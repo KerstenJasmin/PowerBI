@@ -4437,26 +4437,6 @@ cultureInfo de-DE
 			            },
 			            "Weight": 0.727
 			          }
-			        },
-			        {
-			          "Artikelgruppen": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Artikelgruppe": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -34885,16 +34865,6 @@ cultureInfo de-DE
 			            },
 			            "Weight": 0.485
 			          }
-			        },
-			        {
-			          "Absatz": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -34933,16 +34903,6 @@ cultureInfo de-DE
 			          "absatz invoices VJ": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Absatz VJ": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -34962,16 +34922,6 @@ cultureInfo de-DE
 			          "δ absatz invoices zum VJ": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "Δ VJ": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -34990,16 +34940,6 @@ cultureInfo de-DE
 			        {
 			          "δ% absatz invoices zum VJ": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Δ % VJ": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]

@@ -1,4 +1,4 @@
-/// itemGroupHierarchyValues: liefert die Beschreibung der Artikelgruppen im Feld “description” 
+/// itemGroupHierarchyValues: liefert die Beschreibung der Artikelgruppen im Feld “description”
 /// 
 /// Hauptgruppe: Main Group "BusinessArea" (bzw. Integer-Wert 2), Level 01 (bzw. Integer-Wert 1), Wert = Hauptgruppe des Artikels
 /// 
