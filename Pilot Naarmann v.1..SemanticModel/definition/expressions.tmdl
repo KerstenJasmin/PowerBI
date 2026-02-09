@@ -1,0 +1,471 @@
+expression salesInvoiceLines =
+		let
+		    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+		    LIVE = Quelle{[Name="LIVE"]}[Data],
+		    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+		    v2.0 = PLAY02{[Name="v2.0"]}[Data],
+		    salesInvoices_table = v2.0{[Name="salesInvoices",Signature="table"]}[Data],
+		    salesInvoiceLines1 = salesInvoices_table[salesInvoiceLines],
+		    #"In Tabelle konvertiert" = Table.FromList(salesInvoiceLines1, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+		    #"Erweiterte Column1" = Table.ExpandTableColumn(#"In Tabelle konvertiert", "Column1", {"id", "documentId", "sequence", "itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "quantity", "unitPrice", "discountAmount", "discountPercent", "discountAppliedBeforeTax", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "shipmentDate", "itemVariantId", "locationId", "salesInvoice", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"}, {"id", "documentId", "sequence", "itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "quantity", "unitPrice", "discountAmount", "discountPercent", "discountAppliedBeforeTax", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "shipmentDate", "itemVariantId", "locationId", "salesInvoice", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"}),
+		    #"Entfernte Spalten" = Table.RemoveColumns(#"Erweiterte Column1",{"id", "salesInvoice", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"})
+		in
+		    #"Entfernte Spalten"
+	lineageTag: 60dece75-378a-45e8-a17e-96532517f1a1
+	queryGroup: 'Nicht benötigt'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression salesCreditMemoLines =
+		let
+		    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+		    LIVE = Quelle{[Name="LIVE"]}[Data],
+		    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+		    v2.0 = PLAY02{[Name="v2.0"]}[Data],
+		    salesCreditMemos_table = v2.0{[Name="salesCreditMemos",Signature="table"]}[Data],
+		    salesCreditMemoLines1 = salesCreditMemos_table[salesCreditMemoLines],
+		    #"In Tabelle konvertiert" = Table.FromList(salesCreditMemoLines1, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+		    #"Erweiterte Column1" = Table.ExpandTableColumn(#"In Tabelle konvertiert", "Column1", {"id", "documentId", "sequence", "itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "unitPrice", "quantity", "discountAmount", "discountPercent", "discountAppliedBeforeTax", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "shipmentDate", "itemVariantId", "locationId", "salesCreditMemo", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"}, {"Column1.id", "Column1.documentId", "Column1.sequence", "Column1.itemId", "Column1.accountId", "Column1.lineType", "Column1.lineObjectNumber", "Column1.description", "Column1.description2", "Column1.unitOfMeasureId", "Column1.unitOfMeasureCode", "Column1.unitPrice", "Column1.quantity", "Column1.discountAmount", "Column1.discountPercent", "Column1.discountAppliedBeforeTax", "Column1.amountExcludingTax", "Column1.taxCode", "Column1.taxPercent", "Column1.totalTaxAmount", "Column1.amountIncludingTax", "Column1.invoiceDiscountAllocation", "Column1.netAmount", "Column1.netTaxAmount", "Column1.netAmountIncludingTax", "Column1.shipmentDate", "Column1.itemVariantId", "Column1.locationId", "Column1.salesCreditMemo", "Column1.item", "Column1.account", "Column1.unitOfMeasure", "Column1.itemVariant", "Column1.dimensionSetLines", "Column1.location"}),
+		    #"Entfernte Spalten" = Table.RemoveColumns(#"Erweiterte Column1",{"Column1.salesCreditMemo", "Column1.item", "Column1.account", "Column1.unitOfMeasure", "Column1.itemVariant", "Column1.dimensionSetLines", "Column1.location"})
+		in
+		    #"Entfernte Spalten"
+	lineageTag: 25a01c8d-498c-4698-aba3-b470cbd97e11
+	queryGroup: 'Nicht benötigt'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression purchaseOrderLines =
+		let
+		    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+		    LIVE = Quelle{[Name="LIVE"]}[Data],
+		    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+		    v2.0 = PLAY02{[Name="v2.0"]}[Data],
+		    purchaseOrders_table = v2.0{[Name="purchaseOrders",Signature="table"]}[Data],
+		    purchaseOrderLines1 = purchaseOrders_table[purchaseOrderLines],
+		    #"In Tabelle konvertiert" = Table.FromList(purchaseOrderLines1, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+		    #"Erweiterte Column1" = Table.ExpandTableColumn(#"In Tabelle konvertiert", "Column1", {"id", "documentId", "sequence", "itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "quantity", "directUnitCost", "discountAmount", "discountPercent", "discountAppliedBeforeTax", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "expectedReceiptDate", "receivedQuantity", "invoicedQuantity", "invoiceQuantity", "receiveQuantity", "itemVariantId", "locationId", "purchaseOrder", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"}, {"id", "documentId", "sequence", "itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "quantity", "directUnitCost", "discountAmount", "discountPercent", "discountAppliedBeforeTax", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "expectedReceiptDate", "receivedQuantity", "invoicedQuantity", "invoiceQuantity", "receiveQuantity", "itemVariantId", "locationId", "purchaseOrder", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"}),
+		    #"Entfernte Spalten" = Table.RemoveColumns(#"Erweiterte Column1",{"purchaseOrder", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"})
+		in
+		    #"Entfernte Spalten"
+	lineageTag: 5982ed37-89b8-4a90-ae12-63850b08b88d
+	queryGroup: 'Nicht benötigt'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression Abfrage1 = ```
+		let 
+		    
+		fn=(StartJahr, JahreInDieZukunft, optional Culture, optional StartFiskaljahr, optional Wochenstart )=>
+		
+		
+		let
+		/*
+		JahreInDieZukunft = 2,
+		StartJahr = 2017, 
+		Culture = "de-de", 
+		StartFiskaljahr = "Jul",
+		Wochenstart = "Di", 
+		*/
+		    Heute = Date.From(DateTime.LocalNow()),
+		    EndJahr = Date.Year(Date.From(DateTime.LocalNow())) + JahreInDieZukunft, 
+		    StartFiskJahr = if StartFiskaljahr = null then "Jan" else StartFiskaljahr,
+		    GetStartDay = if StartFiskJahr = "Jan" then #date(StartJahr,1,1) else Date.FromText("01."&StartFiskJahr &Number.ToText(StartJahr)),
+		    GetEndDay = if StartFiskJahr = "Jan" then #date(EndJahr,12,31) else Date.EndOfMonth( Date.AddMonths( Date.AddYears( Date.FromText("01."&StartFiskJahr &Number.ToText(EndJahr)), 1), -1) ),
+		    GetCultureDefaultGermany = if Culture = null then "de-de" else Culture, 
+		    DayCount = Duration.Days(Duration.From(GetEndDay - GetStartDay)) + 1, 
+		    GetListOfDates = List.Dates(GetStartDay,DayCount,#duration(1,0,0,0)), 
+		    TableFromList = Table.FromList(GetListOfDates, Splitter.SplitByNothing()),    
+		    ChangedType = Table.TransformColumnTypes(TableFromList,{{"Column1", type date}}), 
+		    Date = Table.Buffer( Table.RenameColumns(ChangedType,{{"Column1", "Datum"}}) ),
+		    #"AddFull date Description" = Table.AddColumn(Date, "Volle Datumsbezeichnung", each Date.ToText([Datum], "dd. MMMM yyyy", Culture), type text),
+		    
+		    //================================================
+		    ErmittleWochenstart = 
+		        if Wochenstart = null then 
+		          1 
+		        else  
+		            List.Select( {
+		              [Tag="Mo", Wochenstart= Day.Monday],
+		              [Tag="Di", Wochenstart= Day.Tuesday],
+		              [Tag="Mi", Wochenstart= Day.Wednesday],
+		              [Tag="Do", Wochenstart= Day.Thursday],
+		              [Tag="Fr", Wochenstart= Day.Friday],
+		              [Tag="Sa", Wochenstart= Day.Saturday],
+		              [Tag="So", Wochenstart= Day.Sunday]
+		              }, each _[Tag] = Wochenstart ){0}[Wochenstart] ,
+		    //================================================
+		    
+		    AddWeekDaySort = Table.AddColumn(#"AddFull date Description", "Tag der Woche #", each Date.DayOfWeek([Datum], ErmittleWochenstart) + 1, Int64.Type),
+		    AddMonthDaySort = Table.AddColumn(AddWeekDaySort, "Tag des Monats #", each Date.Day([Datum]), Int64.Type),
+		    #"Tag des Jahres eingefügt" = Table.AddColumn(AddMonthDaySort, "Tag des Jahres #", each Date.DayOfYear([Datum]), Int64.Type),
+		    AddDayKey = Table.AddIndexColumn(#"Tag des Jahres eingefügt", "TagesKey #", 1, 1, Int64.Type),
+		    AddDayName = Table.AddColumn(AddDayKey, "Name des Tages (TTTT)", each Date.DayOfWeekName([Datum], Culture), type text),
+		    AddDaysName2digits = Table.AddColumn(AddDayName, "Name des Tages (TT)", each Date.ToText([Datum],"ddd", Culture), type text),
+		    AddDaysName1digit = Table.AddColumn(AddDaysName2digits, "Name des Tages (T)", each Text.Start(Date.DayOfWeekName([Datum], Culture),1) & Text.Repeat(Character.FromNumber(8203), [#"Tag der Woche #"]), type text),
+		    WT_WE_flag = Table.AddColumn(AddDaysName1digit, "Wochentags_Flag", each if [#"Tag der Woche #"] < 6 then "Weekday" else "Weekend", type text),
+		    AddWeekOfYear = Table.AddColumn(WT_WE_flag, "Woche #", each Date.WeekOfYear([Datum]), Int64.Type),
+		    #"Wochenbeginn eingefügt" = Table.AddColumn(AddWeekOfYear, "Woche Start", each Date.StartOfWeek([Datum]), type date),
+		    #"Wochenende eingefügt" = Table.AddColumn(#"Wochenbeginn eingefügt", "Woche Ende", each Date.EndOfWeek([Datum]), type date),
+		    AddYearWeek = Table.AddColumn(#"Wochenende eingefügt", "JahrWoche #", each Date.Year([Datum])*100+[#"Woche #"], Int64.Type),
+		    TableWeekKey = /*List.Distinct(#"Geänderter Typ4"[YearWeek])*/ Table.AddIndexColumn(Table.TransformColumnTypes(Table.RenameColumns(Table.FromList(List.Sort(List.Distinct(AddYearWeek[#"JahrWoche #"]),Order.Ascending), Splitter.SplitByNothing(), null, null, ExtraValues.Error),{{"Column1", "YearWeek"}}),{{"YearWeek", Int64.Type}}), "WeekKey #", 1, 1),
+		    AddWeeKey = Table.NestedJoin(AddYearWeek,{"JahrWoche #"},TableWeekKey,{"YearWeek"},"WK",JoinKind.LeftOuter),
+		    #"Expanded WK" = Table.ExpandTableColumn(AddWeeKey, "WK", {"WeekKey #"}, {"WochenKey #"}),
+		    RemovedYearWeek = Table.RemoveColumns(#"Expanded WK",{"JahrWoche #"}),
+		    AddKW_Jahr = Table.AddColumn(RemovedYearWeek, "Woche Jahr", each "KW"&Text.PadStart(Number.ToText([#"Woche #"]),2,"0") &" "&Number.ToText(Date.Year([Datum])), type text),
+		    AddJahr_KW = Table.AddColumn(AddKW_Jahr, "Jahr Woche", each Number.ToText(Date.Year([Datum])) &" "&"KW"&Text.PadStart(Number.ToText([#"Woche #"]),2,"0"), type text),
+		    fnGetIsoWeekNumber = (MyDate as date) =>
+		      //Source --> https://blogs.office.com/en-us/2009/06/30/week-numbers-in-excel/
+		    let
+		      //MyDate = #date(2016,1,3),
+		      Part1 = Number.From(MyDate) - Number.From(#date(Date.Year(Date.From(Number.From(MyDate) - (Date.DayOfWeek(Date.AddDays(MyDate,-1), Day.Sunday) + 1) + 4)),1,3)),
+		      Part2 = Date.DayOfWeek(#date(Date.Year(Date.From(Number.From(MyDate) - (Date.DayOfWeek(Date.AddDays(MyDate,-1), Day.Sunday) +1) + 4)),1,3), Day.Sunday)+1 + 5,
+		      ISOWeekNumber = Number.IntegerDivide(Part1 + Part2, 7)
+		    in
+		      ISOWeekNumber,
+		    AddIsoWeek = Table.AddColumn(AddJahr_KW, "IsoKW #", each fnGetIsoWeekNumber([Datum]), Int64.Type),
+		    AddIsoYear = Table.AddColumn(AddIsoWeek,"IsoJahr #",each Date.Year(Date.AddDays([Datum],3 - Date.DayOfWeek([Datum], 1))), Int64.Type),
+		    AddIsoYear_IsoKW = Table.AddColumn(AddIsoYear, "IsoJahr IsoKW", each Text.From([#"IsoJahr #"]) &  " KW" & Text.PadStart(Text.From([#"IsoKW #"]),2,"0") , type text),
+		    AddIsoKW_IsoYear = Table.AddColumn(AddIsoYear_IsoKW, "IsoKW IsoJahr", each "KW" & Text.PadStart(Text.From([#"IsoKW #"]),2,"0") &" "&Text.From([#"IsoJahr #"]), type text),
+		    GetIsoKalenderwochenKey = Table.AddIndexColumn( Table.Distinct( Table.SelectColumns(AddIsoKW_IsoYear, {"IsoJahr IsoKW"}), {"IsoJahr IsoKW"}), "IsoKWKey #", 1, 1),
+		    AddIsoKalenderwochenKey = Table.AddJoinColumn(AddIsoKW_IsoYear, {"IsoJahr IsoKW"}, GetIsoKalenderwochenKey, {"IsoJahr IsoKW"}, "NEU"),
+		    ExpandIsoKalenderwochenKey = Table.ExpandTableColumn(AddIsoKalenderwochenKey, "NEU", {"IsoKWKey #"}, {"IsoKWKey #"}),
+		    AddMonthSort = Table.AddColumn(ExpandIsoKalenderwochenKey, "Monat #", each Date.Month([Datum]), Int64.Type),
+		    AddMonthName = Table.AddColumn(AddMonthSort, "Monat (MMMM)", each Date.MonthName([Datum], Culture), type text),
+		    AddMonthName3digits = Table.AddColumn(AddMonthName, "Monat (MMM)", each Date.ToText([Datum], "MMM", Culture), type text),
+		    AddMonthName1digit = Table.AddColumn(AddMonthName3digits, "Monat (M)", each Text.Start(Date.MonthName([Datum], Culture),1) & Text.Repeat(Character.FromNumber(8203), [#"Monat #"]), type text),
+		    AddMonthNameShort_Year = Table.AddColumn(AddMonthName1digit, "Monat (MMM) Jahr", each [#"Monat (MMM)"] &" "& Number.ToText(Date.Year([Datum])), type text),
+		    #"AddJahr Monat (MMM)" = Table.AddColumn(AddMonthNameShort_Year, "Jahr Monat (MMM)", each Number.ToText(Date.Year([Datum])) &" "&[#"Monat (MMM)"], type text),
+		    AddYearMonth = Table.TransformColumnTypes(Table.AddColumn(#"AddJahr Monat (MMM)", "JahrMonat #", each Date.Year([Datum])*100 + [#"Monat #"]),{{"JahrMonat #", Int64.Type}}),
+		    TableYearMonth = Table.AddIndexColumn(Table.TransformColumnTypes(Table.RenameColumns(Table.FromList(List.Sort(List.Distinct(AddYearMonth[#"JahrMonat #"]),Order.Ascending), Splitter.SplitByNothing(), null, null, ExtraValues.Error),{{"Column1", "YearMonth"}}),{{"YearMonth", Int64.Type}}), "YearMonthKey", 1, 1),
+		    #"Zusammenführte Abfragen" = Table.NestedJoin(AddYearMonth,{"JahrMonat #"},TableYearMonth,{"YearMonth"},"MK",JoinKind.LeftOuter),
+		    #"Erweiterte MK" = Table.ExpandTableColumn(#"Zusammenführte Abfragen", "MK", {"YearMonthKey"}, {"MonatKey #"}),
+		    #"Entfernte Spalten1" = Table.RemoveColumns(#"Erweiterte MK",{"JahrMonat #"}),
+		    AddSoM = Table.AddColumn(#"Entfernte Spalten1", "Monatsbeginn", each Date.StartOfMonth([Datum]), type date),
+		    AddEoM = Table.AddColumn(AddSoM, "Monatsende", each Date.EndOfMonth([Datum]), type date),
+		    AddQuarter = Table.AddColumn(AddEoM, "Quartal #", each Date.QuarterOfYear([Datum]), Int64.Type),
+		    AddQuarterName = Table.AddColumn(AddQuarter, "Quartal", each "Q" & Number.ToText([#"Quartal #"]), type text),
+		    AddQuartal_Jahr = Table.AddColumn(AddQuarterName, "Quartal Jahr", each "Q"&Number.ToText([#"Quartal #"]) &"-"&Number.ToText(Date.Year([Datum])), type text),
+		    AddJahr_Quartal = Table.AddColumn(AddQuartal_Jahr, "Jahr Quartal", each Number.ToText(Date.Year([Datum])) & "-Q" & Number.ToText([#"Quartal #"]), type text),
+		    AddYearQuarter = Table.AddColumn(AddJahr_Quartal, "Jahr Quartal #", each Date.Year([Datum]) * 100 + [#"Quartal #"], Int64.Type),
+		    TableYearQuarter = Table.AddIndexColumn(Table.TransformColumnTypes(Table.RenameColumns(Table.FromList(List.Sort(List.Distinct(#"AddYearQuarter"[#"Jahr Quartal #"]),Order.Ascending), Splitter.SplitByNothing(), null, null, ExtraValues.Error),{{"Column1", "YearQuarter"}}),{{"YearQuarter", Int64.Type}}), "QuartalKey", 1, 1),
+		    GetQuartalKey = Table.NestedJoin(AddYearQuarter,{"Jahr Quartal #"},TableYearQuarter,{"YearQuarter"},"QK",JoinKind.LeftOuter),
+		    AddQuartalKey = Table.ExpandTableColumn(GetQuartalKey, "QK", {"QuartalKey"}, {"QuartalKey #"}),
+		    #"Entfernte Spalten" = Table.RemoveColumns(AddQuartalKey,{"Jahr Quartal #"}),
+		    AddHalfYearSort = Table.TransformColumnTypes(Table.AddColumn(#"Entfernte Spalten", "Halbjahr #", each if Date.Month([Datum]) < 7 then 1 else 2),{{"Halbjahr #", Int64.Type}}),
+		    AddHalfYearName = Table.AddColumn(AddHalfYearSort, "Halbjahr", each "HJ " & Number.ToText([#"Halbjahr #"]), type text),
+		    AddHalbjahr_Jahr = Table.AddColumn(AddHalfYearName, "Halbjahr Jahr", each "HJ "&Number.ToText([#"Halbjahr #"])&"-"&Number.ToText(Date.Year([Datum])), type text),
+		    #"Hinzugefügte benutzerdefinierte Spalte3" = Table.AddColumn(AddHalbjahr_Jahr, "Jahr Halbjahr", each Number.ToText(Date.Year([Datum]))&"-"& "HJ "&Number.ToText([#"Halbjahr #"]), type text),
+		    AddYearHalfYear = Table.TransformColumnTypes(Table.AddColumn(#"Hinzugefügte benutzerdefinierte Spalte3", "JahrHalbjahr #", each Date.Year([Datum])*100+[#"Halbjahr #"]),{{"JahrHalbjahr #", Int64.Type}}),
+		    TableYearHalfYear = Table.AddIndexColumn(Table.TransformColumnTypes(Table.RenameColumns(Table.FromList(List.Sort(List.Distinct(AddYearHalfYear[#"JahrHalbjahr #"]),Order.Ascending), Splitter.SplitByNothing(), null, null, ExtraValues.Error),{{"Column1", "YearHalfYear"}}),{{"YearHalfYear", Int64.Type}}), "HalfYearKey", 1, 1),
+		    GetHalfYearKey = Table.NestedJoin(AddYearHalfYear,{"JahrHalbjahr #"},TableYearHalfYear,{"YearHalfYear"},"HYK",JoinKind.LeftOuter),
+		    AddHalfYearKey = Table.ExpandTableColumn(GetHalfYearKey, "HYK", {"HalfYearKey"}, {"HalbjahrKey #"}),
+		    #"Entfernte Spalten4" = Table.RemoveColumns(AddHalfYearKey,{"JahrHalbjahr #"}),
+		    AddYear = Table.AddColumn(#"Entfernte Spalten4", "Jahr #", each Date.Year([Datum]), Int64.Type),
+		    AddJahrKey = Table.AddColumn(AddYear, "JahrKey #", each [#"Jahr #"] - List.Min(AddYear[#"Jahr #"]) + 1, Int64.Type),
+		    IsLeapYear = Table.Buffer( Table.TransformColumnTypes(Table.AddColumn(AddJahrKey, "Schaltjahr", each Date.IsLeapYear( [Datum] )),{{"Schaltjahr", type logical}}) ),
+		
+		    fnKeysTodayRecord =
+		      let
+		      TabelleAufHeuteFiltern = Table.SelectRows(IsLeapYear, each _[Datum] = Heute),
+		      Output = 
+		        [
+		          TagesKeyHeute = TabelleAufHeuteFiltern[#"TagesKey #"]{0}, 
+		          WochenKeyHeute = TabelleAufHeuteFiltern[#"WochenKey #"]{0},
+		          IsoKWHeute = TabelleAufHeuteFiltern[#"IsoKWKey #"]{0},
+		          MonatKeyHeute = TabelleAufHeuteFiltern[#"MonatKey #"]{0},
+		          QuartalKeyHeute = TabelleAufHeuteFiltern[#"QuartalKey #"]{0},
+		          HalbjahrKeyHeute = TabelleAufHeuteFiltern[#"HalbjahrKey #"]{0},
+		          JahrKeyHeute = TabelleAufHeuteFiltern[#"JahrKey #"]{0}
+		        ]
+		      in
+		      Output, 
+		    AddRelativerTag = Table.AddColumn(IsLeapYear, "Relativer Tag #", each [#"TagesKey #"] - fnKeysTodayRecord[TagesKeyHeute], Int64.Type),
+		    AddRelativeWoche = Table.AddColumn(AddRelativerTag, "Relative Woche #", each [#"WochenKey #"] - fnKeysTodayRecord[WochenKeyHeute], Int64.Type),
+		    AddRelativeIsoWoche = Table.AddColumn(AddRelativeWoche, "Relative IsoWoche #", each [#"IsoKWKey #"] - fnKeysTodayRecord[IsoKWHeute], Int64.Type),
+		    AddRelativerMonat = Table.AddColumn(AddRelativeIsoWoche, "Relativer Monat #", each [#"MonatKey #"] - fnKeysTodayRecord[MonatKeyHeute], Int64.Type),
+		    AddRelativesQuartal = Table.AddColumn(AddRelativerMonat, "Relatives Quartal #", each [#"QuartalKey #"] - fnKeysTodayRecord[QuartalKeyHeute], Int64.Type),
+		    AddRelativesHalbjahr = Table.AddColumn(AddRelativesQuartal, "Relatives Halbjahr #", each [#"HalbjahrKey #"] - fnKeysTodayRecord[HalbjahrKeyHeute], Int64.Type),
+		    AddRelativesJahr = Table.AddColumn(AddRelativesHalbjahr, "Relatives Jahr #", each [#"JahrKey #"] - fnKeysTodayRecord[JahrKeyHeute], Int64.Type),
+		    //==============================================================================Fiskaljahresberechnungen=================================================================
+		    GetStartMonatsnummerFiskaljahr = List.PositionOf({"Jan", "Feb", "Mrz", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"}, StartFiskJahr ) + 1,
+		    
+		    AddFiscalYear = Table.AddColumn(AddRelativesJahr, "Fiskaljahr #", each if Date.Month([Datum]) < GetStartMonatsnummerFiskaljahr then Date.Year([Datum]) else Date.Year([Datum]) + 1
+		, Int64.Type),
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(AddFiscalYear, "Fiskaljahr", each if Date.Month([Datum]) < GetStartMonatsnummerFiskaljahr then "FJ " &  Number.ToText(Date.Year([Datum])) else "FJ " & Number.ToText(Date.Year([Datum]) + 1), type text),
+		    #"AddFiscalMonth#" = Table.AddColumn(#"Hinzugefügte benutzerdefinierte Spalte", "Fiskalmonat #", each if ( Date.Month([Datum]) >= GetStartMonatsnummerFiskaljahr) then Date.Month([Datum]) - GetStartMonatsnummerFiskaljahr +1 
+		else 
+		Date.Month([Datum])+13-GetStartMonatsnummerFiskaljahr, Int64.Type),
+		    AddFiskalmonat_MMMM = Table.AddColumn(#"AddFiscalMonth#", "Fiskalmonat (MMMM)", each Date.MonthName([Datum]), type text),
+		    Add_Fiskalmonat_MMM = Table.AddColumn(AddFiskalmonat_MMMM, "Fiskalmonat (MMM)", each Date.ToText([Datum], "MMM", Culture), type text),
+		    AddFiskalmonat_MM = Table.AddColumn(Add_Fiskalmonat_MMM, "Fiskalmonat (M)", each Text.Start(Date.MonthName([Datum], Culture),1) & Text.Repeat(Character.FromNumber(8203), [#"Monat #"]), type text),
+		    Add_FiskalQuartal = Table.TransformColumnTypes(Table.AddColumn(AddFiskalmonat_MM, "Fiskalquartal #", each Number.RoundUp([#"Fiskalmonat #"]/3 ,0)), {{"Fiskalquartal #", Int64.Type}}),
+		    #"Hinzugefügte benutzerdefinierte Spalte1" = Table.AddColumn(Add_FiskalQuartal, "Fiskalquartal", each "FQ " & Number.ToText([#"Fiskalquartal #"]), type text),
+		    #"Hinzugefügte benutzerdefinierte Spalte2" = Table.AddColumn(#"Hinzugefügte benutzerdefinierte Spalte1", "Fiskalquartal Fiskaljahr", each [Fiskalquartal]&"-FJ "&Number.ToText([#"Fiskaljahr #"]), type text),
+		    AddFiscalYearQuarterName = Table.AddColumn(#"Hinzugefügte benutzerdefinierte Spalte2", "Fiskaljahr Fiskalquartal", each "FJ "&Text.From([#"Fiskaljahr #"]) &"-FQ" & Text.From([#"Fiskalquartal #"]), type text),
+		    AddFiscalYearQuarter = Table.AddColumn(AddFiscalYearQuarterName, "Fiskal_JahrQuartal", each [#"Fiskaljahr #"]* 100 + [#"Fiskalquartal #"], Int64.Type),
+		    TableFiscalYearQuarter = Table.AddIndexColumn(Table.TransformColumnTypes(Table.RenameColumns(Table.FromList(List.Sort(List.Distinct(#"AddFiscalYearQuarter"[#"Fiskal_JahrQuartal"]),Order.Ascending), Splitter.SplitByNothing(), null, null, ExtraValues.Error),{{"Column1", "Fiscal_YearQuarter"}}),{{"Fiscal_YearQuarter", Int64.Type}}), "Fiskal_QuartalKey", 1, 1),
+		    GetFiscalYearQuarterKey = Table.NestedJoin(AddFiscalYearQuarter,{"Fiskal_JahrQuartal"},TableFiscalYearQuarter,{"Fiscal_YearQuarter"},"FYQ",JoinKind.LeftOuter),
+		    #"Erweiterte FYQ" = Table.ExpandTableColumn(GetFiscalYearQuarterKey, "FYQ", {"Fiskal_QuartalKey"}, {"FiskalQuartalKey #"}),
+		    #"Entfernte Spalten2" = Table.RemoveColumns(#"Erweiterte FYQ",{"Fiskal_JahrQuartal"}),
+		    AddFiscalHalfYear = Table.TransformColumnTypes(Table.AddColumn(#"Entfernte Spalten2", "Fiskalhalbjahr #", each if [#"Fiskalmonat #"]<7 then 1 else 2), {{"Fiskalhalbjahr #", Int64.Type}}),
+		    AddFiscalHalfYearName = Table.AddColumn(AddFiscalHalfYear, "Fiskalhalbjahr", each "FHJ " & Number.ToText([#"Fiskalhalbjahr #"]), type text),
+		    AddFiscalYearHalfYearName = Table.AddColumn(AddFiscalHalfYearName, "Fiskaljahr Fiskalhalbjahr", each "FJ " &Text.From([#"Fiskaljahr #"]) & "-FHJ" & Text.From([#"Fiskalhalbjahr #"]), type text),
+		    #"Hinzugefügte benutzerdefinierte Spalte4" = Table.AddColumn(AddFiscalYearHalfYearName, "Fiskalhalbjahr Fiskaljahr", each "FHJ " & Text.From([#"Fiskalhalbjahr #"])&"-FJ " &Text.From([#"Fiskaljahr #"]), type text),
+		    AddFiscalYearHalfYear = Table.AddColumn(#"Hinzugefügte benutzerdefinierte Spalte4", "Fiskal_JahrHalbjahr", each [#"Fiskaljahr #"] * 100 + [#"Fiskalhalbjahr #"], Int64.Type),
+		    TableFiscalYearHalfYear = Table.AddIndexColumn(Table.TransformColumnTypes(Table.RenameColumns(Table.FromList(List.Sort(List.Distinct(#"AddFiscalYearHalfYear"[Fiskal_JahrHalbjahr]),Order.Ascending), Splitter.SplitByNothing(), null, null, ExtraValues.Error),{{"Column1", "Fiscal_YearHalfYear"}}),{{"Fiscal_YearHalfYear", Int64.Type}}), "Fiskal_HalbjahresKey", 1, 1),
+		    GetFiscalYearHalfYearKey = Table.NestedJoin(AddFiscalYearHalfYear,{"Fiskal_JahrHalbjahr"},TableFiscalYearHalfYear,{"Fiscal_YearHalfYear"},"FYHY",JoinKind.LeftOuter),
+		    #"Erweiterte FYHY" = Table.ExpandTableColumn(GetFiscalYearHalfYearKey, "FYHY", {"Fiskal_HalbjahresKey"}, {"FiskalhalbjahresKey #"}),
+		    #"Entfernte Spalten3" = Table.RemoveColumns(#"Erweiterte FYHY",{"Fiskal_JahrHalbjahr"}),
+		
+		    //==============================================================================Fiskaljahresberechnungen=================================================================
+		    Output = if StartFiskJahr = "Jan" then #"AddRelativesJahr" else #"Entfernte Spalten3"
+		in
+		    Output
+		
+		  ,
+		    fnType = type function(
+		              StartJahr as number,
+		              JahreInDieZukunft as number, 
+		              optional Culture as (type text meta [Documentation.AllowedValues={"de-de", "en-US", "fr-FR", "es-ES"}]), 
+		              optional StartFiskaljahr as (type text meta[Documentation.AllowedValues={"Jan", "Feb", "Mrz", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"}]),
+		              optional Wochenstart as (type text meta[Documentation.AllowedValues={"Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"}])
+		               ) as table meta [
+		                                Documentation.Name="fnCalendar",
+		                                Documentation.LongDescription="Diese Funktion erstellt eine Kalendertabelle, angelehnt an den Vorschlägen der Kimball-Group.",
+		                                Documentation.Author="Lars Schreiber, ssbi-blog.de"
+		                              ]
+		in
+		Value.ReplaceType(fn, fnType)
+		```
+	lineageTag: 7b5b10d9-622e-4743-8efb-3e826d6c84be
+	queryGroup: Hilfstabellen
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+
+expression salesOrderLines =
+		let
+		    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+		    LIVE = Quelle{[Name="LIVE"]}[Data],
+		    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+		    v2.0 = PLAY02{[Name="v2.0"]}[Data],
+		    salesOrders_table = v2.0{[Name="salesOrders",Signature="table"]}[Data],
+		    salesOrderLines1 = salesOrders_table[salesOrderLines],
+		    #"In Tabelle konvertiert" = Table.FromList(salesOrderLines1, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+		    #"Erweiterte Column1" = Table.ExpandTableColumn(#"In Tabelle konvertiert", "Column1", {"id", "documentId", "sequence", "itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "quantity", "unitPrice", "discountAmount", "discountPercent", "discountAppliedBeforeTax", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "shipmentDate", "shippedQuantity", "invoicedQuantity", "invoiceQuantity", "shipQuantity", "itemVariantId", "locationId", "salesOrder", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"}, {"id", "documentId", "sequence", "itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "quantity", "unitPrice", "discountAmount", "discountPercent", "discountAppliedBeforeTax", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "shipmentDate", "shippedQuantity", "invoicedQuantity", "invoiceQuantity", "shipQuantity", "itemVariantId", "locationId", "salesOrder", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"}),
+		    #"Entfernte Spalten" = Table.RemoveColumns(#"Erweiterte Column1",{"salesOrder", "item", "account", "unitOfMeasure", "itemVariant", "dimensionSetLines", "location"})
+		in
+		    #"Entfernte Spalten"
+	lineageTag: e5395e19-bdfe-4a59-a01e-970033d86bf6
+	queryGroup: 'Nicht benötigt'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+
+expression DIM_Customers =
+		let
+		    // Zugriff auf die Business Central API
+		    Quelle =
+		        Dynamics365BusinessCentral.ApiContentsWithOptions(
+		            null,
+		            null,
+		            null,
+		            null
+		        ),
+		
+		    // Auswahl der Umgebung "LIVE"
+		    LIVE =
+		        Quelle{[Name = "LIVE"]}[Data],
+		
+		    // Auswahl der Mandanteninstanz "PLAY02"
+		    PLAY02 =
+		        LIVE{[Name = "PLAY02"]}[Data],
+		
+		    // Auswahl der API-Version "v2.0"
+		    v2_0 =
+		        PLAY02{[Name = "v2.0"]}[Data],
+		
+		    // Zugriff auf die Tabelle "customers"
+		    Customers =
+		        v2_0{[
+		            Name = "customers",
+		            Signature = "table"
+		        ]}[Data],
+		
+		    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+		    Quelle_BC =
+		        Table.AddColumn(
+		            Customers,
+		            "Quelle",
+		            each "BC",
+		            type text
+		        )
+		
+		in
+		    // Rückgabe der finalen Tabelle
+		    Quelle_BC
+	lineageTag: 17f82bea-98c1-4127-a1c1-492ece4c7bbd
+	queryGroup: 'BC Tabellen / Finale Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression DIM_CustomerHierarchies_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_customerHierarchies = Quelle{[Schema="dbo",Item="customerHierarchies"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_customerHierarchies, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: 73b01882-fcaa-4076-86ea-2f5a4b131630
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression DIM_CustomerHierarchyAssignments_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_customerHierarchyAssignments = Quelle{[Schema="dbo",Item="customerHierarchyAssignments"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_customerHierarchyAssignments, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: af9cf9f5-f697-4297-8881-45d403e70c54
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression DIM_Customers_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_customers = Quelle{[Schema="dbo",Item="customers"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_customers, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: 8db14711-5358-4a6f-9798-81a27bc1a0e7
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression DIM_ItemGroupHierarchyValues_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_itemGroupHierarchyValues = Quelle{[Schema="dbo",Item="itemGroupHierarchyValues"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_itemGroupHierarchyValues, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: bb31aa38-fcf0-443e-ba0b-eab69a51ecd8
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression DIM_Items_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_items = Quelle{[Schema="dbo",Item="items"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_items, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: d5207fa6-9f18-4ad2-b052-728c7ab76c46
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression DIM_ItemUnitOfMeasures_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_itemUnitOfMeasures = Quelle{[Schema="dbo",Item="itemUnitOfMeasures"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_itemUnitOfMeasures, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: 647d1cf9-92c4-4ffe-871b-ff7f79a3d416
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression FCT_SalesLineOrders_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_salesLineOrders = Quelle{[Schema="dbo",Item="salesLineOrders"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_salesLineOrders, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: d2506073-0bf1-4681-9b30-7765cbdcec42
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression DIM_SalespeoplePurchasers_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_salespeoplePurchasers = Quelle{[Schema="dbo",Item="salespeoplePurchasers"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_salespeoplePurchasers, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: d18ebad7-ba98-4ef7-afd7-f850f79e8adf
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression DIM_UnitsOfMeasures_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_UnitOfMeasures = Quelle{[Schema="dbo",Item="unitsOfMeasures"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_UnitOfMeasures, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: f7cb7aac-1f4a-4ceb-91c1-4fe6cfc65920
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression FCT_ValueEntriesSales_NAV =
+		let
+		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+		    dbo_valueEntriesSales = Quelle{[Schema="dbo",Item="valueEntriesSales"]}[Data],
+		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_valueEntriesSales, "Quelle", each "NAV"),
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		in
+		    #"Geänderter Typ"
+	lineageTag: 61f0ae87-f70b-4a9a-b525-0e28f2b161bd
+	queryGroup: 'NAV Tabellen'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

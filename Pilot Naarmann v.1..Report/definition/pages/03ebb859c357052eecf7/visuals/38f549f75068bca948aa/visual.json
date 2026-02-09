@@ -1,0 +1,513 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "38f549f75068bca948aa",
+  "position": {
+    "x": 19.692307692307693,
+    "y": 121.84615384615384,
+    "z": 0,
+    "height": 577.23076923076928,
+    "width": 615.38461538461536,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 1 (Hauptgruppe)"
+                }
+              },
+              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 1 (Hauptgruppe)",
+              "nativeQueryRef": "Ebene 1 (Hauptgruppe)",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 2 (Produktart)"
+                }
+              },
+              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 2 (Untergruppe)",
+              "nativeQueryRef": "Ebene 2 (Untergruppe)",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 3 (Fettgehalt)"
+                }
+              },
+              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 3 (Produktart)",
+              "nativeQueryRef": "Ebene 3 (Produktart)",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 4 (leer)"
+                }
+              },
+              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 4 (Fettgehalt)",
+              "nativeQueryRef": "Ebene 4 (Fettgehalt)",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Offener Auftragsbetrag"
+                }
+              },
+              "queryRef": "Measure Tabelle.Auftragsbestand",
+              "nativeQueryRef": "Auftragsbestand"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Δ Offener Auftragsbetrag VJ"
+                }
+              },
+              "queryRef": "Measure Tabelle.Δ Auftragsbestand VJ",
+              "nativeQueryRef": "Δ  VJ",
+              "displayName": "Δ  VJ"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Δ% Offener Auftragsbetrag VJ"
+                }
+              },
+              "queryRef": "Measure Tabelle.Δ% Auftragsbestand VJ",
+              "nativeQueryRef": "Δ% VJ",
+              "displayName": "Δ% VJ"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Measure Tabelle"
+                  }
+                },
+                "Property": "Offener Auftragsbetrag"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "DIM_ItemGroupHierarchyValues.Ebene 1 (Hauptgruppe)"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 1 (Hauptgruppe)"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "DIM_ItemGroupHierarchyValues.Ebene 2 (Untergruppe)"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 2 (Produktart)"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "DIM_ItemGroupHierarchyValues.Ebene 3 (Produktart)"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 3 (Fettgehalt)"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "DIM_ItemGroupHierarchyValues.Ebene 4 (Fettgehalt)"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "dataBars": {
+              "positiveColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#9ea7bf'"
+                      }
+                    }
+                  }
+                }
+              },
+              "negativeColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#9ea7bf'"
+                      }
+                    }
+                  }
+                }
+              },
+              "axisColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'foreground'"
+                      }
+                    }
+                  }
+                }
+              },
+              "reverseDirection": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "hideText": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "totalMatchingOption": {
+                "expr": {
+                  "Literal": {
+                    "Value": "1L"
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measure Tabelle.Auftragsbestand"
+          }
+        },
+        {
+          "properties": {
+            "dataBars": {
+              "positiveColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#1CD783'"
+                      }
+                    }
+                  }
+                }
+              },
+              "negativeColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#F65164'"
+                      }
+                    }
+                  }
+                }
+              },
+              "axisColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'foreground'"
+                      }
+                    }
+                  }
+                }
+              },
+              "reverseDirection": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "hideText": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "totalMatchingOption": {
+                "expr": {
+                  "Literal": {
+                    "Value": "1L"
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measure Tabelle.Δ Auftragsbestand VJ"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "177.6369147924172D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measure Tabelle.Auftragsbestand"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76.72147516917309D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measure Tabelle.Δ Auftragsbestand VJ"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76.6455839142497D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measure Tabelle.Δ% Auftragsbestand VJ"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c068116b3714e4dba9ae",
+        "ordinal": 0,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Δ Offener Auftragsbetrag VJ_copy"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "335400c5d80aec97a2d9",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_Customers"
+              }
+            },
+            "Property": "displayName"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "cde1125a74b675feca43",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ItemCategories"
+              }
+            },
+            "Property": "displayName"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "5d4c59a8cb37a983c204",
+        "ordinal": 3,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Offener Auftragsbetrag"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "de54e4800f25445e6003",
+        "ordinal": 4,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Δ Offener Auftragsbetrag VJ"
+          }
+        },
+        "type": "Advanced"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

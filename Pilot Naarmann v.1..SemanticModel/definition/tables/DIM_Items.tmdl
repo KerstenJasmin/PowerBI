@@ -1,0 +1,218 @@
+/// Alle Artikeldaten
+table DIM_Items
+	lineageTag: 481cd4e7-f5a7-454c-b359-845ab4cc7444
+
+	column no
+		dataType: string
+		lineageTag: 24ed0a3c-8965-4411-b300-b994c1f327d5
+		summarizeBy: none
+		sourceColumn: no
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: 7cb14061-d737-43e9-b0b3-998b5deea9a7
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column baseUnitOfMeasure
+		dataType: string
+		lineageTag: a717b802-472d-4657-9291-ca5c232cb316
+		summarizeBy: none
+		sourceColumn: baseUnitOfMeasure
+
+		annotation SummarizationSetBy = Automatic
+
+	column inventoryPostingGroup
+		dataType: string
+		lineageTag: e3636c0c-0623-465b-b45e-31dd7c95c54c
+		summarizeBy: none
+		sourceColumn: inventoryPostingGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column standardCost
+		dataType: double
+		lineageTag: 1db88743-c282-455f-befa-9ef7a2fe0691
+		summarizeBy: sum
+		sourceColumn: standardCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column genProdPostingGroup
+		dataType: string
+		lineageTag: 108e19f0-eaee-422f-9e2d-2d7ba8041f98
+		summarizeBy: none
+		sourceColumn: genProdPostingGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column itemCategoryCode
+		dataType: string
+		lineageTag: 6387119d-8fae-4fde-9a63-4a7908c5d21b
+		summarizeBy: none
+		sourceColumn: itemCategoryCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column pb365DrItemGroupCode
+		dataType: string
+		lineageTag: e833ac42-bc29-4156-b1c7-e9a33ab89532
+		summarizeBy: none
+		sourceColumn: pb365DrItemGroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column pb365MaItemGroupCode
+		dataType: string
+		lineageTag: 6f955684-ce5a-45f9-b578-1d327758e644
+		summarizeBy: none
+		sourceColumn: pb365MaItemGroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column pb365HsmRawMaterialType
+		dataType: string
+		lineageTag: 3d923a2d-5cd9-4afb-9145-739ff68cd0c4
+		summarizeBy: none
+		sourceColumn: pb365HsmRawMaterialType
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: int64
+		formatString: 0
+		lineageTag: 60e8a2ae-d67a-4801-bd2f-ae045ff36738
+		summarizeBy: sum
+		sourceColumn: type
+
+		annotation SummarizationSetBy = Automatic
+
+	column itemDiscGroup
+		dataType: string
+		lineageTag: 5714c891-b769-43f2-a607-526c056e3cb4
+		summarizeBy: none
+		sourceColumn: itemDiscGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column naMainGroupCode
+		dataType: string
+		lineageTag: a905fc9e-265b-463a-8f41-e5843e217edd
+		summarizeBy: none
+		sourceColumn: naMainGroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column naSubGroupCode
+		dataType: string
+		lineageTag: ff08d771-5b9c-4799-9bd6-34c5bf525883
+		summarizeBy: none
+		sourceColumn: naSubGroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column naProductType
+		dataType: string
+		lineageTag: aae58e8e-ebbd-44a6-b74a-1e116c201c87
+		summarizeBy: none
+		sourceColumn: naProductType
+
+		annotation SummarizationSetBy = Automatic
+
+	column naFatContent
+		dataType: string
+		lineageTag: 3ffbf4ea-e30c-40b5-a294-6c35fc3d03a6
+		summarizeBy: none
+		sourceColumn: naFatContent
+
+		annotation SummarizationSetBy = Automatic
+
+	column naUsagePurpose
+		dataType: string
+		lineageTag: e6daa08f-15c6-445d-b8aa-c0ce75ec4257
+		summarizeBy: none
+		sourceColumn: naUsagePurpose
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Key Item Group' = ```
+			DIM_Items[naMainGroupCode] & "-" & DIM_Items[naSubGroupCode] & "-" & DIM_Items[naFatContent]   
+			```
+		lineageTag: 50d7b49b-70bc-44ba-8780-90e2153c3ffa
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ArtikelNr - ArtikelName'
+		dataType: string
+		lineageTag: 33e36246-6788-4c9f-b62a-64056a15be08
+		summarizeBy: none
+		sourceColumn: ArtikelNr - ArtikelName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quelle
+		dataType: string
+		lineageTag: 25a8c5b9-0289-49e1-96ec-c44f85577790
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_Items = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+				    dbo_items = Quelle{[Schema="dbo",Item="items"]}[Data],
+				    // Filter: nur Artikelnummern beginnend mit 00–08
+				    GefilterteArtikel =
+				        Table.SelectRows(
+				            dbo_items,
+				            each
+				                List.AnyTrue({
+				                    Text.StartsWith([no], "00"),
+				                    Text.StartsWith([no], "01"),
+				                    Text.StartsWith([no], "02"),
+				                    Text.StartsWith([no], "03"),
+				                    Text.StartsWith([no], "04"),
+				                    Text.StartsWith([no], "05"),
+				                    Text.StartsWith([no], "06"),
+				                    Text.StartsWith([no], "07"),
+				                    Text.StartsWith([no], "08")
+				                })
+				        ),
+				
+				    // Zusammengesetzte Spalte: Artikelnummer + Artikelname
+				    ArtikelNr_ArtikelName =
+				        Table.AddColumn(
+				            GefilterteArtikel,
+				            "ArtikelNr - ArtikelName",
+				            each [no] & " - " & [description],
+				            type text
+				        ),
+				
+				    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+				    Quelle_BC =
+				        Table.AddColumn(
+				            ArtikelNr_ArtikelName,
+				            "Quelle",
+				            each "BC",
+				            type text
+				        )
+				
+				in
+				    // Rückgabe der finalen Artikeltabelle
+				    Quelle_BC
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

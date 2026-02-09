@@ -1,0 +1,254 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "8ff49091beda41a25819",
+  "position": {
+    "x": 19.918099918099919,
+    "y": 63.947583947583951,
+    "z": 2000,
+    "height": 631.08927108927116,
+    "width": 1233.8738738738739,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 1 (Hauptgruppe)"
+                }
+              },
+              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 1 (Hauptgruppe)",
+              "nativeQueryRef": "Ebene 1 (Hauptgruppe)",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 2 (Produktart)"
+                }
+              },
+              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 2 (Untergruppe)",
+              "nativeQueryRef": "Ebene 2 (Produktart)",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 3 (Fettgehalt)"
+                }
+              },
+              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 3 (Produktart)",
+              "nativeQueryRef": "Ebene 3 (Fettgehalt)",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FCT_SalesLineOrders"
+                    }
+                  },
+                  "Property": "documentNo"
+                }
+              },
+              "queryRef": "FCT_SalesLineOrders.documentNo",
+              "nativeQueryRef": "documentNo",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Offene Auftragsmenge"
+                }
+              },
+              "queryRef": "Measure Tabelle.Offene Auftragsmenge",
+              "nativeQueryRef": "Offene Auftragsmenge"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Offener Auftragsbetrag"
+                }
+              },
+              "queryRef": "Measure Tabelle.Offener Auftragsbetrag",
+              "nativeQueryRef": "Offener Auftragsbetrag"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Offener Auftragsbetrag VJ"
+                }
+              },
+              "queryRef": "Measure Tabelle.Offener Auftragsbetrag VJ",
+              "nativeQueryRef": "Offener Auftragsbetrag VJ"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Δ Offener Auftragsbetrag VJ"
+                }
+              },
+              "queryRef": "Measure Tabelle.Δ Offener Auftragsbetrag VJ",
+              "nativeQueryRef": "Δ Offener Auftragsbetrag VJ"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Δ% Offener Auftragsbetrag VJ"
+                }
+              },
+              "queryRef": "Measure Tabelle.Δ% Offener Auftragsbetrag VJ",
+              "nativeQueryRef": "Δ% Offener Auftragsbetrag VJ"
+            }
+          ]
+        }
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "DIM_ItemGroupHierarchyValues.Ebene 1 (Hauptgruppe)"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 1 (Hauptgruppe)"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "DIM_ItemGroupHierarchyValues.Ebene 2 (Untergruppe)"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 2 (Produktart)"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "DIM_ItemGroupHierarchyValues.Ebene 3 (Produktart)"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_ItemGroupHierarchyValues"
+                    }
+                  },
+                  "Property": "Ebene 3 (Fettgehalt)"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FCT_SalesLineOrders.documentNo"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,375 @@
+/// Enthält alle Verkaufswertposten: SalesAmountActual enthält den zu berücksichtigenden Betrag, itemLedgerEntryQuantity die Menge
+table FCT_ValueEntriesSales
+	lineageTag: e42c1feb-ca94-4abd-9c84-e75141ea4c7c
+
+	column entryNo
+		dataType: int64
+		formatString: 0
+		lineageTag: 92341a55-0d90-461b-bffa-c4ff13bb7bbf
+		summarizeBy: none
+		sourceColumn: entryNo
+
+		annotation SummarizationSetBy = User
+
+	column itemNo
+		dataType: string
+		lineageTag: fd015009-4a65-4e33-a2ae-5b34b3774082
+		summarizeBy: none
+		sourceColumn: itemNo
+
+		annotation SummarizationSetBy = User
+
+	column postingDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 22192822-4434-4abc-9135-40327ffd6704
+		summarizeBy: none
+		sourceColumn: postingDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column sourceNo
+		dataType: string
+		lineageTag: fe548083-52ef-476e-82c5-dc033222d8f6
+		summarizeBy: none
+		sourceColumn: sourceNo
+
+		annotation SummarizationSetBy = User
+
+	column documentNo
+		dataType: string
+		lineageTag: b5000691-8920-47fe-b10e-c9d08cd98f46
+		summarizeBy: none
+		sourceColumn: documentNo
+
+		annotation SummarizationSetBy = User
+
+	column inventoryPostingGroup
+		dataType: string
+		lineageTag: 4158d312-996f-4d13-a17a-8b60547cdc37
+		summarizeBy: none
+		sourceColumn: inventoryPostingGroup
+
+		annotation SummarizationSetBy = User
+
+	column salesAmountActual
+		dataType: double
+		lineageTag: fa290ef1-0ff2-4f47-8c37-a4c86173aaaf
+		summarizeBy: none
+		sourceColumn: salesAmountActual
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column costAmountActual
+		dataType: double
+		lineageTag: 0cbfa166-56b2-4c43-be12-2d5d9613a58c
+		summarizeBy: none
+		sourceColumn: costAmountActual
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column genBusPostingGroup
+		dataType: string
+		lineageTag: 36d20ba5-da7b-4b14-96f8-46dc17f03726
+		summarizeBy: none
+		sourceColumn: genBusPostingGroup
+
+		annotation SummarizationSetBy = User
+
+	column genProdPostingGroup
+		dataType: string
+		lineageTag: 5103e0a8-7720-4f42-bb84-51a77e4b665b
+		summarizeBy: none
+		sourceColumn: genProdPostingGroup
+
+		annotation SummarizationSetBy = User
+
+	column documentDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2efaf121-cd48-44f0-9978-9c10718870ee
+		summarizeBy: none
+		sourceColumn: documentDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column externalDocumentNo
+		dataType: string
+		lineageTag: 81a62137-8c57-4870-a25b-c6e0f994452c
+		summarizeBy: none
+		sourceColumn: externalDocumentNo
+
+		annotation SummarizationSetBy = User
+
+	column costPostedToGLAcy
+		dataType: double
+		lineageTag: 774c1cf2-7ee1-4a65-9514-843153341de6
+		summarizeBy: none
+		sourceColumn: costPostedToGLAcy
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column documentType
+		dataType: string
+		lineageTag: 432fe8f5-50de-425b-bb31-bc9a02e072a6
+		summarizeBy: none
+		sourceColumn: documentType
+
+		annotation SummarizationSetBy = User
+
+	column entryType
+		dataType: string
+		lineageTag: 5ebb3c48-7461-475a-b452-4479e48bde2b
+		summarizeBy: none
+		sourceColumn: entryType
+
+		annotation SummarizationSetBy = User
+
+	column purchaseAmountActual
+		dataType: double
+		lineageTag: a0f7cd12-960d-4ae0-a5bf-9a171312b71f
+		summarizeBy: none
+		sourceColumn: purchaseAmountActual
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column purchaseAmountExpected
+		dataType: double
+		lineageTag: 627cfe61-f679-43eb-aead-2166a2aa9a40
+		summarizeBy: none
+		sourceColumn: purchaseAmountExpected
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column costAmountExpected
+		dataType: double
+		lineageTag: fd48ab2e-b926-4ea9-aa22-20d56ab7023f
+		summarizeBy: none
+		sourceColumn: costAmountExpected
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column itemLedgerEntryNo
+		dataType: double
+		formatString: 0
+		lineageTag: 481cd94e-33b2-46db-8267-566079398bfc
+		summarizeBy: none
+		sourceColumn: itemLedgerEntryNo
+
+		annotation SummarizationSetBy = User
+
+	column itemLedgerEntryQuantity
+		dataType: double
+		lineageTag: 5625e2b2-3293-43f7-820a-3c93b9fefa1d
+		summarizeBy: none
+		sourceColumn: itemLedgerEntryQuantity
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salespersPurchCode
+		dataType: string
+		lineageTag: 3c6b7439-95b2-4d0e-8e9c-3a30be2c917a
+		summarizeBy: none
+		sourceColumn: salespersPurchCode
+
+		annotation SummarizationSetBy = User
+
+	column sourceType
+		dataType: string
+		lineageTag: 0ae9f48f-788f-46cb-bd94-733be00ed663
+		summarizeBy: none
+		sourceColumn: sourceType
+
+		annotation SummarizationSetBy = User
+
+	column valuationDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 345d2b1b-ff34-4233-bbcd-709999708161
+		summarizeBy: none
+		sourceColumn: valuationDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column salesAmountExpected
+		dataType: double
+		lineageTag: 62395f59-349b-490d-bb6a-226dffef1109
+		summarizeBy: none
+		sourceColumn: salesAmountExpected
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dimensionSetId
+		dataType: double
+		formatString: 0
+		lineageTag: 4cf2aa2c-6e40-41cd-b359-244c1aaeebda
+		summarizeBy: none
+		sourceColumn: dimensionSetId
+
+		annotation SummarizationSetBy = User
+
+	column no
+		dataType: string
+		lineageTag: c1babb63-ff7c-4685-8896-1593cd212e84
+		summarizeBy: none
+		sourceColumn: no
+
+		annotation SummarizationSetBy = User
+
+	column ETag
+		dataType: string
+		lineageTag: cfa81512-b040-47d4-bc89-08983feb0732
+		summarizeBy: none
+		sourceColumn: ETag
+
+		annotation SummarizationSetBy = User
+
+	column 'Key Customer-Date'
+		dataType: string
+		lineageTag: 04bf863e-d6ca-449b-9531-fe08bba2c30d
+		summarizeBy: none
+		sourceColumn: Key Customer-Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column sourceHierCode
+		dataType: string
+		lineageTag: e4935c27-7456-49ba-943f-3fb8a4fe3313
+		summarizeBy: none
+		sourceColumn: sourceHierCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quelle
+		dataType: string
+		lineageTag: 0f33b9bb-8f82-4cc0-8eab-ea2c2a5dd9b4
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FCT_ValueEntriesSales = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    // Zugriff auf die Business Central API
+				    Quelle =
+				        Dynamics365BusinessCentral.ApiContentsWithOptions(
+				            null,
+				            null,
+				            null,
+				            null
+				        ),
+				
+				    // Auswahl der Umgebung "LIVE"
+				    LIVE =
+				        Quelle{[Name = "LIVE"]}[Data],
+				
+				    // Auswahl der Mandanteninstanz "PLAY02"
+				    PLAY02 =
+				        LIVE{[Name = "PLAY02"]}[Data],
+				
+				    // Auswahl des API-Bereichs "Advanced"
+				    Advanced =
+				        PLAY02{[Name = "Advanced"]}[Data],
+				
+				    // Zugriff auf die Custom-API "naarmann/powerbi/v1.0"
+				    API_v1 =
+				        Advanced{[Name = "naarmann/powerbi/v1.0"]}[Data],
+				
+				    // Zugriff auf die Tabelle "valueEntriesSales"
+				    ValueEntriesSales =
+				        API_v1{[
+				            Name = "valueEntriesSales",
+				            Signature = "table"
+				        ]}[Data],
+				
+				    // Temporäre Konvertierung des Buchungsdatums in Text (für Schlüsselbildung)
+				    PostingDate_AlsText =
+				        Table.TransformColumnTypes(
+				            ValueEntriesSales,
+				            {{"postingDate", type text}}
+				        ),
+				
+				    // Bildung eines zusammengesetzten Schlüssels: SourceNo + Buchungsdatum
+				    Key_Customer_Date =
+				        Table.AddColumn(
+				            PostingDate_AlsText,
+				            "Key Customer-Date",
+				            each [sourceNo] & "-" & [postingDate],
+				            type text
+				        ),
+				
+				    // Rückkonvertierung der Datentypen in fachlich korrekte Typen
+				    TypenKorrigiert =
+				        Table.TransformColumnTypes(
+				            Key_Customer_Date,
+				            {
+				                {"postingDate", type date},
+				                {"Key Customer-Date", type text}
+				            }
+				        ),
+				
+				    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+				    Quelle_BC =
+				        Table.AddColumn(
+				            TypenKorrigiert,
+				            "Quelle",
+				            each "BC",
+				            type text
+				        ),
+				
+				    // Zusammenführen mit der NAV-Fact-Tabelle
+				    KombinierteDaten =
+				        Table.Combine(
+				            {
+				                Quelle_BC,
+				                FCT_ValueEntriesSales_NAV
+				            }
+				        ),
+				
+				    // Vereinheitlichung der Datentypen nach dem Combine
+				    FinaleTypen =
+				        Table.TransformColumnTypes(
+				            KombinierteDaten,
+				            {
+				                {"postingDate", type date},
+				                {"documentDate", type date},
+				                {"documentType", type text},
+				                {"entryType", type text},
+				                {"sourceType", type text},
+				                {"valuationDate", type date}
+				            }
+				        )
+				
+				in
+				    // Rückgabe der finalen Faktentabelle
+				    FinaleTypen
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

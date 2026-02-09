@@ -1,0 +1,95 @@
+table DIM_SalesPeoplePurchasers
+	lineageTag: 782ef0d5-ced1-4ae7-a04b-b5460c5ffe6b
+
+	column id
+		dataType: string
+		lineageTag: 40f93cd1-6a01-4c7f-a3d1-547af016db5c
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column code
+		dataType: string
+		lineageTag: 258c2ba8-1ebc-4a05-9620-de82f3eae061
+		summarizeBy: none
+		sourceColumn: code
+
+		annotation SummarizationSetBy = Automatic
+
+	column displayName
+		dataType: string
+		lineageTag: 9e4d2cfb-5d28-41bb-b7cc-59b4e6e4b202
+		summarizeBy: none
+		sourceColumn: displayName
+
+		annotation SummarizationSetBy = Automatic
+
+	column email
+		dataType: string
+		lineageTag: 28b4a07e-92f4-49f4-894e-09d0a73ec662
+		summarizeBy: none
+		sourceColumn: email
+
+		annotation SummarizationSetBy = Automatic
+
+	column blocked
+		dataType: int64
+		formatString: 0
+		lineageTag: 51e61c46-6c85-4c57-b3ea-64c35de49c3f
+		summarizeBy: sum
+		sourceColumn: blocked
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quelle
+		dataType: string
+		lineageTag: f0aa7e09-686d-426b-9fec-b78e142756d5
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column phoneNumber
+		dataType: string
+		lineageTag: 6e19c09b-4e2a-4420-a2b6-f2e5274000dc
+		summarizeBy: none
+		sourceColumn: phoneNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column commissionPercent
+		dataType: double
+		lineageTag: 95d71b51-a13a-42c8-9b6e-c040eb6e90bb
+		summarizeBy: sum
+		sourceColumn: commissionPercent
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition DIM_SalesPeoplePurchasers = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+				    dbo_salespeoplePurchasers = Quelle{[Schema="dbo",Item="salespeoplePurchasers"]}[Data],
+				
+				    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+				    Hinzugefuegte_Quelle =
+				        Table.AddColumn(
+				            dbo_salespeoplePurchasers,
+				            "Quelle",
+				            each "BC",
+				            type text
+				        )
+				
+				in
+				    // Rückgabe der finalen Tabelle
+				    Hinzugefuegte_Quelle
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

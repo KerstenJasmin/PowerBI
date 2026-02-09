@@ -1,0 +1,79 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "91dd5231a01e7dbca5ee",
+  "position": {
+    "x": 205.97014925373134,
+    "y": 85.074626865671632,
+    "z": 0,
+    "height": 634.92537313432831,
+    "width": 867.76119402985069
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FCT_SalesLineOrders"
+                    }
+                  },
+                  "Property": "documentNo"
+                }
+              },
+              "queryRef": "FCT_SalesLineOrders.documentNo",
+              "nativeQueryRef": "documentNo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Offene Auftragsmenge"
+                }
+              },
+              "queryRef": "Measure Tabelle.Offene Auftragsmenge",
+              "nativeQueryRef": "Offene Auftragsmenge"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Offener Auftragsbetrag"
+                }
+              },
+              "queryRef": "Measure Tabelle.Offener Auftragsbetrag",
+              "nativeQueryRef": "Offener Auftragsbetrag"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Umsatz"
+                }
+              },
+              "queryRef": "Measure Tabelle.Umsatz",
+              "nativeQueryRef": "Umsatz"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

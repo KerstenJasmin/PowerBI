@@ -1,0 +1,55 @@
+model Model
+	culture: de-DE
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: de-DE
+	dataAccessOptions
+		fastCombine
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup Hilfstabellen
+
+	annotation PBI_QueryGroupOrder = 0
+
+/// Noch zu löschen nach Validierung
+queryGroup 'Nicht benötigt'
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup 'NAV Tabellen'
+
+	annotation PBI_QueryGroupOrder = 3
+
+queryGroup 'BC Tabellen / Finale Tabellen'
+
+	annotation PBI_QueryGroupOrder = 2
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["Abfrage1","Items","itemLedgerEntries","ItemCategories","SalesInvoices","salesInvoiceLines","SalesOrders","salesOrderLines","DIM_SalesPeoplePurchasers","SalesCreditMemos","PurchaseOrders","salesCreditMemoLines","purchaseOrderLines","DIM_Items","FCT_SalesLineOrders","itemGroupHierarchyValues_alt","externalbusinesseventdefinitions","FCT_ValueEntriesSales","DIM_ItemUnitOfMeasures","DIM_CustomerHierarchies","DIM_CustomerHierarchyAssignments","DIM_ItemGroupHierarchyValues","unitsOfMeasure","DIM_Customers","DIM_Datum","DIM_CustomerHierarchies_NAV","DIM_CustomerHierarchyAssignments_NAV","DIM_Customers_NAV","DIM_ItemGroupHierarchyValues_NAV","DIM_Items_NAV","DIM_ItemUnitOfMeasures_NAV","FCT_SalesLineOrders_NAV","DIM_SalespeoplePurchasers_NAV","DIM_UnitsOfMeasures_NAV","FCT_ValueEntriesSales_NAV"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Items
+ref table itemLedgerEntries
+ref table ItemCategories
+ref table SalesInvoices
+ref table SalesOrders
+ref table DIM_SalesPeoplePurchasers
+ref table SalesCreditMemos
+ref table PurchaseOrders
+ref table DIM_Datum
+ref table 'Measure Tabelle'
+ref table DIM_Items
+ref table FCT_SalesLineOrders
+ref table itemGroupHierarchyValues_alt
+ref table FCT_ValueEntriesSales
+ref table unitsOfMeasure
+ref table DIM_ItemUnitOfMeasures
+ref table DIM_CustomerHierarchies
+ref table DIM_CustomerHierarchyAssignments
+ref table externalbusinesseventdefinitions
+ref table DIM_ItemGroupHierarchyValues
+
+ref cultureInfo de-DE
+

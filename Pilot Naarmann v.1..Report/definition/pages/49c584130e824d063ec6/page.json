@@ -1,0 +1,231 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "49c584130e824d063ec6",
+  "displayName": "Seite 2",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8513cf8b2b13e97e0eee",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchyAssignments"
+              }
+            },
+            "Property": "CustomerNo-CustmomerName"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "DIM_CustomerHierarchyAssignments",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "CustomerNo-CustmomerName"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'R95993 - Wasgau C+C Großhandel GmbH'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "63f9124ae0bce96eb910",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchyAssignments"
+              }
+            },
+            "Property": "CustomerName"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "282766a1b51b06d31550",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 1 (Hauptgruppe)"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "f9ddfc25943abc06e56d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 2 (Produktart)"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "69727763cd0053ae0610",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 3 (Fettgehalt)"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "2c096518d4b8226130aa",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_Datum"
+              }
+            },
+            "Property": "Monat (MMM) Jahr"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "b114f62dc17309b5ccac",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "ac841b602102debc4048",
+        "boundFilter": "8513cf8b2b13e97e0eee",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchyAssignments"
+              }
+            },
+            "Property": "CustomerNo-CustmomerName"
+          }
+        }
+      },
+      {
+        "name": "479d72f6dc5288c8d206",
+        "boundFilter": "63f9124ae0bce96eb910",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchyAssignments"
+              }
+            },
+            "Property": "CustomerName"
+          }
+        }
+      },
+      {
+        "name": "f1a2f2bfa2949275b93e",
+        "boundFilter": "282766a1b51b06d31550",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 1 (Hauptgruppe)"
+          }
+        }
+      },
+      {
+        "name": "2e17b07e6bc6d0638d65",
+        "boundFilter": "f9ddfc25943abc06e56d",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 2 (Produktart)"
+          }
+        }
+      },
+      {
+        "name": "cbd866160d86613cb784",
+        "boundFilter": "69727763cd0053ae0610",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 3 (Fettgehalt)"
+          }
+        }
+      },
+      {
+        "name": "2f11df5e2c1be424ac42",
+        "boundFilter": "2c096518d4b8226130aa",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_Datum"
+              }
+            },
+            "Property": "Monat (MMM) Jahr"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+/// Bilden die Debitorenhierarchien ab
+table DIM_CustomerHierarchies
+	lineageTag: fed191fe-0afe-40eb-850b-2c38e13465b7
+
+	column code
+		dataType: string
+		lineageTag: e0cc9ff3-fed2-4cf0-b447-d5443ff8c267
+		summarizeBy: none
+		sourceColumn: code
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: 866e6c4e-e345-4499-80b7-3eaba8a34a6b
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column level
+		dataType: int64
+		formatString: 0
+		lineageTag: c116238a-749a-4946-9aa1-fa99d35dcea3
+		summarizeBy: none
+		sourceColumn: level
+
+		annotation SummarizationSetBy = Automatic
+
+	column parentHierarchyCode
+		dataType: string
+		lineageTag: 83bfdee4-91f2-4065-9490-9069388aed60
+		summarizeBy: none
+		sourceColumn: parentHierarchyCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column sequenceNo
+		dataType: int64
+		formatString: 0
+		lineageTag: e2278b55-7a86-4581-8493-793c2e910b8a
+		summarizeBy: none
+		sourceColumn: sequenceNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quelle
+		dataType: string
+		lineageTag: 30adf37d-ddb4-420b-9f84-f9fb77c7ff27
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_CustomerHierarchies = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+				    dbo_customerHierarchies = Quelle{[Schema="dbo",Item="customerHierarchies"]}[Data],
+				
+				    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+				    Quelle_BC =
+				        Table.AddColumn(
+				            dbo_customerHierarchies,
+				            "Quelle",
+				            each "BC",
+				            type text
+				        )
+				
+				in
+				    // Rückgabe der finalen Tabelle
+				    Quelle_BC
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

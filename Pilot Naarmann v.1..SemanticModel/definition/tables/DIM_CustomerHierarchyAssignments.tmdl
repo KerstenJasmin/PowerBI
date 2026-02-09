@@ -1,0 +1,328 @@
+/// Bilden die Zuordnung von Debitoren zu Debitorenhierarchien ab; bitte Start- und Enddatum berücksichtigen
+table DIM_CustomerHierarchyAssignments
+	lineageTag: b8f08e23-582d-4038-b223-e7f99fa93205
+
+	column customerNo
+		dataType: string
+		lineageTag: 93bb70fd-1e08-4253-a6ac-e0a9d7950a47
+		summarizeBy: none
+		sourceColumn: customerNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column lineNo
+		dataType: int64
+		formatString: 0
+		lineageTag: c6a2a856-3e1e-437d-9a8e-f3029e91fa2f
+		summarizeBy: sum
+		sourceColumn: lineNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column customerHierarchyCode
+		dataType: string
+		lineageTag: acdfc614-a333-4903-be78-009d6ce59f33
+		summarizeBy: none
+		sourceColumn: customerHierarchyCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column startingDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cd95b394-9ebd-4731-b08a-f90f2b9cf64e
+		summarizeBy: none
+		sourceColumn: startingDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column endingDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 34d94d69-8257-486b-a3a3-ed68c0e9157a
+		summarizeBy: none
+		sourceColumn: endingDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ETag
+		dataType: string
+		lineageTag: 7121a482-251c-4c16-8a17-30d8df7695ab
+		summarizeBy: none
+		sourceColumn: ETag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aktiv ja/nein'
+		dataType: string
+		lineageTag: 77854d26-34d0-43f2-af95-777dc87e644c
+		summarizeBy: none
+		sourceColumn: Aktiv ja/nein
+
+		annotation SummarizationSetBy = Automatic
+
+	column Datum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cb796cdd-279c-4d0c-8a60-2334605d6752
+		summarizeBy: none
+		sourceColumn: Datum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Key Customer - Date'
+		dataType: string
+		lineageTag: 6b355528-6382-47f2-b22d-19755afb57bf
+		summarizeBy: none
+		sourceColumn: Key Customer - Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerName
+		dataType: string
+		lineageTag: 28071550-c1db-4a76-8a71-59566c92b276
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 6630630b-a225-4b19-bd80-b18bda6ad736
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column salespersonCode
+		dataType: string
+		lineageTag: 70bebad9-bcb0-4784-84c1-f977600e8593
+		summarizeBy: none
+		sourceColumn: salespersonCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerNo-CustmomerName
+		dataType: string
+		lineageTag: 841de814-9c6f-46c1-8c35-2cdf2b58f644
+		summarizeBy: none
+		sourceColumn: CustomerNo-CustmomerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quelle
+		dataType: string
+		lineageTag: 7728ad36-e8b0-460f-8c6c-c88564798b52
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_CustomerHierarchyAssignments = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    // ------------------------------------------------------------
+				    // 1. Verbindung zu Dynamics 365 Business Central
+				    // ------------------------------------------------------------
+				    Source = Dynamics365BusinessCentral.ApiContentsWithOptions(
+				        null, null, null, null
+				    ),
+				
+				    // Auswahl der Umgebung "LIVE"
+				    LIVE = Source{[Name = "LIVE"]}[Data],
+				
+				    // Auswahl der Company "PLAY02"
+				    PLAY02 = LIVE{[Name = "PLAY02"]}[Data],
+				
+				    // Zugriff auf den Bereich "Advanced"
+				    Advanced = PLAY02{[Name = "Advanced"]}[Data],
+				
+				    // Zugriff auf die API-Version
+				    #"naarmann/powerbi/v1.0" =
+				        Advanced{[Name = "naarmann/powerbi/v1.0"]}[Data],
+				
+				    // Laden der Tabelle customerHierarchyAssignments
+				    customerHierarchyAssignments_table =
+				        #"naarmann/powerbi/v1.0"{
+				            [Name = "customerHierarchyAssignments", Signature = "table"]
+				        }[Data],
+				
+				
+				    // ------------------------------------------------------------
+				    // 2. Logik zur Gültigkeit der Hierarchie-Zuordnung
+				    // ------------------------------------------------------------
+				
+				    // Kennzeichen, ob die Zuordnung aktuell gültig ist
+				    #"Added Custom" =
+				        Table.AddColumn(
+				            customerHierarchyAssignments_table,
+				            "Aktiv ja/nein",
+				            each
+				                [startingDate] <= Date.From(DateTime.LocalNow())
+				                and [endingDate] >= Date.From(DateTime.LocalNow())
+				        ),
+				
+				    // Entfernt sehr alte Datensätze (EndingDate vor 01.01.2020)
+				    #"Gefilterte Zeilen" =
+				        Table.SelectRows(
+				            #"Added Custom",
+				            each [endingDate] > #date(2020, 1, 1)
+				        ),
+				
+				
+				    // ------------------------------------------------------------
+				    // 3. Anreicherung mit Kundenstammdaten
+				    // ------------------------------------------------------------
+				
+				    // Left Join auf die Kundendimension, um den Kundennamen und weitere Informationen zum Kunden in die Tabelle zu bekommen.
+				    #"Zusammengeführte Abfragen" =
+				        Table.NestedJoin(
+				            #"Gefilterte Zeilen",
+				            {"customerNo"},
+				            DIM_Customers,
+				            {"number"},
+				            "DIM_Customers",
+				            JoinKind.LeftOuter
+				        ),
+				
+				    // Erweiterung der benötigten Kundenfelder
+				    #"Erweiterte DIM_Customers" =
+				        Table.ExpandTableColumn(
+				            #"Zusammengeführte Abfragen",
+				            "DIM_Customers",
+				            {"displayName", "country", "salespersonCode"},
+				            {"displayName", "country", "salespersonCode"}
+				        ),
+				
+				    // Umbenennung des Kundennamens
+				    #"Umbenannte Spalten1" =
+				        Table.RenameColumns(
+				            #"Erweiterte DIM_Customers",
+				            {{"displayName", "CustomerName"}}
+				        ),
+				
+				    // Kombination aus Kundennummer und Name (Anzeigezwecke)
+				    #"Hinzugefügte benutzerdefinierte Spalte2" =
+				        Table.AddColumn(
+				            #"Umbenannte Spalten1",
+				            "CustomerNo-CustmomerName",
+				            each [customerNo] & " - " & [CustomerName]
+				        ),
+				
+				
+				    // ------------------------------------------------------------
+				    // 4. Bereinigung und Korrektur von Datumswerten
+				    // ------------------------------------------------------------
+				
+				    // Ersetzt Default-Datum 01.01.0001 durch weit entferntes Enddatum
+				    #"Ersetzter Wert" =
+				        Table.ReplaceValue(
+				            #"Hinzugefügte benutzerdefinierte Spalte2",
+				            #date(1, 1, 1),
+				            #date(2999, 12, 31),
+				            Replacer.ReplaceValue,
+				            {"endingDate"}
+				        ),
+				
+				    // Setzt Enddatum auf "Heute + 100 Tage" für offene Zeiträume
+				    #"Ersetzter Wert2" =
+				        Table.ReplaceValue(
+				            #"Ersetzter Wert",
+				            #date(2999, 12, 31),
+				            Date.From(Date.AddDays(DateTime.LocalNow(), 100)),
+				            Replacer.ReplaceValue,
+				            {"endingDate"}
+				        ),
+				
+				    // Korrigiert Startdatum 01.01.2014 auf 01.01.2020
+				    #"Ersetzter Wert1" =
+				        Table.ReplaceValue(
+				            #"Ersetzter Wert2",
+				            #date(2014, 1, 1),
+				            #date(2020, 1, 1),
+				            Replacer.ReplaceValue,
+				            {"startingDate"}
+				        ),
+				
+				
+				    // ------------------------------------------------------------
+				    // 5. Auflösung der Zeiträume auf Tagesebene
+				    // ------------------------------------------------------------
+				
+				    // Temporäre Typumwandlung für Bereichserstellung
+				    #"Geänderter Typ" =
+				        Table.TransformColumnTypes(
+				            #"Ersetzter Wert1",
+				            {
+				                {"startingDate", Int64.Type},
+				                {"endingDate", Int64.Type}
+				            }
+				        ),
+				
+				    // Erzeugt eine Liste aller Tage zwischen Start- und Enddatum
+				    #"Hinzugefügte benutzerdefinierte Spalte" =
+				        Table.AddColumn(
+				            #"Geänderter Typ",
+				            "Datum",
+				            each {[startingDate] .. [endingDate]}
+				        ),
+				
+				    // Expandiert die Datums-Liste auf einzelne Zeilen
+				    #"Erweiterte Datum" =
+				        Table.ExpandListColumn(
+				            #"Hinzugefügte benutzerdefinierte Spalte",
+				            "Datum"
+				        ),
+				
+				    // Rückwandlung der Datentypen
+				    #"Geänderter Typ1" =
+				        Table.TransformColumnTypes(
+				            #"Erweiterte Datum",
+				            {
+				                {"Datum", type date},
+				                {"endingDate", type date},
+				                {"startingDate", type date}
+				            }
+				        ),
+				
+				    // Zwischenschritt: Datum als Text (für Schlüsselbildung)
+				    #"Geänderter Typ2" =
+				        Table.TransformColumnTypes(
+				            #"Geänderter Typ1",
+				            {{"Datum", type text}}
+				        ),
+				
+				    // Erzeugt einen eindeutigen Schlüssel: Kunde + Datum
+				    #"Hinzugefügte benutzerdefinierte Spalte1" =
+				        Table.AddColumn(
+				            #"Geänderter Typ2",
+				            "Key Customer - Date",
+				            each [customerNo] & "-" & [Datum]
+				        ),
+				
+				    // Finaler Datentyp-Fix
+				    #"Geänderter Typ3" =
+				        Table.TransformColumnTypes(
+				            #"Hinzugefügte benutzerdefinierte Spalte1",
+				            {
+				                {"Key Customer - Date", type text},
+				                {"Datum", type date}
+				            }
+				        ),
+				    #"Hinzugefügte benutzerdefinierte Spalte3" = Table.AddColumn(#"Geänderter Typ3", "Quelle", each "BC"),
+				    #"Geänderter Typ4" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte3",{{"Quelle", type text}})
+				in
+				    #"Geänderter Typ4"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

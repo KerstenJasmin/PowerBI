@@ -1,0 +1,179 @@
+table externalbusinesseventdefinitions
+	isHidden
+	lineageTag: ea90e2fc-6a1e-4784-88e9-c3bb78fd5b92
+
+	column appId
+		dataType: string
+		isHidden
+		lineageTag: f1c6c48c-f267-433f-909c-4032a4a9b207
+		summarizeBy: none
+		sourceColumn: appId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		isHidden
+		lineageTag: 4837e03e-89f9-49a7-be09-39cfb06018ad
+		summarizeBy: none
+		sourceColumn: name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column eventVersion
+		dataType: string
+		isHidden
+		lineageTag: 867ec574-6d70-4cde-92e9-b902ec09f6fe
+		summarizeBy: none
+		sourceColumn: eventVersion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column isObsolete
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 82bb07e3-92bc-4c96-8d98-59c96cb0e288
+		summarizeBy: none
+		sourceColumn: isObsolete
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column obsoleteReason
+		dataType: string
+		isHidden
+		lineageTag: b5af366c-d5d7-4f78-98ee-948d03bc8a0b
+		summarizeBy: none
+		sourceColumn: obsoleteReason
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column obsoleteTag
+		dataType: string
+		isHidden
+		lineageTag: d9dc5d53-20bd-44e4-b69b-0ce25d2267fd
+		summarizeBy: none
+		sourceColumn: obsoleteTag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column payload
+		dataType: string
+		isHidden
+		lineageTag: 254b169d-da8e-456e-b94c-47b37585b492
+		summarizeBy: none
+		sourceColumn: payload
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column displayName
+		dataType: string
+		isHidden
+		lineageTag: f90312f7-1f5f-4130-a378-2d58739c3d73
+		summarizeBy: none
+		sourceColumn: displayName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		isHidden
+		lineageTag: 7d71f83f-a21a-4a8f-a86f-103c97fbd26e
+		summarizeBy: none
+		sourceColumn: description
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		isHidden
+		lineageTag: 127f7994-c09a-47cf-a069-45e289a9fa3e
+		summarizeBy: none
+		sourceColumn: category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column appName
+		dataType: string
+		isHidden
+		lineageTag: 5359bb7c-6b4f-4348-845f-870e38659afc
+		summarizeBy: none
+		sourceColumn: appName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column appPublisher
+		dataType: string
+		isHidden
+		lineageTag: ba4a3b5e-3d24-4f7a-8149-9429567a3476
+		summarizeBy: none
+		sourceColumn: appPublisher
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column appVersion
+		dataType: string
+		isHidden
+		lineageTag: f13da9f6-d20c-43dd-8250-684018c3c4bc
+		summarizeBy: none
+		sourceColumn: appVersion
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETag
+		dataType: string
+		isHidden
+		lineageTag: 461b4217-b149-44f0-982c-5c9b80144d35
+		summarizeBy: none
+		sourceColumn: ETag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition externalbusinesseventdefinitions = m
+		mode: import
+		queryGroup: 'Nicht benötigt'
+		source =
+				let
+				    Source = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+				    LIVE = Source{[Name="LIVE"]}[Data],
+				    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+				    Advanced = PLAY02{[Name="Advanced"]}[Data],
+				    #"naarmann/powerbi/v1.0" = Advanced{[Name="naarmann/powerbi/v1.0"]}[Data],
+				    externalbusinesseventdefinitions_table = #"naarmann/powerbi/v1.0"{[Name="externalbusinesseventdefinitions",Signature="table"]}[Data]
+				in
+				    externalbusinesseventdefinitions_table
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

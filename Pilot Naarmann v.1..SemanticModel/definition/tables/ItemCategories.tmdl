@@ -1,0 +1,79 @@
+table ItemCategories
+	isHidden
+	lineageTag: 618c2095-8839-4666-8682-0e1db214474b
+
+	column id
+		dataType: string
+		isHidden
+		lineageTag: 0f8d04ea-43bd-4a1f-a805-c9766cb7ab85
+		summarizeBy: none
+		sourceColumn: id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code
+		dataType: string
+		isHidden
+		lineageTag: 77e41c37-4442-44d6-bb82-dd08149248a6
+		summarizeBy: none
+		sourceColumn: code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column displayName
+		dataType: string
+		isHidden
+		lineageTag: 6eb757ca-fc7c-4415-80e9-9a4a42602682
+		summarizeBy: none
+		sourceColumn: displayName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column lastModifiedDateTime
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: f867ed69-c3d6-4379-aeb3-c8194f5e549e
+		summarizeBy: none
+		sourceColumn: lastModifiedDateTime
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETag
+		dataType: string
+		isHidden
+		lineageTag: 5e96a19e-30a1-4db1-9aa0-c8ced1cf5a29
+		summarizeBy: none
+		sourceColumn: ETag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ItemCategories = m
+		mode: import
+		queryGroup: 'Nicht benötigt'
+		source =
+				let
+				    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+				    LIVE = Quelle{[Name="LIVE"]}[Data],
+				    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+				    v2.0 = PLAY02{[Name="v2.0"]}[Data],
+				    itemCategories_table = v2.0{[Name="itemCategories",Signature="table"]}[Data]
+				in
+				    itemCategories_table
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Exception
+
+	annotation PBI_NavigationStepName = Navigation
+

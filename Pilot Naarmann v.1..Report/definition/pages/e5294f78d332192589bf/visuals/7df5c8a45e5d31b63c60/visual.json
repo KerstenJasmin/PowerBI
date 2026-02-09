@@ -1,0 +1,255 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "7df5c8a45e5d31b63c60",
+  "position": {
+    "x": 19.918099918099919,
+    "y": 63.947583947583951,
+    "z": 0,
+    "height": 631.08927108927116,
+    "width": 1233.8738738738739,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_CustomerHierarchyAssignments"
+                    }
+                  },
+                  "Property": "CustomerNo-CustmomerName"
+                }
+              },
+              "queryRef": "DIM_CustomerHierarchyAssignments.CustomerNo-CustmomerName",
+              "nativeQueryRef": "CustomerNo-CustmomerName",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SalesInvoices"
+                    }
+                  },
+                  "Property": "orderId"
+                }
+              },
+              "queryRef": "FCT_SalesInvoices.orderId",
+              "nativeQueryRef": "orderId",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Umsatz"
+                }
+              },
+              "queryRef": "Measure Tabelle.Umsatz",
+              "nativeQueryRef": "Umsatz"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Absatz"
+                }
+              },
+              "queryRef": "Measure Tabelle.Absatz",
+              "nativeQueryRef": "Absatz"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Absatz VJ"
+                }
+              },
+              "queryRef": "Measure Tabelle.Absatz VJ",
+              "nativeQueryRef": "Absatz VJ1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Δ Absatz VJ"
+                }
+              },
+              "queryRef": "Measure Tabelle.Δ Absatz VJ",
+              "nativeQueryRef": "Δ Absatz VJ"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Δ% Absatz VJ"
+                }
+              },
+              "queryRef": "Measure Tabelle.Δ% Absatz VJ",
+              "nativeQueryRef": "Δ% Absatz VJ"
+            }
+          ]
+        }
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "DIM_CustomerHierarchyAssignments.CustomerNo-CustmomerName"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "FCT_SalesInvoices.orderId"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "153.42742577369862D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measure Tabelle.Umsatz"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "dataBars": {
+              "positiveColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#9ea7bf'"
+                      }
+                    }
+                  }
+                }
+              },
+              "negativeColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'#9ea7bf'"
+                      }
+                    }
+                  }
+                }
+              },
+              "axisColor": {
+                "solid": {
+                  "color": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "'foreground'"
+                      }
+                    }
+                  }
+                }
+              },
+              "reverseDirection": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "hideText": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "totalMatchingOption": {
+                "expr": {
+                  "Literal": {
+                    "Value": "1L"
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measure Tabelle.Umsatz"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

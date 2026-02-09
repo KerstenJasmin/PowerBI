@@ -1,0 +1,709 @@
+/// Bilden die Artikeleinheiten ab
+table DIM_ItemUnitOfMeasures
+	lineageTag: 74ee9923-8b28-43fb-9f2d-730704ea68ba
+
+	column itemNo
+		dataType: string
+		lineageTag: d60b7598-a2d7-4a16-af73-64a96062a658
+		summarizeBy: none
+		sourceColumn: itemNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEBINDE
+		dataType: double
+		lineageTag: 1e7848d6-eaef-4dcf-8c51-6d9ce0309ad6
+		summarizeBy: none
+		sourceColumn: GEBINDE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PALETTE
+		dataType: double
+		lineageTag: 5d67fb9b-3ab0-4820-8008-f709d1fd45a8
+		summarizeBy: none
+		sourceColumn: PALETTE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ST
+		dataType: double
+		lineageTag: 6167ef50-0542-415a-b024-fcc1b1cfd1fa
+		summarizeBy: none
+		sourceColumn: ST
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TRAY
+		dataType: double
+		lineageTag: 49f882c8-ccec-4171-a60e-51497a16a327
+		summarizeBy: none
+		sourceColumn: TRAY
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column L
+		dataType: double
+		lineageTag: 474e7057-f857-44a0-8127-5a9b3beff4b7
+		summarizeBy: none
+		sourceColumn: L
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LAGEN
+		dataType: double
+		lineageTag: 0825700e-554d-4896-8d2d-040af87616a3
+		summarizeBy: none
+		sourceColumn: LAGEN
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KART/L
+		dataType: double
+		lineageTag: f6cb13e0-c354-4e94-90df-9035eed718f3
+		summarizeBy: none
+		sourceColumn: KART/L
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KG
+		dataType: double
+		lineageTag: da871c46-ae9b-44b1-a69e-24ff4418ed63
+		summarizeBy: none
+		sourceColumn: KG
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BIB
+		dataType: double
+		lineageTag: 584a7cc5-decd-4eca-a764-5571883971fe
+		summarizeBy: none
+		sourceColumn: BIB
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CONTAINER
+		dataType: double
+		lineageTag: d3f2bdcf-0eef-418e-a75a-95f0e2cae745
+		summarizeBy: none
+		sourceColumn: CONTAINER
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'PALETTE L'
+		dataType: double
+		lineageTag: 88bdd499-254e-4051-9637-4e32b20501e8
+		summarizeBy: none
+		sourceColumn: PALETTE L
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'KISTE E2'
+		dataType: double
+		lineageTag: b6627475-52fe-46e6-a319-8d78be1d1f76
+		summarizeBy: none
+		sourceColumn: KISTE E2
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BEUTEL
+		dataType: double
+		lineageTag: 0d8a9860-b29c-4a85-ada3-fc3223950ec9
+		summarizeBy: none
+		sourceColumn: BEUTEL
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ST100
+		dataType: double
+		lineageTag: 514b9feb-d7b6-424a-b2d6-91098b3ea4e4
+		summarizeBy: none
+		sourceColumn: ST100
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column G/L
+		dataType: double
+		lineageTag: 3771fc93-97f7-414b-89d3-d059be9a48d9
+		summarizeBy: none
+		sourceColumn: G/L
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KARTON
+		dataType: double
+		lineageTag: ee8328ba-d323-47c9-a6b1-55b8b95ff2e1
+		summarizeBy: none
+		sourceColumn: KARTON
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PALTETRA
+		dataType: double
+		lineageTag: 71e3480d-4d3c-4998-a890-5dd6191b02b2
+		summarizeBy: none
+		sourceColumn: PALTETRA
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column EIMER
+		dataType: double
+		lineageTag: ef99d814-7bf9-41eb-b6aa-3ef1c044ec70
+		summarizeBy: none
+		sourceColumn: EIMER
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'PALETTE KG'
+		dataType: double
+		lineageTag: 1a4fb46b-97bf-47e2-9115-9d7af19db42d
+		summarizeBy: none
+		sourceColumn: PALETTE KG
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'PAL.1000'
+		dataType: double
+		lineageTag: c7704666-40ab-4fcd-b3a3-a77194ee87bc
+		summarizeBy: none
+		sourceColumn: PAL.1000
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DOSE
+		dataType: double
+		lineageTag: d77d25e5-3952-43d2-9354-a717e9ff8ed6
+		summarizeBy: none
+		sourceColumn: DOSE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column STÜCK
+		dataType: double
+		lineageTag: 93613220-3b6f-402e-9eed-99d927a19ca6
+		summarizeBy: none
+		sourceColumn: STÜCK
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SACK
+		dataType: double
+		lineageTag: d0291e3a-7f84-415a-b0f9-79090945cf2c
+		summarizeBy: none
+		sourceColumn: SACK
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'BIG BAG'
+		dataType: double
+		lineageTag: 7ab872b4-9095-4b8c-ba09-f5d91a0e91db
+		summarizeBy: none
+		sourceColumn: BIG BAG
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'PAL 900 KG'
+		dataType: double
+		lineageTag: 0034429a-ffb4-4ee8-8cbe-c3fdb7ae947b
+		summarizeBy: none
+		sourceColumn: PAL 900 KG
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'KARTON / L'
+		dataType: double
+		lineageTag: e912e39e-1774-4cb9-bac0-e7577553a421
+		summarizeBy: none
+		sourceColumn: KARTON / L
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LITER
+		dataType: double
+		lineageTag: 33e9c1f0-40eb-430a-8209-5aac483cd4fd
+		summarizeBy: none
+		sourceColumn: LITER
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FASS
+		dataType: double
+		lineageTag: 147c28a6-dafe-441c-8969-41365506b1be
+		summarizeBy: none
+		sourceColumn: FASS
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IBC1000
+		dataType: double
+		lineageTag: 392a8693-f292-41d2-b037-805c4d6f256b
+		summarizeBy: none
+		sourceColumn: IBC1000
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KANISTER
+		dataType: double
+		lineageTag: 074d56f7-ee4b-4023-be44-d38af555022d
+		summarizeBy: none
+		sourceColumn: KANISTER
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PACKUNG
+		dataType: double
+		lineageTag: 0e427c19-a26c-4186-8091-809c21f3e931
+		summarizeBy: none
+		sourceColumn: PACKUNG
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ST1000
+		dataType: double
+		lineageTag: 228922ff-b383-4177-8358-75cf030d6e12
+		summarizeBy: none
+		sourceColumn: ST1000
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'BEISTELLG.'
+		dataType: double
+		lineageTag: 750e922e-2c86-4db1-b58c-6f616a1a8191
+		summarizeBy: none
+		sourceColumn: BEISTELLG.
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PALETTE750
+		dataType: double
+		lineageTag: c2949d92-fb0e-48c4-b28e-787ce3a965ff
+		summarizeBy: none
+		sourceColumn: PALETTE750
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PALETTE825
+		dataType: double
+		lineageTag: f5e1b724-f93d-46b4-ab9a-5b41b4d5be11
+		summarizeBy: none
+		sourceColumn: PALETTE825
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'BEUTEL 5,7'
+		dataType: double
+		lineageTag: 4a2caa28-f2a9-4003-93bb-61625c706148
+		summarizeBy: none
+		sourceColumn: BEUTEL 5,7
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BEUTEL11,5
+		dataType: double
+		lineageTag: 43ad574d-0a2b-420b-a203-b483fc14902c
+		summarizeBy: none
+		sourceColumn: BEUTEL11,5
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BEUTEL8,3
+		dataType: double
+		lineageTag: 96c53a32-1181-455d-8944-1cb5a2578db4
+		summarizeBy: none
+		sourceColumn: BEUTEL8,3
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'PALETTE BO'
+		dataType: double
+		lineageTag: a1590651-7c78-4a23-8d62-c539cf4b525c
+		summarizeBy: none
+		sourceColumn: PALETTE BO
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'PALETTE IM'
+		dataType: double
+		lineageTag: 522a4cbb-c5a6-465f-87ce-a52ab25b97e6
+		summarizeBy: none
+		sourceColumn: PALETTE IM
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column G
+		dataType: double
+		lineageTag: ce5be9ad-244a-4e58-bf0a-44d0f6f0d480
+		summarizeBy: none
+		sourceColumn: G
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IBC
+		dataType: double
+		lineageTag: 5223bfc7-cb2f-4653-b377-2e897f783567
+		summarizeBy: none
+		sourceColumn: IBC
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ÎBC1400
+		dataType: double
+		lineageTag: 6baf74ed-4152-4513-afe1-90a7bc054adc
+		summarizeBy: none
+		sourceColumn: ÎBC1400
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GALLONE
+		dataType: double
+		lineageTag: f254cd4d-e1ad-46a3-ade0-d7404c71afb6
+		summarizeBy: none
+		sourceColumn: GALLONE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BOX
+		dataType: double
+		lineageTag: 5b0746b4-8194-4f16-a04f-138ff8e1e9bd
+		summarizeBy: none
+		sourceColumn: BOX
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ROLLE
+		dataType: double
+		lineageTag: 29f1beae-6fa3-4595-b642-8a7051cb663c
+		summarizeBy: none
+		sourceColumn: ROLLE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PALETTEÜ
+		dataType: double
+		lineageTag: cd07ef50-0a7d-4534-926d-ad48987e5d10
+		summarizeBy: none
+		sourceColumn: PALETTEÜ
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BÜNDEL
+		dataType: double
+		lineageTag: 1592176e-64aa-4aa8-8902-be9d025083d2
+		summarizeBy: none
+		sourceColumn: BÜNDEL
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KG2
+		dataType: double
+		lineageTag: d27c5d9a-65ff-4f0b-92f3-8c6473793a0f
+		summarizeBy: none
+		sourceColumn: KG2
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column M
+		dataType: double
+		lineageTag: f4615355-bc24-42fd-a3d7-47a19987ab34
+		summarizeBy: none
+		sourceColumn: M
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column METER
+		dataType: double
+		lineageTag: 22395bd2-fc0d-4ee8-bccf-9e32d5e7d362
+		summarizeBy: none
+		sourceColumn: METER
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ROLLE990
+		dataType: double
+		lineageTag: 3ea2fb41-324e-49ec-9b74-53cf483ce548
+		summarizeBy: none
+		sourceColumn: ROLLE990
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column M1000
+		dataType: double
+		lineageTag: 5040d7e1-43aa-416c-bfae-8edb24643213
+		summarizeBy: none
+		sourceColumn: M1000
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ST10000
+		dataType: double
+		lineageTag: bc1bdee1-aad6-4380-8085-160cfdd6b9c7
+		summarizeBy: none
+		sourceColumn: ST10000
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 40%
+		dataType: double
+		lineageTag: bfaf70fd-8327-44a8-bd78-dfb315d0fb09
+		summarizeBy: none
+		sourceColumn: 40%
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KG1000
+		dataType: double
+		lineageTag: a70716f4-4f58-49f9-87cd-e1fcd440d6a1
+		summarizeBy: none
+		sourceColumn: KG1000
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 30%
+		dataType: double
+		lineageTag: f7672218-1120-421b-8d97-942db9f38e94
+		summarizeBy: none
+		sourceColumn: 30%
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KG100
+		dataType: double
+		lineageTag: 52485b68-3337-464e-b26e-cfbbe4110471
+		summarizeBy: none
+		sourceColumn: KG100
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TANKZUG
+		dataType: double
+		lineageTag: 8d9e9adf-ffea-46ef-a1dd-e4490ffe75e9
+		summarizeBy: none
+		sourceColumn: TANKZUG
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column A
+		dataType: double
+		lineageTag: 40f558df-d386-48e9-b1a1-c07969021d2f
+		summarizeBy: none
+		sourceColumn: A
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '1 TAG'
+		dataType: double
+		lineageTag: a2255346-9410-4cf6-8f55-e2066d95fff0
+		summarizeBy: none
+		sourceColumn: 1 TAG
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VE
+		dataType: double
+		lineageTag: 9920c3ed-23ee-4475-b3d5-e9f1e17cba09
+		summarizeBy: none
+		sourceColumn: VE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SAT
+		dataType: double
+		lineageTag: a9a1f801-12e7-4d20-a70d-c31587d12477
+		summarizeBy: none
+		sourceColumn: SAT
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column STUNDE
+		dataType: double
+		lineageTag: bc2ab13e-9c8f-4809-af08-bbadb1d66088
+		summarizeBy: none
+		sourceColumn: STUNDE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Quelle
+		dataType: string
+		lineageTag: 135b2eba-bbc0-425a-9bbf-1cb21f65ad14
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_ItemUnitOfMeasures = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+				    dbo_itemUnitOfMeasures = Quelle{[Schema="dbo",Item="itemUnitOfMeasures"]}[Data],
+				
+				    // Entfernen nicht benötigter technischer und dimensionsbezogener Spalten
+				    ReduzierteSpalten =
+				        Table.RemoveColumns(
+				            dbo_itemUnitOfMeasures,
+				            {
+				                "length",
+				                "width",
+				                "height",
+				                "weight",
+				                "cubage"
+				            }
+				        ),
+				
+				    // Pivotierung der Einheitencodes (z. B. PCS, KARTON, PALETTE) in eigene Spalten
+				    // Werte: Menge pro Einheit (qtyPerUnitOfMeasure)
+				    PivotierteEinheiten =
+				        Table.Pivot(
+				            ReduzierteSpalten,
+				            List.Distinct(ReduzierteSpalten[code]),
+				            "code",
+				            "qtyPerUnitOfMeasure",
+				            List.Sum
+				        ),
+				
+				    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+				    Quelle_BC =
+				        Table.AddColumn(
+				            PivotierteEinheiten,
+				            "Quelle",
+				            each "BC",
+				            type text
+				        )
+				
+				in
+				    // Rückgabe der finalen Tabelle
+				    Quelle_BC
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

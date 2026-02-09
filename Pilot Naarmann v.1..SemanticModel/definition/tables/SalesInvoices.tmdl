@@ -1,0 +1,958 @@
+table SalesInvoices
+	isHidden
+	lineageTag: c49861c5-f1b0-4a5d-9f22-ce2a3717be8b
+
+	column id
+		dataType: string
+		isHidden
+		lineageTag: b34b93c2-2b96-4f56-8ea4-39721844ed91
+		summarizeBy: none
+		sourceColumn: id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column number
+		dataType: string
+		isHidden
+		lineageTag: 1386a078-bf1a-4ede-a557-d0e0604ec99a
+		summarizeBy: none
+		sourceColumn: number
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column externalDocumentNumber
+		dataType: string
+		isHidden
+		lineageTag: b4215e85-299d-47f5-93c6-b3641029a937
+		summarizeBy: none
+		sourceColumn: externalDocumentNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column invoiceDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 9ac76778-f559-4e72-a441-6db5359de57c
+		summarizeBy: none
+		sourceColumn: invoiceDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column postingDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: ab327f09-690a-4657-a56c-e057030467cc
+		summarizeBy: none
+		sourceColumn: postingDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dueDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 5f6d0e8e-c84d-4379-862a-eec64887c020
+		summarizeBy: none
+		sourceColumn: dueDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column promisedPayDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 62d10182-1837-4c50-8632-774b327648ca
+		summarizeBy: none
+		sourceColumn: promisedPayDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column customerPurchaseOrderReference
+		dataType: string
+		isHidden
+		lineageTag: ddca688a-4932-43be-a9c9-d9b38423eed6
+		summarizeBy: none
+		sourceColumn: customerPurchaseOrderReference
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column customerId
+		dataType: string
+		isHidden
+		lineageTag: 8cbd2f76-7b34-4a39-95f8-724426ddb9b7
+		summarizeBy: none
+		sourceColumn: customerId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToName
+		dataType: string
+		isHidden
+		lineageTag: 817e3a47-67ed-4507-8776-85e68c9c9080
+		summarizeBy: none
+		sourceColumn: billToName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToCustomerId
+		dataType: string
+		isHidden
+		lineageTag: d5170fdf-d1c2-42c9-90e3-351ab2a0c2c4
+		summarizeBy: none
+		sourceColumn: billToCustomerId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToCustomerNumber
+		dataType: string
+		isHidden
+		lineageTag: c7c7e609-a6ca-49f0-8a80-07b2b03702b6
+		summarizeBy: none
+		sourceColumn: billToCustomerNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipToName
+		dataType: string
+		isHidden
+		lineageTag: 3c0db9e5-cd6b-4679-9609-0d86d1385eef
+		summarizeBy: none
+		sourceColumn: shipToName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipToContact
+		dataType: string
+		isHidden
+		lineageTag: 795d537d-048f-4a8a-bc1c-019337035dc4
+		summarizeBy: none
+		sourceColumn: shipToContact
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sellToAddressLine1
+		dataType: string
+		isHidden
+		lineageTag: 6ce52a84-d36e-405f-942e-9963c62b934b
+		summarizeBy: none
+		sourceColumn: sellToAddressLine1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sellToAddressLine2
+		dataType: string
+		isHidden
+		lineageTag: 8b818b11-25d6-4b7d-806e-da91dd778044
+		summarizeBy: none
+		sourceColumn: sellToAddressLine2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sellToCity
+		dataType: string
+		isHidden
+		lineageTag: fa8ea09a-46b0-45b2-86ae-ded0ad7c6e2f
+		summarizeBy: none
+		sourceColumn: sellToCity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sellToCountry
+		dataType: string
+		isHidden
+		lineageTag: e5613f2a-0f1d-4759-90e4-bd8673d1ea80
+		summarizeBy: none
+		sourceColumn: sellToCountry
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sellToState
+		dataType: string
+		isHidden
+		lineageTag: 27c0d7a2-4076-4843-83f6-25a06c3d7928
+		summarizeBy: none
+		sourceColumn: sellToState
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sellToPostCode
+		dataType: string
+		isHidden
+		lineageTag: b7cc709f-72f9-4dac-a7f6-97a6084a2b3b
+		summarizeBy: none
+		sourceColumn: sellToPostCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToAddressLine1
+		dataType: string
+		isHidden
+		lineageTag: 51093e50-52a3-448b-a49a-317068c2122d
+		summarizeBy: none
+		sourceColumn: billToAddressLine1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToAddressLine2
+		dataType: string
+		isHidden
+		lineageTag: b252ffad-11fa-4c83-aa20-14334b4f8b86
+		summarizeBy: none
+		sourceColumn: billToAddressLine2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToCity
+		dataType: string
+		isHidden
+		lineageTag: def4fa3a-cbc7-42af-b2f9-26e182ace4f5
+		summarizeBy: none
+		sourceColumn: billToCity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToCountry
+		dataType: string
+		isHidden
+		lineageTag: 29692629-980e-4755-beda-0a477b95e440
+		summarizeBy: none
+		sourceColumn: billToCountry
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToState
+		dataType: string
+		isHidden
+		lineageTag: 2124dd56-f9ad-469c-9324-2416857636a2
+		summarizeBy: none
+		sourceColumn: billToState
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column billToPostCode
+		dataType: string
+		isHidden
+		lineageTag: e3750f30-565e-46ba-b49d-8d726bcdaf45
+		summarizeBy: none
+		sourceColumn: billToPostCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipToAddressLine1
+		dataType: string
+		isHidden
+		lineageTag: 914c0ef8-f6b5-4005-99d0-495a0ca980f8
+		summarizeBy: none
+		sourceColumn: shipToAddressLine1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipToAddressLine2
+		dataType: string
+		isHidden
+		lineageTag: 8ef91112-41a9-4a45-a63b-b1d6b33fb374
+		summarizeBy: none
+		sourceColumn: shipToAddressLine2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipToCity
+		dataType: string
+		isHidden
+		lineageTag: 73621b28-6d2e-47e5-b16c-ca4be5c46b2e
+		summarizeBy: none
+		sourceColumn: shipToCity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipToCountry
+		dataType: string
+		isHidden
+		lineageTag: 2cb4965c-1cfe-43a7-ae09-baa2bf6fd80d
+		summarizeBy: none
+		sourceColumn: shipToCountry
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipToState
+		dataType: string
+		isHidden
+		lineageTag: f48f3dd2-dda3-477b-ac01-44a8224418d9
+		summarizeBy: none
+		sourceColumn: shipToState
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipToPostCode
+		dataType: string
+		isHidden
+		lineageTag: c2f5aed7-0400-460a-a1a1-21d4fa2bbcfc
+		summarizeBy: none
+		sourceColumn: shipToPostCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column currencyId
+		dataType: string
+		isHidden
+		lineageTag: 478d582c-26d8-42e6-8c08-4a0a72746ade
+		summarizeBy: none
+		sourceColumn: currencyId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shortcutDimension1Code
+		dataType: string
+		isHidden
+		lineageTag: 4bf08deb-1f2a-4231-8f58-21285484fd78
+		summarizeBy: none
+		sourceColumn: shortcutDimension1Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shortcutDimension2Code
+		dataType: string
+		isHidden
+		lineageTag: 19282e52-91c5-459f-a72a-c740acb3b7bd
+		summarizeBy: none
+		sourceColumn: shortcutDimension2Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column currencyCode
+		dataType: string
+		isHidden
+		lineageTag: c39b5156-62a3-4278-8838-654f01d3335c
+		summarizeBy: none
+		sourceColumn: currencyCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column orderId
+		dataType: string
+		isHidden
+		lineageTag: e79d9c76-cfad-4838-894e-268781efd0a0
+		summarizeBy: none
+		sourceColumn: orderId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column orderNumber
+		dataType: string
+		isHidden
+		lineageTag: 62758590-2730-425b-afe6-f244089b5f7d
+		summarizeBy: none
+		sourceColumn: orderNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column paymentTermsId
+		dataType: string
+		isHidden
+		lineageTag: dc97753b-c41e-4fdf-94ea-439c9f139b47
+		summarizeBy: none
+		sourceColumn: paymentTermsId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipmentMethodId
+		dataType: string
+		isHidden
+		lineageTag: df299708-c45b-4165-9551-d1b99f12568e
+		summarizeBy: none
+		sourceColumn: shipmentMethodId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column salesperson
+		dataType: string
+		isHidden
+		lineageTag: 67bacf49-2aa4-4a01-af68-785956bae43e
+		summarizeBy: none
+		sourceColumn: salesperson
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column disputeStatusId
+		dataType: string
+		isHidden
+		lineageTag: f66c7517-86b2-4c63-8337-c71f2105f9a3
+		summarizeBy: none
+		sourceColumn: disputeStatusId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column disputeStatus
+		dataType: string
+		isHidden
+		lineageTag: f6b912f5-0f3f-4cee-957c-940867247d3a
+		summarizeBy: none
+		sourceColumn: disputeStatus
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column pricesIncludeTax
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 46a0d05a-ca56-40e5-b813-f03b3d0b8483
+		summarizeBy: none
+		sourceColumn: pricesIncludeTax
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column remainingAmount
+		dataType: double
+		isHidden
+		lineageTag: ffb59d6f-9e65-407a-b358-e39f825034e3
+		summarizeBy: sum
+		sourceColumn: remainingAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discountAmount
+		dataType: double
+		isHidden
+		lineageTag: 6e8e46e3-ba1a-4fee-99ee-2f060f0b60e7
+		summarizeBy: sum
+		sourceColumn: discountAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discountAppliedBeforeTax
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 79373090-ea34-4fc1-b905-4e546a5c9e58
+		summarizeBy: none
+		sourceColumn: discountAppliedBeforeTax
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column totalAmountExcludingTax
+		dataType: double
+		isHidden
+		lineageTag: 6e01fb16-b25b-48cd-8f3c-da2096861a7e
+		summarizeBy: sum
+		sourceColumn: totalAmountExcludingTax
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column totalTaxAmount
+		dataType: double
+		isHidden
+		lineageTag: 889097dd-38e2-4d2c-b27b-bb74d85f5f89
+		summarizeBy: sum
+		sourceColumn: totalTaxAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column totalAmountIncludingTax
+		dataType: double
+		isHidden
+		lineageTag: 1079ea5f-bf34-481d-8ec4-21df6be92573
+		summarizeBy: sum
+		sourceColumn: totalAmountIncludingTax
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column status
+		dataType: string
+		isHidden
+		lineageTag: ee151e94-75b1-4003-8523-dc6aea8347f5
+		summarizeBy: none
+		sourceColumn: status
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column lastModifiedDateTime
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: a8ba1f5b-ed30-409d-8971-3044b874c820
+		summarizeBy: none
+		sourceColumn: lastModifiedDateTime
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column phoneNumber
+		dataType: string
+		isHidden
+		lineageTag: ffbea952-f1d1-4473-bfd8-17ff077d19ad
+		summarizeBy: none
+		sourceColumn: phoneNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column email
+		dataType: string
+		isHidden
+		lineageTag: d036b15a-90af-4698-bf5a-1b9bcfb64754
+		summarizeBy: none
+		sourceColumn: email
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETag
+		dataType: string
+		isHidden
+		lineageTag: eb481c37-d768-42c0-8c4d-61b050be804e
+		summarizeBy: none
+		sourceColumn: ETag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column itemId
+		dataType: string
+		isHidden
+		lineageTag: 197f73e7-99f1-4932-a76f-8005931dcb96
+		summarizeBy: none
+		sourceColumn: itemId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column accountId
+		dataType: string
+		isHidden
+		lineageTag: 1007c671-00d2-466f-8a72-d3ee46fc71db
+		summarizeBy: none
+		sourceColumn: accountId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column lineType
+		dataType: string
+		isHidden
+		lineageTag: 90d74465-c0ce-454d-b9e1-794d7435e2c0
+		summarizeBy: none
+		sourceColumn: lineType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column lineObjectNumber
+		dataType: string
+		isHidden
+		lineageTag: 65da0fb9-c55f-439d-8349-df879b00874d
+		summarizeBy: none
+		sourceColumn: lineObjectNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		isHidden
+		lineageTag: 51cc67d4-d9ba-4b63-a12a-91415cf0a20e
+		summarizeBy: none
+		sourceColumn: description
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column description2
+		dataType: string
+		isHidden
+		lineageTag: baaf5443-99f1-4b83-bee7-29b211fe750e
+		summarizeBy: none
+		sourceColumn: description2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitOfMeasureId
+		dataType: string
+		isHidden
+		lineageTag: 997a3d1f-26db-49bd-8754-2ba6e971b81a
+		summarizeBy: none
+		sourceColumn: unitOfMeasureId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitOfMeasureCode
+		dataType: string
+		isHidden
+		lineageTag: 9a6c4943-c33e-46a2-b7cd-a88ec698fb1e
+		summarizeBy: none
+		sourceColumn: unitOfMeasureCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantity
+		dataType: double
+		isHidden
+		lineageTag: a6d2c847-7d3c-4268-b9ba-58a6951ee366
+		summarizeBy: sum
+		sourceColumn: quantity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unitPrice
+		dataType: double
+		isHidden
+		lineageTag: 0b1e59d6-faaa-4ec1-811c-5efd2a0af541
+		summarizeBy: sum
+		sourceColumn: unitPrice
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'discountAmount.1'
+		dataType: double
+		isHidden
+		lineageTag: 5d666d14-968f-4d16-9b56-7b7c3c094496
+		summarizeBy: sum
+		sourceColumn: discountAmount.1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column discountPercent
+		dataType: double
+		isHidden
+		lineageTag: dbb85e88-f974-4d26-bede-0aed163e3114
+		summarizeBy: sum
+		sourceColumn: discountPercent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'discountAppliedBeforeTax.1'
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e5acd147-ed71-4999-8f33-3b32be447252
+		summarizeBy: none
+		sourceColumn: discountAppliedBeforeTax.1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column amountExcludingTax
+		dataType: double
+		isHidden
+		lineageTag: 3557702c-03dd-40d7-bff1-e2ed45211217
+		summarizeBy: sum
+		sourceColumn: amountExcludingTax
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taxCode
+		dataType: string
+		isHidden
+		lineageTag: 7c350d5b-62eb-419e-9625-081deca0615b
+		summarizeBy: none
+		sourceColumn: taxCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column taxPercent
+		dataType: string
+		isHidden
+		lineageTag: 3460bf07-1a9e-4614-8236-fc23807387ae
+		summarizeBy: none
+		sourceColumn: taxPercent
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'totalTaxAmount.1'
+		dataType: double
+		isHidden
+		lineageTag: fbec41c8-4d2e-4c29-8a2b-747143460117
+		summarizeBy: sum
+		sourceColumn: totalTaxAmount.1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column amountIncludingTax
+		dataType: double
+		isHidden
+		lineageTag: e0b962f5-afc9-40de-9da6-316360a38609
+		summarizeBy: sum
+		sourceColumn: amountIncludingTax
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column invoiceDiscountAllocation
+		dataType: double
+		isHidden
+		lineageTag: b4c20e99-7448-4b7c-8da6-ce49ff2978a6
+		summarizeBy: sum
+		sourceColumn: invoiceDiscountAllocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column netAmount
+		dataType: double
+		isHidden
+		lineageTag: e4b07399-0ec7-4e81-b5ef-5f7b62ee1ab1
+		summarizeBy: sum
+		sourceColumn: netAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column netTaxAmount
+		dataType: double
+		isHidden
+		lineageTag: 8c8635df-609e-4bf0-8c97-884538976a7a
+		summarizeBy: sum
+		sourceColumn: netTaxAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column netAmountIncludingTax
+		dataType: double
+		isHidden
+		lineageTag: f847e987-3a73-42f6-ad0e-6bd153ab690b
+		summarizeBy: sum
+		sourceColumn: netAmountIncludingTax
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column shipmentDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: b7e0592c-c24b-4c91-b5d0-339c515bb7c7
+		summarizeBy: none
+		sourceColumn: shipmentDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column itemVariantId
+		dataType: string
+		isHidden
+		lineageTag: ae2baf06-6875-46a5-89e7-219909d90f82
+		summarizeBy: none
+		sourceColumn: itemVariantId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column locationId
+		dataType: string
+		isHidden
+		lineageTag: 3db7e26e-9475-4914-9d73-67ec9a2932a0
+		summarizeBy: none
+		sourceColumn: locationId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SalesInvoices = m
+		mode: import
+		queryGroup: 'Nicht benötigt'
+		source =
+				let
+				    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+				    LIVE = Quelle{[Name="LIVE"]}[Data],
+				    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+				    v2.0 = PLAY02{[Name="v2.0"]}[Data],
+				    salesInvoices_table = v2.0{[Name="salesInvoices",Signature="table"]}[Data],
+				    #"Entfernte Spalten" = Table.RemoveColumns(salesInvoices_table,{"customer", "currency", "dimensionValue", "paymentTerm", "shipmentMethod", "dimensionSetLines", "salesInvoiceLines", "pdfDocument", "attachments", "documentAttachments", "customerNumber", "customerName"}),
+				    #"Zusammengeführte Abfragen" = Table.NestedJoin(#"Entfernte Spalten", {"id"}, salesInvoiceLines, {"documentId"}, "salesInvoiceLines", JoinKind.LeftOuter),
+				    #"Erweiterte salesInvoiceLines" = Table.ExpandTableColumn(#"Zusammengeführte Abfragen", "salesInvoiceLines", {"itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "quantity", "unitPrice", "discountAmount", "discountPercent", "discountAppliedBeforeTax", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "shipmentDate", "itemVariantId", "locationId"}, {"itemId", "accountId", "lineType", "lineObjectNumber", "description", "description2", "unitOfMeasureId", "unitOfMeasureCode", "quantity", "unitPrice", "discountAmount.1", "discountPercent", "discountAppliedBeforeTax.1", "amountExcludingTax", "taxCode", "taxPercent", "totalTaxAmount.1", "amountIncludingTax", "invoiceDiscountAllocation", "netAmount", "netTaxAmount", "netAmountIncludingTax", "shipmentDate", "itemVariantId", "locationId"}),
+				    #"Geänderter Typ" = Table.TransformColumnTypes(#"Erweiterte salesInvoiceLines",{{"locationId", type text}, {"itemVariantId", type text}, {"shipmentDate", type date}, {"netAmountIncludingTax", type number}, {"netTaxAmount", type number}, {"netAmount", type number}, {"invoiceDiscountAllocation", type number}, {"amountIncludingTax", type number}, {"totalTaxAmount.1", type number}, {"taxPercent", type text}, {"taxCode", type text}, {"amountExcludingTax", type number}, {"discountAppliedBeforeTax.1", type logical}, {"discountPercent", type number}, {"discountAmount.1", type number}, {"unitPrice", type number}, {"quantity", type number}, {"unitOfMeasureCode", type text}})
+				in
+				    #"Geänderter Typ"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Exception
+
+	annotation PBI_NavigationStepName = Navigation
+

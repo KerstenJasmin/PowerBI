@@ -1,0 +1,97 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "9a80b1ea4b80762f124b",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 720,
+    "width": 1248.3582089552237
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FCT_ValueEntriesSales"
+                    }
+                  },
+                  "Property": "itemNo"
+                }
+              },
+              "queryRef": "valueEntriesSales.itemNo",
+              "nativeQueryRef": "itemNo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Tabelle"
+                    }
+                  },
+                  "Property": "Umsatz"
+                }
+              },
+              "queryRef": "Measure Tabelle.Umsatz",
+              "nativeQueryRef": "Umsatz"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_Items"
+                    }
+                  },
+                  "Property": "description"
+                }
+              },
+              "queryRef": "items.description",
+              "nativeQueryRef": "description"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "122.02979923278042D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "valueEntriesSales.itemNo"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "345.13434245839073D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "items.description"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

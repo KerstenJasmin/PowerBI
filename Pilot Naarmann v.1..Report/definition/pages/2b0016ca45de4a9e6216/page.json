@@ -1,0 +1,318 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "2b0016ca45de4a9e6216",
+  "displayName": "Detailtabelle Auftragsbestand",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1abf8f9e403071a56fc0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_Datum"
+              }
+            },
+            "Property": "Datum"
+          }
+        },
+        "type": "RelativeDate",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "DIM_Datum",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Between": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "d"
+                        }
+                      },
+                      "Property": "Datum"
+                    }
+                  },
+                  "LowerBound": {
+                    "DateSpan": {
+                      "Expression": {
+                        "DateAdd": {
+                          "Expression": {
+                            "Now": {}
+                          },
+                          "Amount": -1,
+                          "TimeUnit": 3
+                        }
+                      },
+                      "TimeUnit": 3
+                    }
+                  },
+                  "UpperBound": {
+                    "DateSpan": {
+                      "Expression": {
+                        "DateAdd": {
+                          "Expression": {
+                            "Now": {}
+                          },
+                          "Amount": -1,
+                          "TimeUnit": 3
+                        }
+                      },
+                      "TimeUnit": 3
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "5ec831475a3f36ca286c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 1 (Hauptgruppe)"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "7c3bf6dd70be773df672",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 2 (Produktart)"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "4ae9868527c188ffd0a8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 3 (Fettgehalt)"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "88b2a38b7d8623fc593d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 4 (leer)"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "65cca89e03f81b6c410c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchies"
+              }
+            },
+            "Property": "description"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "e4dfc46c38519846fb1d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchyAssignments"
+              }
+            },
+            "Property": "CustomerNo-CustmomerName"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      },
+      {
+        "name": "85899c365fb03e16498e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchyAssignments"
+              }
+            },
+            "Property": "CustomerName"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "7966d6ec372e264aa6d0",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "a7e39edf4e3b2a60cbbe",
+        "boundFilter": "5ec831475a3f36ca286c",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 1 (Hauptgruppe)"
+          }
+        }
+      },
+      {
+        "name": "794cb7a0510d72032a72",
+        "boundFilter": "7c3bf6dd70be773df672",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 2 (Produktart)"
+          }
+        }
+      },
+      {
+        "name": "cbedbc57489ca062ad74",
+        "boundFilter": "4ae9868527c188ffd0a8",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 3 (Fettgehalt)"
+          }
+        }
+      },
+      {
+        "name": "cd4d4fe7d29a0d80aeb9",
+        "boundFilter": "88b2a38b7d8623fc593d",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 4 (leer)"
+          }
+        }
+      },
+      {
+        "name": "665bc0306734601859bd",
+        "boundFilter": "65cca89e03f81b6c410c",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchies"
+              }
+            },
+            "Property": "description"
+          }
+        }
+      },
+      {
+        "name": "551dc1e94d55eadf9885",
+        "boundFilter": "e4dfc46c38519846fb1d",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchyAssignments"
+              }
+            },
+            "Property": "CustomerNo-CustmomerName"
+          }
+        }
+      },
+      {
+        "name": "d3c86890e71107923439",
+        "boundFilter": "85899c365fb03e16498e",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_CustomerHierarchyAssignments"
+              }
+            },
+            "Property": "CustomerName"
+          }
+        }
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "d9f4d39d0a5a5b05836c",
+  "position": {
+    "x": 645,
+    "y": 389.99991657263894,
+    "z": 2000,
+    "height": 309.5609009145175,
+    "width": 614.72353870458142,
+    "tabOrder": 5000
+  },
+  "visualGroup": {
+    "displayName": "Abweichungsdiagram",
+    "groupMode": "ScaleMode"
+  }
+}

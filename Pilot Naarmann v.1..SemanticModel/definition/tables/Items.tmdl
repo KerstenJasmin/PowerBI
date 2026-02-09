@@ -1,0 +1,320 @@
+table Items
+	isHidden
+	lineageTag: 2fcff560-4769-48df-9c41-8c3546d70bb0
+
+	column id
+		dataType: string
+		isHidden
+		lineageTag: 4cd334ba-a38a-4d2a-afc4-4fd97f9cbbc0
+		summarizeBy: none
+		sourceColumn: id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column number
+		dataType: string
+		isHidden
+		lineageTag: 39570d21-0cc0-4e27-9a0c-8fed7ef9025c
+		summarizeBy: none
+		sourceColumn: number
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column displayName
+		dataType: string
+		isHidden
+		lineageTag: 620d3ddd-46a6-4f27-a665-1026ad876e2b
+		summarizeBy: none
+		sourceColumn: displayName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column displayName2
+		dataType: string
+		isHidden
+		lineageTag: eb09a4bb-1200-47e2-b10d-88c34537b8ff
+		summarizeBy: none
+		sourceColumn: displayName2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: string
+		isHidden
+		lineageTag: a819f126-4d5c-4cc8-9bf2-5b3702129add
+		summarizeBy: none
+		sourceColumn: type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column itemCategoryId
+		dataType: string
+		isHidden
+		lineageTag: bd75274b-f3bb-4c2c-85dd-238999bb3eb9
+		summarizeBy: none
+		sourceColumn: itemCategoryId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column itemCategoryCode
+		dataType: string
+		isHidden
+		lineageTag: 8d7a7c17-d2bc-49d6-bda1-ee68eb1dfb1f
+		summarizeBy: none
+		sourceColumn: itemCategoryCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column blocked
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ecc52106-f5a7-44c2-bb25-f1c2dafa60db
+		summarizeBy: none
+		sourceColumn: blocked
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gtin
+		dataType: string
+		isHidden
+		lineageTag: 9e532a08-7193-4eff-85f6-9541c9ed27ed
+		summarizeBy: none
+		sourceColumn: gtin
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column inventory
+		dataType: double
+		isHidden
+		lineageTag: e8eb69c7-6b6a-4219-8faa-ee8b52eb2b96
+		summarizeBy: sum
+		sourceColumn: inventory
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unitPrice
+		dataType: double
+		isHidden
+		lineageTag: da5f6f2f-3604-4ce2-8901-eaecd7837d50
+		summarizeBy: sum
+		sourceColumn: unitPrice
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column priceIncludesTax
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ea577459-027a-47c3-bf2b-527bce38afa7
+		summarizeBy: none
+		sourceColumn: priceIncludesTax
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column unitCost
+		dataType: double
+		isHidden
+		lineageTag: 1d0dc11c-b22d-4608-9ee6-1052ee70dc30
+		summarizeBy: sum
+		sourceColumn: unitCost
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column taxGroupId
+		dataType: string
+		isHidden
+		lineageTag: 9b3b635f-5001-4dd8-9e21-eadf474a70d5
+		summarizeBy: none
+		sourceColumn: taxGroupId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column taxGroupCode
+		dataType: string
+		isHidden
+		lineageTag: 5d04fd58-0b3d-4e0d-a8bf-e182c56e6a60
+		summarizeBy: none
+		sourceColumn: taxGroupCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column baseUnitOfMeasureId
+		dataType: string
+		isHidden
+		lineageTag: f0fc5b42-bd83-4ec2-b3f8-72d967c7d8cc
+		summarizeBy: none
+		sourceColumn: baseUnitOfMeasureId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column baseUnitOfMeasureCode
+		dataType: string
+		isHidden
+		lineageTag: 1b4e0d12-9e7c-455c-92c2-5990a387975d
+		summarizeBy: none
+		sourceColumn: baseUnitOfMeasureCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column generalProductPostingGroupId
+		dataType: string
+		isHidden
+		lineageTag: 29fe0b08-208e-4acc-9069-489bd4360b20
+		summarizeBy: none
+		sourceColumn: generalProductPostingGroupId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column generalProductPostingGroupCode
+		dataType: string
+		isHidden
+		lineageTag: 1802c697-b590-4017-8c2c-c6ad2ca21cc5
+		summarizeBy: none
+		sourceColumn: generalProductPostingGroupCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column inventoryPostingGroupId
+		dataType: string
+		isHidden
+		lineageTag: c615e0cb-7275-462e-880a-bfd13f3ad046
+		summarizeBy: none
+		sourceColumn: inventoryPostingGroupId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column inventoryPostingGroupCode
+		dataType: string
+		isHidden
+		lineageTag: af44d570-90f4-4dd7-9d15-e99957318ade
+		summarizeBy: none
+		sourceColumn: inventoryPostingGroupCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column lastModifiedDateTime
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: e2ab486e-7db9-44fd-bade-b89d9e1af8c6
+		summarizeBy: none
+		sourceColumn: lastModifiedDateTime
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETag
+		dataType: string
+		isHidden
+		lineageTag: 07d41cff-998e-464c-a7d3-98adc1db3366
+		summarizeBy: none
+		sourceColumn: ETag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'itemCategory.code'
+		dataType: string
+		isHidden
+		lineageTag: 0f32921d-5afb-48d4-8839-29b4e3f7e48c
+		summarizeBy: none
+		sourceColumn: itemCategory.code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'unitOfMeasure.code'
+		dataType: string
+		isHidden
+		lineageTag: 841074db-ed23-4028-9148-ea242d058699
+		summarizeBy: none
+		sourceColumn: unitOfMeasure.code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'unitOfMeasure.displayName'
+		dataType: string
+		isHidden
+		lineageTag: 63f7eca8-1c81-44d4-b85f-c798fff90cd3
+		summarizeBy: none
+		sourceColumn: unitOfMeasure.displayName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Items = m
+		mode: import
+		queryGroup: 'Nicht benötigt'
+		source =
+				let
+				    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+				    LIVE = Quelle{[Name="LIVE"]}[Data],
+				    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+				    v2.0 = PLAY02{[Name="v2.0"]}[Data],
+				    items_table = v2.0{[Name="items",Signature="table"]}[Data],
+				    #"Erweiterte itemCategory" = Table.ExpandRecordColumn(items_table, "itemCategory", {"code"}, {"itemCategory.code"}),
+				    #"Erweiterte unitOfMeasure" = Table.ExpandRecordColumn(#"Erweiterte itemCategory", "unitOfMeasure", {"code", "displayName"}, {"unitOfMeasure.code", "unitOfMeasure.displayName"})
+				in
+				    #"Erweiterte unitOfMeasure"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

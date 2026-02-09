@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "2f4bf0537c268092b84d",
+  "position": {
+    "x": 19.793814432989691,
+    "y": 9.8969072164948457,
+    "z": 3000,
+    "height": 40.824742268041234,
+    "width": 676.08247422680415,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Umsatz | Artikelhierarchie, Kundenhierarchie, Zeit | EUR | VJ ",
+                    "textStyle": {
+                      "fontFamily": "Arial",
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

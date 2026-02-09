@@ -1,0 +1,238 @@
+/// itemGroupHierarchyValues: liefert die Beschreibung der Artikelgruppen im Feld “description” 
+/// 
+/// Hauptgruppe: Main Group "BusinessArea" (bzw. Integer-Wert 2), Level 01 (bzw. Integer-Wert 1), Wert = Hauptgruppe des Artikels
+/// 
+/// Untergruppe: Main Group "BusinessArea" (bzw. Integer-Wert 2), Level 02 (bzw. Integer-Wert 2), From Value = Hauptgruppe des Artikels, Wert = Untergruppe des Artikels
+/// 
+/// Produktart: Main Group "ProductAttributes" (bzw. Integer-Wert 3), Level 01 (bzw. Integer-Wert 1), Wert = Produktart des Artikels
+/// 
+/// Fetthalt: Main Group "BusinessArea" (bzw. Integer-Wert 2), Level 03 (bzw. Integer-Wert 3), From Value = Untergruppe des Artikels, Wert = Fettgehalt des Artikels
+table DIM_ItemGroupHierarchyValues
+	lineageTag: b01a17d3-5f24-4ba2-89f0-cfa17fac712e
+
+	column mainGroup
+		dataType: string
+		lineageTag: 3e3ca4e8-ca04-4ff4-87b3-7489a6038b2a
+		summarizeBy: none
+		sourceColumn: mainGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column level
+		dataType: string
+		lineageTag: dfb5593b-e074-4bb6-adcc-5e8668135446
+		summarizeBy: none
+		sourceColumn: level
+
+		annotation SummarizationSetBy = Automatic
+
+	column subgroupCode
+		dataType: string
+		lineageTag: 6aeec375-a668-4b8e-b70b-b2105aa64649
+		summarizeBy: none
+		sourceColumn: subgroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column fromValue
+		dataType: string
+		lineageTag: bf85b354-5cc2-49e0-8ed2-d7f3144723bf
+		summarizeBy: none
+		sourceColumn: fromValue
+
+		annotation SummarizationSetBy = Automatic
+
+	column value
+		dataType: string
+		lineageTag: 4b7d6d86-5ec4-4840-a391-778b6ed7b9c1
+		summarizeBy: none
+		sourceColumn: value
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: c80c0454-cd9b-461b-90d7-9d383c0055df
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETag
+		dataType: string
+		lineageTag: 74b19aba-3ce7-405a-835c-b6467d5d7e29
+		summarizeBy: none
+		sourceColumn: ETag
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pfad = ```
+			
+			    PATH(DIM_ItemGroupHierarchyValues[value], DIM_ItemGroupHierarchyValues[fromValue])
+			```
+		lineageTag: f603aed1-827b-42f3-91e7-e8f66b95c107
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hauptgruppe =
+			
+			IF(DIM_ItemGroupHierarchyValues[level] = "01" && DIM_ItemGroupHierarchyValues[mainGroup] = "BusinessArea",DIM_ItemGroupHierarchyValues[description],BLANK())
+		lineageTag: 645fda06-e6b5-4041-9e2a-e0654cfbecc0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Untergruppe =
+			
+			IF(DIM_ItemGroupHierarchyValues[level] = "02" && DIM_ItemGroupHierarchyValues[mainGroup] = "BusinessArea",DIM_ItemGroupHierarchyValues[description],BLANK())
+		lineageTag: 80cfca10-f294-4d85-ad9d-30b0c4667129
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Produktart =
+			
+			IF(DIM_ItemGroupHierarchyValues[level] = "01" && DIM_ItemGroupHierarchyValues[mainGroup] = "ProductAttributes",DIM_ItemGroupHierarchyValues[description],BLANK())
+		lineageTag: d2ea4d1d-b9f1-4c37-9332-0667b9d07c09
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fettgehalt =
+			
+			IF(DIM_ItemGroupHierarchyValues[level] = "03" && DIM_ItemGroupHierarchyValues[mainGroup] = "BusinessArea",DIM_ItemGroupHierarchyValues[description],BLANK())
+		lineageTag: 88b610a3-a5d0-411a-83ba-1f127ff42793
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ebene 1 (Hauptgruppe)' =
+			
+			VAR Pfaditem = PATHITEM(DIM_ItemGroupHierarchyValues[Pfad], 1)
+			
+			RETURN
+			LOOKUPVALUE(DIM_ItemGroupHierarchyValues[description], DIM_ItemGroupHierarchyValues[value], Pfaditem)
+		lineageTag: bfababca-9788-4e1e-93f3-e497d5a3d98e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ebene 2 (Produktart)' =
+			
+			VAR Pfaditem = PATHITEM(DIM_ItemGroupHierarchyValues[Pfad], 2)
+			
+			RETURN
+			LOOKUPVALUE(DIM_ItemGroupHierarchyValues[description], DIM_ItemGroupHierarchyValues[value], Pfaditem)
+		lineageTag: f686b592-618a-4ae7-b073-f6fb9d36f626
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ebene 3 (Fettgehalt)' =
+			
+			VAR Pfaditem = PATHITEM(DIM_ItemGroupHierarchyValues[Pfad], 3)
+			
+			RETURN
+			LOOKUPVALUE(DIM_ItemGroupHierarchyValues[description], DIM_ItemGroupHierarchyValues[value], Pfaditem)
+		lineageTag: 0f881171-5c81-4795-9254-1e43145bf5cf
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ebene 4 (leer)' =
+			
+			VAR Pfaditem = PATHITEM(DIM_ItemGroupHierarchyValues[Pfad], 4)
+			
+			RETURN
+			LOOKUPVALUE(DIM_ItemGroupHierarchyValues[description], DIM_ItemGroupHierarchyValues[value], Pfaditem)
+		lineageTag: 79213268-24a7-4435-a073-16f702f34ff1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Key Item Group' = DIM_ItemGroupHierarchyValues[level] & "-" & DIM_ItemGroupHierarchyValues[subgroupCode] & "-" & DIM_ItemGroupHierarchyValues[value]
+		lineageTag: 8806ce82-8e94-40d5-ba30-b2aa0f20e90d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quelle
+		dataType: string
+		lineageTag: 01019a3e-8a09-41ad-9cf5-3e503b9864a6
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_ItemGroupHierarchyValues = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    // Zugriff auf die Business Central API
+				    Source =
+				        Dynamics365BusinessCentral.ApiContentsWithOptions(
+				            null,
+				            null,
+				            null,
+				            null
+				        ),
+				
+				    // Auswahl der Umgebung "LIVE"
+				    LIVE =
+				        Source{[Name = "LIVE"]}[Data],
+				
+				    // Auswahl der Mandanteninstanz "PLAY02"
+				    PLAY02 =
+				        LIVE{[Name = "PLAY02"]}[Data],
+				
+				    // Auswahl des API-Bereichs "Advanced"
+				    Advanced =
+				        PLAY02{[Name = "Advanced"]}[Data],
+				
+				    // Zugriff auf die Custom-API "naarmann/powerbi/v1.0"
+				    API_v1 =
+				        Advanced{[Name = "naarmann/powerbi/v1.0"]}[Data],
+				
+				    // Zugriff auf die Tabelle "itemGroupHierarchyValues"
+				    ItemGroupHierarchyValues =
+				        API_v1{[
+				            Name = "itemGroupHierarchyValues",
+				            Signature = "table"
+				        ]}[Data],
+				
+				    // Filtern nur auf Hauptgruppe "ItemGroup"
+				    GefilterteZeilen =
+				        Table.SelectRows(
+				            ItemGroupHierarchyValues,
+				            each [mainGroup] = "ItemGroup"
+				        ),
+				
+				    // Ersetzen leerer Strings in "fromValue" durch Null
+				    ErsetzterWert =
+				        Table.ReplaceValue(
+				            GefilterteZeilen,
+				            "",
+				            null,
+				            Replacer.ReplaceValue,
+				            {"fromValue"}
+				        ),
+				
+				    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+				    Quelle_BC =
+				        Table.AddColumn(
+				            ErsetzterWert,
+				            "Quelle",
+				            each "BC",
+				            type text
+				        )
+				
+				in
+				    // Rückgabe der finalen Tabelle
+				    Quelle_BC
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

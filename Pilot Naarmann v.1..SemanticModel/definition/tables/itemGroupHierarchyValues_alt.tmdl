@@ -1,0 +1,162 @@
+/// itemGroupHierarchyValues: liefert die Beschreibung der Artikelgruppen im Feld “description” 
+/// 
+/// Hauptgruppe: Main Group "BusinessArea" (bzw. Integer-Wert 2), Level 01 (bzw. Integer-Wert 1), Wert = Hauptgruppe des Artikels
+/// 
+/// Untergruppe: Main Group "BusinessArea" (bzw. Integer-Wert 2), Level 02 (bzw. Integer-Wert 2), From Value = Hauptgruppe des Artikels, Wert = Untergruppe des Artikels
+/// 
+/// Produktart: Main Group "ProductAttributes" (bzw. Integer-Wert 3), Level 01 (bzw. Integer-Wert 1), Wert = Produktart des Artikels
+/// 
+/// Fetthalt: Main Group "BusinessArea" (bzw. Integer-Wert 2), Level 03 (bzw. Integer-Wert 3), From Value = Untergruppe des Artikels, Wert = Fettgehalt des Artikels
+table itemGroupHierarchyValues_alt
+	isHidden
+	lineageTag: 6ccb4a11-1147-47f1-8050-2da984eee95e
+
+	column mainGroup
+		dataType: string
+		isHidden
+		lineageTag: 82389cf5-d85f-4585-8065-a705fbda850b
+		summarizeBy: none
+		sourceColumn: mainGroup
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column level
+		dataType: string
+		isHidden
+		lineageTag: df218647-9765-4faf-b94e-5f2c18a91954
+		summarizeBy: none
+		sourceColumn: level
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column subgroupCode
+		dataType: string
+		isHidden
+		lineageTag: f1bcd431-9ccb-4ad9-a8bc-897a6f919932
+		summarizeBy: none
+		sourceColumn: subgroupCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fromValue
+		dataType: string
+		isHidden
+		lineageTag: 1c64e8b5-fa6e-4972-8a96-21fc252e1d79
+		summarizeBy: none
+		sourceColumn: fromValue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column value
+		dataType: string
+		isHidden
+		lineageTag: a0b0dc76-c3b0-4fc5-980b-9fea78619bdc
+		summarizeBy: none
+		sourceColumn: value
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		isHidden
+		lineageTag: 154065c5-7187-483d-92b7-87e3fe6484e3
+		summarizeBy: none
+		sourceColumn: description
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETag
+		dataType: string
+		isHidden
+		lineageTag: 798e77fe-4b19-476a-938b-88c07995d316
+		summarizeBy: none
+		sourceColumn: ETag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pfad = PATH(itemGroupHierarchyValues_alt[value], itemGroupHierarchyValues_alt[fromValue])
+		isHidden
+		lineageTag: 00e18e18-b433-4ef2-b492-eca7cb42fc5a
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ebene 1' =
+			
+			VAR Pfaditem = PATHITEM(itemGroupHierarchyValues_alt[Pfad], 1)
+			
+			RETURN
+			LOOKUPVALUE(itemGroupHierarchyValues_alt[description], itemGroupHierarchyValues_alt[value], Pfaditem)
+		isHidden
+		lineageTag: 08feee3d-fd28-4ed9-a1e6-2a5ce8b28687
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ebene 2' =
+			
+			VAR Pfaditem = PATHITEM(itemGroupHierarchyValues_alt[Pfad], 2)
+			
+			RETURN
+			LOOKUPVALUE(itemGroupHierarchyValues_alt[description], itemGroupHierarchyValues_alt[value], Pfaditem)
+		isHidden
+		lineageTag: 29a2bbf0-4cfc-4ae6-b9d5-1fd9b9ce595a
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ebene 3' =
+			
+			VAR Pfaditem = PATHITEM(itemGroupHierarchyValues_alt[Pfad], 3)
+			
+			RETURN
+			LOOKUPVALUE(itemGroupHierarchyValues_alt[description], itemGroupHierarchyValues_alt[value], Pfaditem)
+		isHidden
+		lineageTag: 8ff3c328-3f90-488c-831f-527b9c7cace5
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition itemGroupHierarchyValues_alt = m
+		mode: import
+		queryGroup: 'Nicht benötigt'
+		source =
+				let
+				    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+				    LIVE = Quelle{[Name="LIVE"]}[Data],
+				    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+				    Advanced = PLAY02{[Name="Advanced"]}[Data],
+				    #"naarmann/powerbi/v1.0" = Advanced{[Name="naarmann/powerbi/v1.0"]}[Data],
+				    itemGroupHierarchyValues_table = #"naarmann/powerbi/v1.0"{[Name="itemGroupHierarchyValues",Signature="table"]}[Data],
+				    #"Ersetzter Wert" = Table.ReplaceValue(itemGroupHierarchyValues_table,"",null,Replacer.ReplaceValue,{"fromValue"})
+				in
+				    #"Ersetzter Wert"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

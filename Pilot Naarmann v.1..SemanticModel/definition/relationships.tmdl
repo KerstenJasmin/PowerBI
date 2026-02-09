@@ -1,0 +1,77 @@
+relationship 5b051236-182e-e0d3-e57c-b83f40174781
+	fromColumn: SalesInvoices.itemId
+	toColumn: Items.id
+
+relationship e56ddbd0-f3fb-ab1d-01fa-3a06cdd849ab
+	fromColumn: Items.itemCategoryId
+	toColumn: ItemCategories.id
+
+relationship ad243653-2025-4398-2952-fc6f0ef1e61e
+	fromColumn: SalesInvoices.salesperson
+	toColumn: DIM_SalesPeoplePurchasers.code
+
+relationship 3ad600a1-35c9-516d-c65a-604223a84e24
+	fromColumn: SalesInvoices.invoiceDate
+	toColumn: DIM_Datum.Datum
+
+relationship 64e5392b-318f-d1b7-247a-d58bab15a7fb
+	fromColumn: SalesOrders.salesperson
+	toColumn: DIM_SalesPeoplePurchasers.code
+
+relationship bf285a30-b144-15d4-3ef7-8e19c4540fde
+	fromColumn: SalesOrders.itemId
+	toColumn: Items.id
+
+relationship 050e5e95-b793-941b-8dd7-51cb0d472cc7
+	fromColumn: SalesOrders.orderDate
+	toColumn: DIM_Datum.Datum
+
+relationship cc8a98e1-443a-397e-ac0f-03e8e838f138
+	isActive: false
+	fromColumn: FCT_ValueEntriesSales.itemNo
+	toColumn: Items.number
+
+relationship 0d357bf3-a797-23f2-21d0-cb8ab87d8cb8
+	fromColumn: FCT_ValueEntriesSales.itemNo
+	toColumn: DIM_Items.no
+
+relationship 453789b8-673c-1688-b29d-c86c97dc8a35
+	fromColumn: FCT_ValueEntriesSales.salespersPurchCode
+	toColumn: DIM_SalesPeoplePurchasers.code
+
+relationship 80091068-3ca6-aa55-1892-30664bd4f3cf
+	fromColumn: FCT_ValueEntriesSales.postingDate
+	toColumn: DIM_Datum.Datum
+
+relationship 9bd9298b-c925-69e9-2701-09284cc46612
+	fromColumn: FCT_SalesLineOrders.postingDate
+	toColumn: DIM_Datum.Datum
+
+relationship 97ba1d0b-0b29-abef-5d90-349ead81296c
+	fromColumn: FCT_SalesLineOrders.no
+	toColumn: DIM_Items.no
+
+relationship b0544734-3c17-a796-762e-04c15457b24c
+	fromColumn: DIM_CustomerHierarchyAssignments.customerHierarchyCode
+	toColumn: DIM_CustomerHierarchies.code
+
+relationship eaf3c5f9-388a-30db-a868-dfeb512ac989
+	fromColumn: DIM_Items.no
+	toColumn: DIM_ItemUnitOfMeasures.itemNo
+
+relationship c4833743-f0e6-9232-54f4-1135bd4052e8
+	fromColumn: DIM_Items.naFatContent
+	toColumn: DIM_ItemGroupHierarchyValues.value
+
+relationship 7cb704d1-5b17-28c5-4618-6a166fe421f6
+	fromColumn: FCT_ValueEntriesSales.'Key Customer-Date'
+	toColumn: DIM_CustomerHierarchyAssignments.'Key Customer - Date'
+
+relationship 5917f785-5068-b4c7-f1a0-beaead1c236e
+	fromColumn: FCT_SalesLineOrders.'Key Customer-Date'
+	toColumn: DIM_CustomerHierarchyAssignments.'Key Customer - Date'
+
+relationship 9516235b-b527-ff9c-7943-ef049b4e4644
+	fromColumn: FCT_SalesLineOrders.salespersonCode
+	toColumn: DIM_SalesPeoplePurchasers.code
+

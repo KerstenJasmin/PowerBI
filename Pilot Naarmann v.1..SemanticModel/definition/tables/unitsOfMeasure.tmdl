@@ -1,0 +1,93 @@
+table unitsOfMeasure
+	isHidden
+	lineageTag: d413560f-0ef2-4f15-b5ef-af9d12bdf117
+
+	column id
+		dataType: string
+		isHidden
+		lineageTag: 68499080-977d-4a04-b17a-0d866e18bf76
+		summarizeBy: none
+		sourceColumn: id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column code
+		dataType: string
+		isHidden
+		lineageTag: 828b2cbe-58db-4f12-bf17-67cf6cf079fd
+		summarizeBy: none
+		sourceColumn: code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column displayName
+		dataType: string
+		isHidden
+		lineageTag: 664656d3-df58-4df2-9bed-7a39d40019fc
+		summarizeBy: none
+		sourceColumn: displayName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column internationalStandardCode
+		dataType: string
+		isHidden
+		lineageTag: d46a61ce-855a-4365-84d2-037c73723440
+		summarizeBy: none
+		sourceColumn: internationalStandardCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column symbol
+		dataType: string
+		isHidden
+		lineageTag: 7c5eb46e-1f68-4e4a-8697-69dffe0c71b2
+		summarizeBy: none
+		sourceColumn: symbol
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quelle
+		dataType: string
+		lineageTag: d6713df0-05f6-4950-9032-be2e61847787
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition unitsOfMeasure = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+				    dbo_UnitOfMeasures = Quelle{[Schema="dbo",Item="unitsOfMeasures"]}[Data],
+				    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+				    Quelle_BC =
+				        Table.AddColumn(
+				            dbo_UnitOfMeasures,
+				            "Quelle",
+				            each "BC",
+				            type text
+				        )
+				
+				in
+				    // Rückgabe der finalen Tabelle
+				    Quelle_BC
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

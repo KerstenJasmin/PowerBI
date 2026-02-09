@@ -1,0 +1,199 @@
+table itemLedgerEntries
+	isHidden
+	lineageTag: b5968b83-e292-4d1d-a42b-932f19c6a066
+
+	column id
+		dataType: string
+		isHidden
+		lineageTag: 645bf221-a280-43cd-8634-1a79dd1c7553
+		summarizeBy: none
+		sourceColumn: id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column entryNumber
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a643a3ee-98f0-41c8-8a70-4ff225ad02ea
+		summarizeBy: sum
+		sourceColumn: entryNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column itemNumber
+		dataType: string
+		isHidden
+		lineageTag: cf674fa7-13c4-4ab0-80de-67231a0fabb5
+		summarizeBy: none
+		sourceColumn: itemNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column postingDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 544d04c5-bc89-4cae-bfc3-485da30f046a
+		summarizeBy: none
+		sourceColumn: postingDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column entryType
+		dataType: string
+		isHidden
+		lineageTag: 5a1810cd-1ab1-4685-8692-9baad70f2ba3
+		summarizeBy: none
+		sourceColumn: entryType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sourceNumber
+		dataType: string
+		isHidden
+		lineageTag: 31545bd0-e560-4171-b453-268478cdc745
+		summarizeBy: none
+		sourceColumn: sourceNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sourceType
+		dataType: string
+		isHidden
+		lineageTag: 6e009e63-33c0-45a1-b5c0-349f2b15fa51
+		summarizeBy: none
+		sourceColumn: sourceType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column documentNumber
+		dataType: string
+		isHidden
+		lineageTag: b6840e7d-89fb-4bed-90a4-e3db8068277d
+		summarizeBy: none
+		sourceColumn: documentNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column documentType
+		dataType: string
+		isHidden
+		lineageTag: 4b7ed181-0b70-475c-b5d6-02f4751daa23
+		summarizeBy: none
+		sourceColumn: documentType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		isHidden
+		lineageTag: 195b856f-d6f3-4d77-a326-059df39cf1b4
+		summarizeBy: none
+		sourceColumn: description
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantity
+		dataType: double
+		isHidden
+		lineageTag: 67a6a43f-a0e8-472d-b304-e5a592e54eeb
+		summarizeBy: sum
+		sourceColumn: quantity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salesAmountActual
+		dataType: double
+		isHidden
+		lineageTag: cf85857d-d2b7-42dd-b7c0-2fcfd9586ac1
+		summarizeBy: sum
+		sourceColumn: salesAmountActual
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column costAmountActual
+		dataType: double
+		isHidden
+		lineageTag: 42d412d1-a09d-4a32-8c7c-08645b99cac9
+		summarizeBy: sum
+		sourceColumn: costAmountActual
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lastModifiedDateTime
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: a0156062-3a46-41b8-8484-449de22b875b
+		summarizeBy: none
+		sourceColumn: lastModifiedDateTime
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETag
+		dataType: string
+		isHidden
+		lineageTag: 8674460a-4bf3-4006-ba62-a82ec753da54
+		summarizeBy: none
+		sourceColumn: ETag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition itemLedgerEntries = m
+		mode: import
+		queryGroup: 'Nicht benötigt'
+		source =
+				let
+				    Quelle = Dynamics365BusinessCentral.ApiContentsWithOptions(null, null, null, null),
+				    LIVE = Quelle{[Name="LIVE"]}[Data],
+				    PLAY02 = LIVE{[Name="PLAY02"]}[Data],
+				    v2.0 = PLAY02{[Name="v2.0"]}[Data],
+				    itemLedgerEntries_table = v2.0{[Name="itemLedgerEntries",Signature="table"]}[Data]
+				in
+				    itemLedgerEntries_table
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

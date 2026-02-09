@@ -1,0 +1,472 @@
+table DIM_Datum
+	lineageTag: 75b7b133-1028-46bd-81f0-4b3d6bf4e570
+	dataCategory: Time
+
+	column Datum
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 5d33e96e-bb49-457d-a370-a3df06d7c261
+		summarizeBy: none
+		sourceColumn: Datum
+
+		annotation SummarizationSetBy = User
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Volle Datumsbezeichnung'
+		dataType: string
+		lineageTag: 71f24ec0-cd1c-4a8d-a15b-78df4698d405
+		summarizeBy: none
+		sourceColumn: Volle Datumsbezeichnung
+
+		annotation SummarizationSetBy = User
+
+	column 'Tag der Woche #'
+		dataType: int64
+		formatString: 0
+		lineageTag: cedf07af-8d0c-40f6-97ff-fd0931f5bf55
+		summarizeBy: none
+		sourceColumn: Tag der Woche #
+
+		annotation SummarizationSetBy = User
+
+	column 'Tag des Monats #'
+		dataType: int64
+		formatString: 0
+		lineageTag: ab110e54-b17c-4261-8765-2497d94e1968
+		summarizeBy: none
+		sourceColumn: Tag des Monats #
+
+		annotation SummarizationSetBy = User
+
+	column 'Tag des Jahres #'
+		dataType: int64
+		formatString: 0
+		lineageTag: c3c1af30-c5d5-4a0f-b2f0-567854281cf0
+		summarizeBy: none
+		sourceColumn: Tag des Jahres #
+
+		annotation SummarizationSetBy = User
+
+	column 'TagesKey #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 23538aa6-84b9-4e27-92b8-66d22fd2ee56
+		summarizeBy: none
+		sourceColumn: TagesKey #
+
+		annotation SummarizationSetBy = User
+
+	column 'Name des Tages (TTTT)'
+		dataType: string
+		lineageTag: 2f40bf4f-e73c-4cd7-9632-fe31a39d070b
+		summarizeBy: none
+		sourceColumn: Name des Tages (TTTT)
+
+		annotation SummarizationSetBy = User
+
+	column 'Name des Tages (TT)'
+		dataType: string
+		lineageTag: 610ce107-c220-4bc3-8c35-7394a504f0d1
+		summarizeBy: none
+		sourceColumn: Name des Tages (TT)
+
+		annotation SummarizationSetBy = User
+
+	column 'Name des Tages (T)'
+		dataType: string
+		lineageTag: 736466ec-743f-428d-a10e-84e67ad19989
+		summarizeBy: none
+		sourceColumn: Name des Tages (T)
+
+		annotation SummarizationSetBy = User
+
+	column Wochentags_Flag
+		dataType: string
+		lineageTag: e3f1d760-a748-4725-b685-bc1304fd042a
+		summarizeBy: none
+		sourceColumn: Wochentags_Flag
+
+		annotation SummarizationSetBy = User
+
+	column 'Woche #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3971365c-6b6e-42a7-b045-250f435710e1
+		summarizeBy: none
+		sourceColumn: Woche #
+
+		annotation SummarizationSetBy = User
+
+	column 'Woche Start'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 805877d7-293d-4afe-ad1a-de6e86a803fd
+		summarizeBy: none
+		sourceColumn: Woche Start
+
+		annotation SummarizationSetBy = User
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Woche Ende'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 06a79bf8-f04c-409b-a77c-2b15746ffe36
+		summarizeBy: none
+		sourceColumn: Woche Ende
+
+		annotation SummarizationSetBy = User
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'WochenKey #'
+		dataType: double
+		lineageTag: 154c56b9-3f95-4055-b918-86dfabfa571f
+		summarizeBy: none
+		sourceColumn: WochenKey #
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Woche Jahr'
+		dataType: string
+		lineageTag: e027526f-be8a-4ef5-b542-a65234cc7510
+		summarizeBy: none
+		sourceColumn: Woche Jahr
+
+		annotation SummarizationSetBy = User
+
+	column 'Jahr Woche'
+		dataType: string
+		lineageTag: ddd2a508-9507-46d9-bc3c-a32db25f4f26
+		summarizeBy: none
+		sourceColumn: Jahr Woche
+
+		annotation SummarizationSetBy = User
+
+	column 'IsoKW #'
+		dataType: int64
+		formatString: 0
+		lineageTag: e245fc7e-3b44-4a6c-a02c-981f35761a3a
+		summarizeBy: none
+		sourceColumn: IsoKW #
+
+		annotation SummarizationSetBy = User
+
+	column 'IsoJahr #'
+		dataType: int64
+		formatString: 0
+		lineageTag: deab930c-41a0-4731-9423-d8f7480be14a
+		summarizeBy: none
+		sourceColumn: IsoJahr #
+
+		annotation SummarizationSetBy = User
+
+	column 'IsoJahr IsoKW'
+		dataType: string
+		lineageTag: 776d27e8-f199-4abf-8682-0caf7627007a
+		summarizeBy: none
+		sourceColumn: IsoJahr IsoKW
+
+		annotation SummarizationSetBy = User
+
+	column 'IsoKW IsoJahr'
+		dataType: string
+		lineageTag: 62aab89a-dd26-42b2-9d56-ac04d74f009b
+		summarizeBy: none
+		sourceColumn: IsoKW IsoJahr
+
+		annotation SummarizationSetBy = User
+
+	column 'IsoKWKey #'
+		dataType: double
+		lineageTag: 84bb4a0b-a769-4a05-b43f-293f25339a3a
+		summarizeBy: none
+		sourceColumn: IsoKWKey #
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Monat #'
+		dataType: int64
+		formatString: 0
+		lineageTag: c9168367-2af4-428f-9922-2c28a5be42a9
+		summarizeBy: none
+		sourceColumn: Monat #
+
+		annotation SummarizationSetBy = User
+
+	column 'Monat (MMMM)'
+		dataType: string
+		lineageTag: ec441a74-7753-4928-9744-53f283768268
+		summarizeBy: none
+		sourceColumn: Monat (MMMM)
+
+		annotation SummarizationSetBy = User
+
+	column 'Monat (MMM)'
+		dataType: string
+		lineageTag: 5fc61f58-15c5-4941-bb28-7e3196aa3fe6
+		summarizeBy: none
+		sourceColumn: Monat (MMM)
+
+		annotation SummarizationSetBy = User
+
+	column 'Monat (M)'
+		dataType: string
+		lineageTag: 1699375b-1ec8-4af7-a218-00f2d51f32c6
+		summarizeBy: none
+		sourceColumn: Monat (M)
+
+		annotation SummarizationSetBy = User
+
+	column 'Monat (MMM) Jahr'
+		dataType: string
+		lineageTag: 6eabfa1e-26bb-4be8-be3a-b668da69b26a
+		summarizeBy: none
+		sourceColumn: Monat (MMM) Jahr
+		sortByColumn: YearMonthSort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = User
+
+	column 'Jahr Monat (MMM)'
+		dataType: string
+		lineageTag: ff821d36-c1bf-4471-9b62-a68993fe199c
+		summarizeBy: none
+		sourceColumn: Jahr Monat (MMM)
+
+		annotation SummarizationSetBy = User
+
+	column 'MonatKey #'
+		dataType: double
+		lineageTag: 8ebb2465-3ff9-4f2b-9736-9967be43113c
+		summarizeBy: none
+		sourceColumn: MonatKey #
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Monatsbeginn
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d5ac0baa-eaf2-4aad-a825-eec9945d741d
+		summarizeBy: none
+		sourceColumn: Monatsbeginn
+
+		annotation SummarizationSetBy = User
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Monatsende
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 44826098-2e94-4aa6-bf1b-b800e9518ec5
+		summarizeBy: none
+		sourceColumn: Monatsende
+
+		annotation SummarizationSetBy = User
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Quartal #'
+		dataType: int64
+		formatString: 0
+		lineageTag: ef45838c-889d-415d-ba22-08c8b24dcc6c
+		summarizeBy: none
+		sourceColumn: Quartal #
+
+		annotation SummarizationSetBy = User
+
+	column Quartal
+		dataType: string
+		lineageTag: ae9c5bcb-f026-4ae9-8273-933817bb7295
+		summarizeBy: none
+		sourceColumn: Quartal
+
+		annotation SummarizationSetBy = User
+
+	column 'Quartal Jahr'
+		dataType: string
+		lineageTag: 8fc0e96b-bb61-4c6e-9281-5e31ca4f2409
+		summarizeBy: none
+		sourceColumn: Quartal Jahr
+
+		annotation SummarizationSetBy = User
+
+	column 'Jahr Quartal'
+		dataType: string
+		lineageTag: 48c6bf21-08a8-4301-bb44-05dd401223b5
+		summarizeBy: none
+		sourceColumn: Jahr Quartal
+
+		annotation SummarizationSetBy = User
+
+	column 'QuartalKey #'
+		dataType: double
+		lineageTag: edeeb4e2-7344-4663-9198-6aa49d9f4e99
+		summarizeBy: none
+		sourceColumn: QuartalKey #
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Halbjahr #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 79388177-6dd5-46a9-aef2-fd12d7268afa
+		summarizeBy: none
+		sourceColumn: Halbjahr #
+
+		annotation SummarizationSetBy = User
+
+	column Halbjahr
+		dataType: string
+		lineageTag: 0c1ebe40-7908-4b6c-9ff8-331b1dbc01e4
+		summarizeBy: none
+		sourceColumn: Halbjahr
+
+		annotation SummarizationSetBy = User
+
+	column 'Halbjahr Jahr'
+		dataType: string
+		lineageTag: c3491707-8e8c-41aa-81a0-b18abd162c58
+		summarizeBy: none
+		sourceColumn: Halbjahr Jahr
+
+		annotation SummarizationSetBy = User
+
+	column 'Jahr Halbjahr'
+		dataType: string
+		lineageTag: 372f5034-550c-46a1-9e86-38710b82ecd0
+		summarizeBy: none
+		sourceColumn: Jahr Halbjahr
+
+		annotation SummarizationSetBy = User
+
+	column 'HalbjahrKey #'
+		dataType: double
+		lineageTag: 38ecc498-bd29-407a-971b-057fda20e60c
+		summarizeBy: none
+		sourceColumn: HalbjahrKey #
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Jahr #'
+		dataType: int64
+		formatString: 0
+		lineageTag: d20f8b30-5f86-4475-b450-f765f4f28689
+		summarizeBy: none
+		sourceColumn: Jahr #
+
+		annotation SummarizationSetBy = User
+
+	column 'JahrKey #'
+		dataType: int64
+		formatString: 0
+		lineageTag: fe59edfa-9b62-4671-ad21-9f77d9d3d8d2
+		summarizeBy: none
+		sourceColumn: JahrKey #
+
+		annotation SummarizationSetBy = User
+
+	column Schaltjahr
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7cc4f01d-998d-40b7-9b21-3e9b96c9dd58
+		summarizeBy: none
+		sourceColumn: Schaltjahr
+
+		annotation SummarizationSetBy = User
+
+	column 'Relativer Tag #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 02bbff2e-7180-4755-9407-8c6e1f111bc4
+		summarizeBy: none
+		sourceColumn: Relativer Tag #
+
+		annotation SummarizationSetBy = User
+
+	column 'Relative Woche #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 51f97513-76c6-4fd7-bd3e-8ccbf949ccc6
+		summarizeBy: none
+		sourceColumn: Relative Woche #
+
+		annotation SummarizationSetBy = User
+
+	column 'Relative IsoWoche #'
+		dataType: int64
+		formatString: 0
+		lineageTag: a275f41f-845a-452e-8d66-de0c0e1b3ac0
+		summarizeBy: none
+		sourceColumn: Relative IsoWoche #
+
+		annotation SummarizationSetBy = User
+
+	column 'Relativer Monat #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0220d579-feb3-475e-81fe-26483ae56b49
+		summarizeBy: none
+		sourceColumn: Relativer Monat #
+
+		annotation SummarizationSetBy = User
+
+	column 'Relatives Quartal #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 256e473d-00cf-4d97-b005-711475ffb2bd
+		summarizeBy: none
+		sourceColumn: Relatives Quartal #
+
+		annotation SummarizationSetBy = User
+
+	column 'Relatives Halbjahr #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 28f68255-4c28-49e3-b274-420ef8c87c15
+		summarizeBy: none
+		sourceColumn: Relatives Halbjahr #
+
+		annotation SummarizationSetBy = User
+
+	column 'Relatives Jahr #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 24979313-db03-4506-a04b-a6e1c01d1a62
+		summarizeBy: none
+		sourceColumn: Relatives Jahr #
+
+		annotation SummarizationSetBy = User
+
+	column YearMonthSort = YEAR(DIM_Datum[Datum])*100 + MONTH(DIM_Datum[Datum])
+		formatString: 0
+		lineageTag: 3a462ce3-d166-4fc0-a8f9-31d178128fe9
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_Datum = m
+		mode: import
+		source =
+				let
+				    Quelle = Abfrage1(2015, 20, "de-de", "Jan", "Mo")
+				in
+				    Quelle
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

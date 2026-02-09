@@ -1,0 +1,230 @@
+table 'Measure Tabelle'
+	lineageTag: 04d5535f-ac3d-43dd-b08d-3dd98549193e
+
+	measure 'Umsatz Invoices' = SUM(SalesInvoices[netAmount])
+		formatString: #,0.00\ "€";-#,0.00\ "€";#,0.00\ "€"
+		isHidden
+		displayFolder: Umsatz SalesInvoices
+		lineageTag: 19bd4c9d-b93b-47c0-998d-30227d88f972
+
+	measure 'Umsatz Invoice_copy' = [Umsatz Invoices]
+		formatString: #,0.00\ "€";-#,0.00\ "€";#,0.00\ "€"
+		isHidden
+		displayFolder: Umsatz SalesInvoices
+		lineageTag: c62a6015-65f1-4cec-a9c9-d173aba8d2ea
+
+	measure 'Umsatz Invoices VJ' = ```
+			CALCULATE( 
+			[Umsatz Invoices],
+			DATEADD(DIM_Datum[Datum], -1, YEAR)
+			)
+			```
+		formatString: #,0.00\ "€";-#,0.00\ "€";#,0.00\ "€"
+		isHidden
+		displayFolder: Umsatz SalesInvoices
+		lineageTag: 13e39bf3-461d-45f8-9218-102222f2e4f6
+
+	measure 'Δ Umsatz Invoices zum VJ' = [Umsatz Invoices] - [Umsatz Invoices VJ]
+		formatString: #,0.00\ "€";-#,0.00\ "€";#,0.00\ "€"
+		isHidden
+		displayFolder: Umsatz SalesInvoices
+		lineageTag: f5766b92-4793-451b-8c9b-113868de2d5b
+
+	measure 'Δ% Umsatz Invoices zum VJ' = DIVIDE([Δ Umsatz Invoices zum VJ], [Umsatz Invoices VJ])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		isHidden
+		displayFolder: Umsatz SalesInvoices
+		lineageTag: 50d62808-7ce8-434b-9819-8802af25e92b
+
+	measure 'Absatz Invoice' = ```
+			SUM(SalesInvoices[quantity]) 
+			```
+		formatString: #,0.00
+		isHidden
+		displayFolder: Absatz SalesInvoice
+		lineageTag: 4bb64903-fee7-47db-8cac-d362ae8e8aa6
+
+	measure 'Absatz Invoices_copy' = [Absatz Invoice]
+		formatString: #,0.00
+		isHidden
+		displayFolder: Absatz SalesInvoice
+		lineageTag: c9cc0afb-3ee6-4efa-b8ea-ff2c7219a126
+
+	measure 'Absatz Invoices VJ' =
+			CALCULATE(
+			    [Absatz Invoice],
+			    DATEADD(DIM_Datum[Datum], -1, YEAR)
+			)
+		formatString: #,0.00
+		isHidden
+		displayFolder: Absatz SalesInvoice
+		lineageTag: 9b63bef6-6a67-4093-9350-4d264d04b257
+
+	measure 'Δ Absatz Invoices zum VJ' = [Absatz Invoice] - [Absatz Invoices VJ]
+		formatString: #,0.00
+		isHidden
+		displayFolder: Absatz SalesInvoice
+		lineageTag: 40b2745c-8e9a-4fa2-b1b0-aff5364ab96e
+
+	measure 'Δ% Absatz Invoices zum VJ' = DIVIDE([Δ Absatz Invoices zum VJ], [Absatz Invoices VJ])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		isHidden
+		displayFolder: Absatz SalesInvoice
+		lineageTag: 07a71e13-9a26-47d9-a1bb-defd22f1595f
+
+	measure 'Δ% Umsatz Invoices zum VJ_copy' = [Δ% Umsatz Invoices zum VJ]
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		isHidden
+		displayFolder: Umsatz SalesInvoices
+		lineageTag: 71dc0ba9-db73-48f4-8cb1-bd5a99e6aaa8
+
+	measure 'Δ Umsatz Invoices zum VJ_copy' = [Δ Umsatz Invoices zum VJ]
+		formatString: #,0.00\ "€";-#,0.00\ "€";#,0.00\ "€"
+		isHidden
+		displayFolder: Umsatz SalesInvoices
+		lineageTag: 72c55e8f-1156-46b3-8406-c2cd15d34ef3
+
+	measure 'Δ Absatz Invoices zum VJ_copy' = [Δ Absatz Invoices zum VJ]
+		formatString: #,0.00
+		isHidden
+		displayFolder: Absatz SalesInvoice
+		lineageTag: e82a2d49-d8fc-4ffb-bae1-b7bdb7f66847
+
+	measure 'Offener Auftragsbetrag' =
+			
+			VAR AnteilFakturiert = DIVIDE(SUM(FCT_SalesLineOrders[qtyInvoicedBase]), SUM(FCT_SalesLineOrders[quantityBase]),1)
+			RETURN
+			SUMX(FCT_SalesLineOrders, FCT_SalesLineOrders[amount] -  (AnteilFakturiert * FCT_SalesLineOrders[amount]))
+		formatString: #,0
+		displayFolder: Offener Auftragsbetrag
+		lineageTag: 9dd30fa5-1930-4cc2-88a4-c749c8dd4cec
+
+	measure 'Offener Auftragsbetrag VJ' =
+			
+			CALCULATE(
+			    [Offener Auftragsbetrag],
+			    DATEADD(DIM_Datum[Datum],-1,YEAR)
+			)
+		formatString: #,0
+		displayFolder: Offener Auftragsbetrag
+		lineageTag: bfbb4286-732b-4227-884e-2c18ebb5559a
+
+	measure 'Δ Offener Auftragsbetrag VJ' =
+			
+			[Offener Auftragsbetrag] - [Offener Auftragsbetrag VJ]
+		formatString: #,0
+		displayFolder: Offener Auftragsbetrag
+		lineageTag: 05e44ee2-a5ea-498b-b081-29bfc9ab0a0a
+
+	measure 'Δ% Offener Auftragsbetrag VJ' =
+			
+			DIVIDE([Δ Offener Auftragsbetrag VJ],[Offener Auftragsbetrag VJ])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Offener Auftragsbetrag
+		lineageTag: 1f1336f2-b142-40da-a928-62824f2c2ec4
+
+	measure 'Δ Offener Auftragsbetrag VJ_copy' =
+			
+			[Δ Offener Auftragsbetrag VJ]
+		formatString: #,0
+		displayFolder: Offener Auftragsbetrag
+		lineageTag: 9ac582f0-44d0-424a-8d45-4ac16865eeb3
+
+	measure 'Δ% Absatz Invoices zum VJ_copy' = DIVIDE([Δ Absatz Invoices zum VJ], [Absatz Invoices VJ])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		isHidden
+		displayFolder: Absatz SalesInvoice
+		lineageTag: 91cf709e-a302-4c3a-9628-38e130492938
+
+	measure Umsatz =
+			
+			SUM(FCT_ValueEntriesSales[salesAmountActual])
+		formatString: #,0
+		displayFolder: Umsatz ValueEntriesSales
+		lineageTag: c079924b-4633-4775-b460-9af7b6c58632
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Umsatz VJ' = ```
+			
+			CALCULATE( 
+			[Umsatz],
+			DATEADD(DIM_Datum[Datum], -1, YEAR)
+			) 
+			```
+		displayFolder: Umsatz ValueEntriesSales
+		lineageTag: 69ed4bfa-731e-40fe-a92a-d92a8e395ba6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Δ Umsatz zum VJ' = [Umsatz] - [Umsatz VJ]
+		displayFolder: Umsatz ValueEntriesSales
+		lineageTag: 40cb011b-5855-4059-b464-49041af7b441
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Δ% Umsatz zum VJ' = DIVIDE([Δ Umsatz zum VJ], [Umsatz VJ])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Umsatz ValueEntriesSales
+		lineageTag: 6b263b51-9d6c-4020-b1cd-3040196f7ba1
+
+	measure 'Offene Auftragsmenge' =
+			
+			SUMX(FCT_SalesLineOrders, (FCT_SalesLineOrders[quantityBase]-FCT_SalesLineOrders[qtyInvoicedBase]))
+		displayFolder: Offener Auftragsbetrag
+		lineageTag: d6f2be3e-e66a-45e8-9fb2-0eabad33c5ca
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Absatz =
+			
+			ABS(SUM(FCT_ValueEntriesSales[itemLedgerEntryQuantity]))
+		displayFolder: Absatz ValueEntriesSales
+		lineageTag: 48c7937a-e687-41d9-a142-5dbfef503e03
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Absatz VJ' =
+			
+			CALCULATE(
+			    [Absatz],
+			    DATEADD(DIM_Datum[Datum],-1,YEAR)
+			)
+		displayFolder: Absatz ValueEntriesSales
+		lineageTag: c3b48a2c-dff2-4905-87fa-e078a7126d39
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Δ Absatz VJ' =
+			
+			[Absatz] - [Absatz VJ]
+		displayFolder: Absatz ValueEntriesSales
+		lineageTag: d386900e-ea0c-436e-bf83-6bc5fbfa6ee9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Δ% Absatz VJ' =
+			
+			DIVIDE([Δ Absatz VJ], [Absatz VJ])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		displayFolder: Absatz ValueEntriesSales
+		lineageTag: df42a785-2044-4e7a-b6ba-0d370161d901
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: ca2b69f0-9e37-42bc-8b31-f4168d504694
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Measure Tabelle' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = eb1a63d55630491ebab5efd2d3e72773
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

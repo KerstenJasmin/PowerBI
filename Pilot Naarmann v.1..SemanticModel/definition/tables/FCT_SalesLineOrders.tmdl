@@ -1,0 +1,540 @@
+/// Bereits auf Belegart Auftrag vorgefilterte SalesLines
+/// - no entspricht no aus DIM_items
+/// - Enthält keine Verantwortlichkeiten (Salesperson)
+table FCT_SalesLineOrders
+	lineageTag: ca003cb6-3d9e-4656-b738-d16af97c6f10
+
+	column documentType
+		dataType: string
+		lineageTag: 59864551-fc4a-4e69-9fcd-98c7fa9dd693
+		summarizeBy: none
+		sourceColumn: documentType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column documentNo
+		dataType: string
+		lineageTag: 20d4c83a-6061-40a5-bd4e-3169fc353ed4
+		summarizeBy: none
+		sourceColumn: documentNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column lineNo
+		dataType: int64
+		formatString: 0
+		lineageTag: 2176cbf5-d9d7-458f-8968-708e66065ed8
+		summarizeBy: none
+		sourceColumn: lineNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column sellToCustomerNo
+		dataType: string
+		lineageTag: 3c46c006-1d79-4b75-951b-c903de508d3c
+		summarizeBy: none
+		sourceColumn: sellToCustomerNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column type
+		dataType: string
+		lineageTag: 605cbeb0-bd26-4139-bb03-4e5291cec183
+		summarizeBy: none
+		sourceColumn: type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column no
+		dataType: string
+		lineageTag: 9dd40216-30cf-4623-9059-e2564281e6d6
+		summarizeBy: none
+		sourceColumn: no
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column locationCode
+		dataType: string
+		lineageTag: aedf6d64-036c-4104-8653-40c59f49d3f0
+		summarizeBy: none
+		sourceColumn: locationCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column description
+		dataType: string
+		lineageTag: 7caee3a1-1710-4184-8472-9d89e718c779
+		summarizeBy: none
+		sourceColumn: description
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column lineDiscountAmount
+		dataType: double
+		lineageTag: b400db80-fa3a-4079-842a-cd4486189807
+		summarizeBy: none
+		sourceColumn: lineDiscountAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column amount
+		dataType: double
+		lineageTag: 724574a9-d66e-41e0-b09d-f27c6075a409
+		summarizeBy: none
+		sourceColumn: amount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column outstandingAmount
+		dataType: double
+		lineageTag: 81e117b7-546a-4935-b1e1-d1d0b3f1f59a
+		summarizeBy: none
+		sourceColumn: outstandingAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column genBusPostingGroup
+		dataType: string
+		lineageTag: 39fb01b7-7c5f-419f-a736-5d2b15129e85
+		summarizeBy: none
+		sourceColumn: genBusPostingGroup
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column genProdPostingGroup
+		dataType: string
+		lineageTag: be33cbe2-7ef3-4ee0-9b5f-6d7eabd7e3c1
+		summarizeBy: none
+		sourceColumn: genProdPostingGroup
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column blanketOrderNo
+		dataType: string
+		lineageTag: 44b214ff-238a-415b-bb7c-3403c973dc72
+		summarizeBy: none
+		sourceColumn: blanketOrderNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column blanketOrderLineNo
+		dataType: double
+		formatString: 0
+		lineageTag: 57a1540a-c6ab-40df-90c0-b1e44dc7ffaa
+		summarizeBy: none
+		sourceColumn: blanketOrderLineNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column dimensionSetId
+		dataType: double
+		formatString: 0
+		lineageTag: 7df658e1-8332-4a7c-8a11-4ff9198fc626
+		summarizeBy: none
+		sourceColumn: dimensionSetId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column quantityBase
+		dataType: double
+		lineageTag: 075d8715-b68f-4c88-9d85-6939f91e0ca4
+		summarizeBy: none
+		sourceColumn: quantityBase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column outstandingQtyBase
+		dataType: double
+		lineageTag: 2f5bae58-cf06-4a3b-91e4-e048a2096a85
+		summarizeBy: none
+		sourceColumn: outstandingQtyBase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column qtyShippedNotInvdBase
+		dataType: double
+		lineageTag: 4bd4dc6c-ca8e-4eee-a425-86d2472008ad
+		summarizeBy: none
+		sourceColumn: qtyShippedNotInvdBase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column qtyShippedBase
+		dataType: double
+		lineageTag: 435cd399-8777-4b64-9417-4d4a39507b64
+		summarizeBy: none
+		sourceColumn: qtyShippedBase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column qtyInvoicedBase
+		dataType: double
+		lineageTag: f7cc45f3-1c0d-4ba4-8333-374c534243b1
+		summarizeBy: none
+		sourceColumn: qtyInvoicedBase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column itemCategoryCode
+		dataType: string
+		lineageTag: f0e2d66a-169b-4b02-92d8-cf23a4a893b7
+		summarizeBy: none
+		sourceColumn: itemCategoryCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column plannedShipmentDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fa40b2c8-4f81-4211-b71b-bb7dda52b429
+		summarizeBy: none
+		sourceColumn: plannedShipmentDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column retQtyRcdNotInvdBase
+		dataType: double
+		lineageTag: 3125c94e-fb3c-4f47-bd34-2db2b3ba1a4a
+		summarizeBy: none
+		sourceColumn: retQtyRcdNotInvdBase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column returnQtyReceivedBase
+		dataType: double
+		lineageTag: dfa8683c-623d-4c4a-bc76-257e11663e86
+		summarizeBy: none
+		sourceColumn: returnQtyReceivedBase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column returnReceiptNo
+		dataType: string
+		lineageTag: 4ff1c8f6-492c-412f-8593-a86e0631537c
+		summarizeBy: none
+		sourceColumn: returnReceiptNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column returnReceiptLineNo
+		dataType: double
+		formatString: 0
+		lineageTag: 7d1ffc10-be04-439b-81ed-6f97922b41fc
+		summarizeBy: none
+		sourceColumn: returnReceiptLineNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column returnReasonCode
+		dataType: string
+		lineageTag: 8f36329b-a5cb-4c7f-b46c-7ea72cd5bb63
+		summarizeBy: none
+		sourceColumn: returnReasonCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column shipmentDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b39dbea0-376e-47d5-be90-a225bc49bffc
+		summarizeBy: none
+		sourceColumn: shipmentDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column outstandingQuantity
+		dataType: double
+		lineageTag: b6255b93-e0bb-4000-aad9-1c36ec4d1069
+		summarizeBy: none
+		sourceColumn: outstandingQuantity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column qtyShippedNotInvoiced
+		dataType: double
+		lineageTag: cadaf806-eab8-42bf-acdf-7428c46639d2
+		summarizeBy: none
+		sourceColumn: qtyShippedNotInvoiced
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column shippedNotInvoiced
+		dataType: double
+		lineageTag: 3bb0905f-8f1b-42f3-b0dc-eb7a38a3de72
+		summarizeBy: none
+		sourceColumn: shippedNotInvoiced
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column postingDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e77b6912-0134-43c4-a0e9-8007fe3aa2c1
+		summarizeBy: none
+		sourceColumn: postingDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column plannedDeliveryDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4869c143-548a-44fb-82f9-7b7c7517eaee
+		summarizeBy: none
+		sourceColumn: plannedDeliveryDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column returnRcdNotInvdLcy
+		dataType: double
+		lineageTag: 94d0dbb5-f085-4079-9259-87f12c89cd79
+		summarizeBy: none
+		sourceColumn: returnRcdNotInvdLcy
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ETag
+		dataType: string
+		lineageTag: d1fb2223-1c52-4d3b-a083-03d8b4c99fb5
+		summarizeBy: none
+		sourceColumn: ETag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column salespersonCode
+		dataType: string
+		lineageTag: 95846c6b-73ce-4adc-bc99-b8e1b08a9914
+		summarizeBy: none
+		sourceColumn: salespersonCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Key Customer-Date'
+		dataType: string
+		lineageTag: fe0f5221-0705-4663-a734-26f28c118502
+		summarizeBy: none
+		sourceColumn: Key Customer-Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quelle
+		dataType: string
+		lineageTag: f2183a22-2111-4c07-807c-34c0fadecab1
+		summarizeBy: none
+		sourceColumn: Quelle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FCT_SalesLineOrders = m
+		mode: import
+		queryGroup: 'BC Tabellen / Finale Tabellen'
+		source =
+				let
+				    // Zugriff auf die Business Central API
+				    Quelle =
+				        Dynamics365BusinessCentral.ApiContentsWithOptions(
+				            null,
+				            null,
+				            null,
+				            null
+				        ),
+				
+				    // Auswahl der Umgebung "LIVE"
+				    LIVE =
+				        Quelle{[Name = "LIVE"]}[Data],
+				
+				    // Auswahl der Mandanteninstanz "PLAY02"
+				    PLAY02 =
+				        LIVE{[Name = "PLAY02"]}[Data],
+				
+				    // Auswahl des API-Bereichs "Advanced"
+				    Advanced =
+				        PLAY02{[Name = "Advanced"]}[Data],
+				
+				    // Zugriff auf die Custom-API "naarmann/powerbi/v1.0"
+				    API_v1 =
+				        Advanced{[Name = "naarmann/powerbi/v1.0"]}[Data],
+				
+				    // Zugriff auf die Tabelle "salesLineOrders"
+				    SalesLineOrders =
+				        API_v1{[
+				            Name = "salesLineOrders",
+				            Signature = "table"
+				        ]}[Data],
+				
+				    // Temporäre Umwandlung des Buchungsdatums in Text (für Key-Erstellung)
+				    PostingDate_AlsText =
+				        Table.TransformColumnTypes(
+				            SalesLineOrders,
+				            {{"postingDate", type text}}
+				        ),
+				
+				    // Erzeugung eines zusammengesetzten Schlüssels: Kunde + Buchungsdatum
+				    Key_Customer_Date =
+				        Table.AddColumn(
+				            PostingDate_AlsText,
+				            "Key Customer-Date",
+				            each [sellToCustomerNo] & "-" & [postingDate],
+				            type text
+				        ),
+				
+				    // Rückkonvertierung der Datentypen in fachlich korrekte Typen
+				    TypenKorrigiert =
+				        Table.TransformColumnTypes(
+				            Key_Customer_Date,
+				            {
+				                {"postingDate", type date},
+				                {"Key Customer-Date", type text},
+				                {"documentType", type text}
+				            }
+				        ),
+				
+				    // Hinzufügen einer konstanten Spalte zur Kennzeichnung der Datenquelle
+				    Quelle_BC =
+				        Table.AddColumn(
+				            TypenKorrigiert,
+				            "Quelle",
+				            each "BC",
+				            type text
+				        ),
+				
+				    // Zusammenführen mit der NAV-Fact-Tabelle
+				    KombinierteDaten =
+				        Table.Combine(
+				            {
+				                Quelle_BC,
+				                FCT_SalesLineOrders_NAV
+				            }
+				        ),
+				
+				    // Sicherstellung konsistenter Datentypen nach dem Combine
+				    FinaleTypen =
+				        Table.TransformColumnTypes(
+				            KombinierteDaten,
+				            {
+				                {"documentType", type text},
+				                {"type", type text},
+				                {"plannedShipmentDate", type date},
+				                {"shipmentDate", type date},
+				                {"postingDate", type date},
+				                {"plannedDeliveryDate", type date}
+				            }
+				        )
+				
+				in
+				    // Rückgabe der finalen Faktentabelle
+				    FinaleTypen
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
