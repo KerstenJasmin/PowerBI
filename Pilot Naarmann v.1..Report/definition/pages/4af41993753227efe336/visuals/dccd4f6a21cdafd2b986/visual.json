@@ -43,7 +43,7 @@
               },
               "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 2 (Produktart)",
               "nativeQueryRef": "Ebene 2 (Produktart)",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -58,7 +58,7 @@
               },
               "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 3 (Fettgehalt)",
               "nativeQueryRef": "Ebene 3 (Fettgehalt)",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -68,12 +68,12 @@
                       "Entity": "DIM_Items"
                     }
                   },
-                  "Property": "description"
+                  "Property": "ArtikelNr - ArtikelName"
                 }
               },
-              "queryRef": "DIM_Items.description",
-              "nativeQueryRef": "description",
-              "active": false
+              "queryRef": "DIM_Items.ArtikelNr - ArtikelName",
+              "nativeQueryRef": "ArtikelNr - ArtikelName",
+              "active": true
             }
           ]
         },
@@ -192,13 +192,50 @@
           },
           {
             "queryRefs": [
-              "DIM_Items.description"
+              "DIM_Items.ArtikelNr - ArtikelName"
             ],
             "isCollapsed": true,
             "isPinned": true
           }
         ],
-        "root": {}
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'Eismix'"
+                  }
+                }
+              ],
+              "isToggled": true,
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'Softeismix'"
+                      }
+                    }
+                  ],
+                  "isToggled": true,
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'alle'"
+                          }
+                        }
+                      ],
+                      "isToggled": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "objects": {
@@ -428,5 +465,107 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "44a5da639055ce276d3b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 1 (Hauptgruppe)"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5ded930f025320bd3d17",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 2 (Produktart)"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "de0990ff892438c8fda1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 3 (Fettgehalt)"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a795239782511b613006",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Absatz"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5ee69307c4bda58f7141",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Δ Absatz VJ"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cbcf2f8fd2ac9085c72f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Δ% Absatz VJ"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "55e14d3f7324f902e38e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_Items"
+              }
+            },
+            "Property": "ArtikelNr - ArtikelName"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
