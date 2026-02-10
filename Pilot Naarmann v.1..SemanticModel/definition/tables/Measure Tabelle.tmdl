@@ -210,6 +210,10 @@ table 'Measure Tabelle'
 		displayFolder: Absatz ValueEntriesSales
 		lineageTag: df42a785-2044-4e7a-b6ba-0d370161d901
 
+	measure 'neues test measure git' = 5
+		formatString: 0
+		displayFolder: Absatz ValueEntriesSales
+		lineageTag: 9857cbb5-ad6f-4b12-8ab9-430ad41f7b32
 	measure 'test measure' = 3
 		formatString: 0
 		displayFolder: Absatz ValueEntriesSales

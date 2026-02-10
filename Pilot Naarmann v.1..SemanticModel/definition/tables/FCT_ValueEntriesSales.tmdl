@@ -270,14 +270,6 @@ table FCT_ValueEntriesSales
 
 		annotation SummarizationSetBy = Automatic
 
-	column itemChargeNo
-		dataType: string
-		lineageTag: da9ffa3a-7d39-4a32-b46e-b52153113337
-		summarizeBy: none
-		sourceColumn: itemChargeNo
-
-		annotation SummarizationSetBy = Automatic
-
 	partition FCT_ValueEntriesSales = m
 		mode: import
 		queryGroup: 'BC Tabellen / Finale Tabellen'
