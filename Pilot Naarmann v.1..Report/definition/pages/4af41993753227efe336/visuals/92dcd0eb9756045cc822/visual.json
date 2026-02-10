@@ -144,8 +144,7 @@
             "queryRefs": [
               "DIM_CustomerHierarchyAssignments.CustomerName"
             ],
-            "isCollapsed": true,
-            "isPinned": true
+            "isCollapsed": true
           }
         ],
         "root": {}
