@@ -214,6 +214,10 @@ table 'Measure Tabelle'
 		formatString: 0
 		displayFolder: Absatz ValueEntriesSales
 		lineageTag: 9857cbb5-ad6f-4b12-8ab9-430ad41f7b32
+	measure 'test measure' = 3
+		formatString: 0
+		displayFolder: Absatz ValueEntriesSales
+		lineageTag: e98462f4-f94f-4733-9e84-544c49da4893
 
 	column Column
 		isHidden
