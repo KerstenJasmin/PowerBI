@@ -210,6 +210,11 @@ table 'Measure Tabelle'
 		displayFolder: Absatz ValueEntriesSales
 		lineageTag: df42a785-2044-4e7a-b6ba-0d370161d901
 
+	measure 'test measure' = 3
+		formatString: 0
+		displayFolder: Absatz ValueEntriesSales
+		lineageTag: e98462f4-f94f-4733-9e84-544c49da4893
+
 	column Column
 		isHidden
 		formatString: 0
