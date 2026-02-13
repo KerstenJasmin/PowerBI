@@ -58,7 +58,7 @@
               },
               "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 3 (Produktart)",
               "nativeQueryRef": "Ebene 3 (Fettgehalt)",
-              "active": false
+              "active": true
             }
           ]
         },
@@ -232,7 +232,31 @@
                   }
                 }
               ],
-              "isToggled": true
+              "isToggled": true,
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'Milchschaum'"
+                      }
+                    }
+                  ],
+                  "isToggled": true,
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'Milchschaum 1,8%'"
+                          }
+                        }
+                      ],
+                      "isToggled": true
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

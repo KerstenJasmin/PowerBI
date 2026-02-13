@@ -49,14 +49,6 @@ table DIM_CustomerHierarchyAssignments
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column ETag
-		dataType: string
-		lineageTag: 7121a482-251c-4c16-8a17-30d8df7695ab
-		summarizeBy: none
-		sourceColumn: ETag
-
-		annotation SummarizationSetBy = Automatic
-
 	column 'Aktiv ja/nein'
 		dataType: string
 		lineageTag: 77854d26-34d0-43f2-af95-777dc87e644c
@@ -116,45 +108,14 @@ table DIM_CustomerHierarchyAssignments
 
 		annotation SummarizationSetBy = Automatic
 
-	column Quelle
-		dataType: string
-		lineageTag: 7728ad36-e8b0-460f-8c6c-c88564798b52
-		summarizeBy: none
-		sourceColumn: Quelle
-
-		annotation SummarizationSetBy = Automatic
-
 	partition DIM_CustomerHierarchyAssignments = m
 		mode: import
 		queryGroup: 'BC Tabellen / Finale Tabellen'
 		source =
 				let
-				    // ------------------------------------------------------------
-				    // 1. Verbindung zu Dynamics 365 Business Central
-				    // ------------------------------------------------------------
-				    Source = Dynamics365BusinessCentral.ApiContentsWithOptions(
-				        null, null, null, null
-				    ),
-				
-				    // Auswahl der Umgebung "LIVE"
-				    LIVE = Source{[Name = "LIVE"]}[Data],
-				
-				    // Auswahl der Company "PLAY02"
-				    PLAY02 = LIVE{[Name = "PLAY02"]}[Data],
-				
-				    // Zugriff auf den Bereich "Advanced"
-				    Advanced = PLAY02{[Name = "Advanced"]}[Data],
-				
-				    // Zugriff auf die API-Version
-				    #"naarmann/powerbi/v1.0" =
-				        Advanced{[Name = "naarmann/powerbi/v1.0"]}[Data],
-				
-				    // Laden der Tabelle customerHierarchyAssignments
-				    customerHierarchyAssignments_table =
-				        #"naarmann/powerbi/v1.0"{
-				            [Name = "customerHierarchyAssignments", Signature = "table"]
-				        }[Data],
-				
+				    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
+				    dbo_customerHierarchyAssignments = Quelle{[Schema="dbo",Item="customerHierarchyAssignments"]}[Data],
+				    #"Geänderter Typ5" = Table.TransformColumnTypes(dbo_customerHierarchyAssignments,{{"startingDate", type date}, {"endingDate", type date}}),
 				
 				    // ------------------------------------------------------------
 				    // 2. Logik zur Gültigkeit der Hierarchie-Zuordnung
@@ -163,7 +124,7 @@ table DIM_CustomerHierarchyAssignments
 				    // Kennzeichen, ob die Zuordnung aktuell gültig ist
 				    #"Added Custom" =
 				        Table.AddColumn(
-				            customerHierarchyAssignments_table,
+				            #"Geänderter Typ5",
 				            "Aktiv ja/nein",
 				            each
 				                [startingDate] <= Date.From(DateTime.LocalNow())
@@ -316,11 +277,9 @@ table DIM_CustomerHierarchyAssignments
 				                {"Key Customer - Date", type text},
 				                {"Datum", type date}
 				            }
-				        ),
-				    #"Hinzugefügte benutzerdefinierte Spalte3" = Table.AddColumn(#"Geänderter Typ3", "Quelle", each "BC"),
-				    #"Geänderter Typ4" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte3",{{"Quelle", type text}})
+				        )
 				in
-				    #"Geänderter Typ4"
+				    #"Geänderter Typ3"
 
 	annotation PBI_NavigationStepName = Navigation
 

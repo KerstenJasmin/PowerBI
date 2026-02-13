@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "010875981cf37ad6daba",
+  "name": "472e6e9df49a952ae887",
   "position": {
-    "x": 0,
-    "y": 123.52614578023635,
-    "z": 1500,
-    "height": 186.0347551342812,
-    "width": 614.72353870458142,
-    "tabOrder": 0
+    "x": 37.049866831940236,
+    "y": 292.28228278530628,
+    "z": 2000,
+    "height": 178.38824770934187,
+    "width": 614.75334595219351,
+    "tabOrder": 2000
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
         "Category": {
@@ -43,11 +43,11 @@
                       "Entity": "Measure Tabelle"
                     }
                   },
-                  "Property": "Umsatz"
+                  "Property": "Absatz"
                 }
               },
-              "queryRef": "Measure Tabelle.Umsatz",
-              "nativeQueryRef": "Umsatz"
+              "queryRef": "Measure Tabelle.Absatz",
+              "nativeQueryRef": "Absatz"
             }
           ]
         }
@@ -84,39 +84,7 @@
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1000000D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "titleColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "concatenateLabels": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "0D"
                 }
               }
             }
@@ -144,6 +112,40 @@
                   }
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
             }
           }
         }
@@ -156,7 +158,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Absatz Entwicklung'"
                 }
               }
             }
@@ -165,6 +174,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "parentGroupName": "d9f4d39d0a5a5b05836c"
+  }
 }

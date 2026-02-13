@@ -50,6 +50,7 @@ ref table DIM_CustomerHierarchies
 ref table DIM_CustomerHierarchyAssignments
 ref table externalbusinesseventdefinitions
 ref table DIM_ItemGroupHierarchyValues
+ref table FehlendeItemsWerte
 
 ref cultureInfo de-DE
 

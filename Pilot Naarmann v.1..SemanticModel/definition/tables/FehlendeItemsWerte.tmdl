@@ -1,0 +1,19 @@
+table FehlendeItemsWerte
+	lineageTag: 8214e964-34a2-44b1-815d-78c086049ede
+
+	column 'ValueEntriesSales.Items'
+		lineageTag: 0883c91c-d3db-4ea8-8e76-27ea0c52796a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [ValueEntriesSales.Items]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FehlendeItemsWerte = calculated
+		mode: import
+		source =
+				DISTINCT(EXCEPT(
+				SELECTCOLUMNS(FCT_ValueEntriesSales, "ValueEntriesSales.Items", FCT_ValueEntriesSales[itemNo]),SELECTCOLUMNS(DIM_Items, "Item.ItemNo", DIM_Items[no])))
+
+	annotation PBI_Id = 8267c047384946c1880b257d06511d55
+

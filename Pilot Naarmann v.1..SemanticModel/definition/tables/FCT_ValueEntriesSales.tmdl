@@ -270,6 +270,24 @@ table FCT_ValueEntriesSales
 
 		annotation SummarizationSetBy = Automatic
 
+	column itemChargeNo
+		dataType: string
+		lineageTag: 52d1333d-f0d5-48ba-8e91-a685abd82152
+		summarizeBy: none
+		sourceColumn: itemChargeNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column invoicedQuantity
+		dataType: double
+		lineageTag: 62a93c58-bf70-4f2d-87ea-9498e629b4dd
+		summarizeBy: sum
+		sourceColumn: invoicedQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition FCT_ValueEntriesSales = m
 		mode: import
 		queryGroup: 'BC Tabellen / Finale Tabellen'
@@ -363,11 +381,12 @@ table FCT_ValueEntriesSales
 				                {"sourceType", type text},
 				                {"valuationDate", type date}
 				            }
-				        )
+				        ),
+				    #"Gefilterte Zeilen" = Table.SelectRows(FinaleTypen, each true)
 				
 				in
 				    // Rückgabe der finalen Faktentabelle
-				    FinaleTypen
+				    #"Gefilterte Zeilen"
 
 	annotation PBI_ResultType = Table
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
-  "name": "2b0016ca45de4a9e6216",
-  "displayName": "Detailtabelle Auftragsbestand - Artikel",
+  "name": "bb832311ecf92a87c794",
+  "displayName": "Detailtabelle Auftragsbestand - Kunde",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
@@ -186,7 +186,7 @@
     ]
   },
   "pageBinding": {
-    "name": "7966d6ec372e264aa6d0",
+    "name": "780f5cefc7b38c09e0ca",
     "type": "Drillthrough",
     "parameters": [
       {

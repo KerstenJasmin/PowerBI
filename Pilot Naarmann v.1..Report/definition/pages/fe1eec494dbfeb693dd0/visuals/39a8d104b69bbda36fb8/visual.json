@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "010875981cf37ad6daba",
+  "name": "39a8d104b69bbda36fb8",
   "position": {
-    "x": 0,
-    "y": 123.52614578023635,
-    "z": 1500,
-    "height": 186.0347551342812,
-    "width": 614.72353870458142,
-    "tabOrder": 0
+    "x": 37.049866831940236,
+    "y": 93.310775724886525,
+    "z": 1000,
+    "height": 186.62155144977305,
+    "width": 614.75334595219351,
+    "tabOrder": 1000
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
         "Category": {
@@ -113,10 +113,10 @@
                 }
               }
             },
-            "concatenateLabels": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -144,6 +144,13 @@
                   }
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -156,7 +163,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Umsatz Entwicklung'"
                 }
               }
             }
@@ -165,6 +179,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "parentGroupName": "d9f4d39d0a5a5b05836c"
+  }
 }

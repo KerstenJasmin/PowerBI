@@ -134,6 +134,18 @@
               "DIM_CustomerHierarchyAssignments.CustomerNo-CustmomerName"
             ],
             "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_CustomerHierarchyAssignments"
+                    }
+                  },
+                  "Property": "CustomerNo-CustmomerName"
+                }
+              }
+            ],
             "isPinned": true
           },
           {

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "996326eee276a7148412",
+  "position": {
+    "x": 19.45288753799392,
+    "y": 9.72644376899696,
+    "z": 0,
+    "height": 40.851063829787236,
+    "width": 890.94224924012167,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Kundenentwicklung | Basiseinheit, Kunde, Zeit | VJM | Rollierend letzte 12 Monate",
+                    "textStyle": {
+                      "fontFamily": "Arial",
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

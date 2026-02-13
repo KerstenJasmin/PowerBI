@@ -458,6 +458,17 @@ table DIM_Datum
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Flag YTD' =
+			
+			IF(dim_Datum[Relatives Jahr #] = 0 && dim_Datum[Datum] <= TODAY(),
+			    TRUE(), FALSE()
+			)
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c9fe0736-8ae4-4d33-8544-aae306d8ab1b
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition DIM_Datum = m
 		mode: import
 		source =

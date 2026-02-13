@@ -4225,16 +4225,6 @@ cultureInfo de-DE
 			          }
 			        },
 			        {
-			          "item group": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
 			          "item type": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4292,6 +4282,16 @@ cultureInfo de-DE
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "product category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
 			          }
 			        }
 			      ]
@@ -10294,6 +10294,16 @@ cultureInfo de-DE
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "phone no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -18240,6 +18250,16 @@ cultureInfo de-DE
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "phone no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
 			        }
 			      ]
 			    },
@@ -18609,8 +18629,7 @@ cultureInfo de-DE
 			            "Weight": 0.714
 			          }
 			        }
-			      ],
-			      "NameType": "Identifier"
+			      ]
 			    },
 			    "DIM_sales_people_purchaser.code": {
 			      "Definition": {
@@ -23091,6 +23110,16 @@ cultureInfo de-DE
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "phone no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -39981,6 +40010,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "na fat content": {
@@ -40429,9 +40461,6 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "sell to customer no": {
@@ -43025,6 +43054,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "item group hierarchy values alt": {
@@ -43200,6 +43232,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "main group": {
@@ -43283,6 +43318,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "level": {
@@ -43339,6 +43377,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "subgroup code": {
@@ -43382,6 +43423,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "from value": {
@@ -43494,11 +43538,6 @@ cultureInfo de-DE
 			            },
 			            "Weight": 0.475
 			          }
-			        },
-			        {
-			          "value": {
-			            "State": "Generated"
-			          }
 			        }
 			      ]
 			    },
@@ -43510,6 +43549,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "value": {
@@ -43626,6 +43668,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "description": {
@@ -43702,6 +43747,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "E tag": {
@@ -43831,6 +43879,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "pfad": {
@@ -43847,6 +43898,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "ebene 1": {
@@ -43863,6 +43917,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "ebene 2": {
@@ -43879,6 +43936,9 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "ebene 3": {
@@ -44194,9 +44254,6 @@ cultureInfo de-DE
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "source no": {
@@ -50170,135 +50227,6 @@ cultureInfo de-DE
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "DIM_customer_hierarchy_assignment.E_tag": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DIM_CustomerHierarchyAssignments",
-			          "ConceptualProperty": "ETag"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "E tag": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "ETag": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "tag": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "e identifier": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "e device": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "device": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "e label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e ticket": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e tab": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e docket": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e code": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e chip": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e mark": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        }
-			      ]
-			    },
 			    "DIM_customer_hierarchy_assignment.aktiv_ja_nein": {
 			      "Definition": {
 			        "Binding": {
@@ -50438,6 +50366,16 @@ cultureInfo de-DE
 			        {
 			          "name": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
 			          }
 			        },
 			        {
@@ -52277,135 +52215,6 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
-			    "DIM_item_group_hierarchy_value.E_tag": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DIM_ItemGroupHierarchyValues",
-			          "ConceptualProperty": "ETag"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "E tag": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "ETag": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "tag": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "e identifier": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "e device": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "device": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "e label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e ticket": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e tab": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e docket": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e code": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e chip": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "e mark": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        }
-			      ]
-			    },
 			    "DIM_item_group_hierarchy_value.pfad": {
 			      "Definition": {
 			        "Binding": {
@@ -52485,9 +52294,1825 @@ cultureInfo de-DE
 			          }
 			        }
 			      ]
+			    },
+			    "DIM_sales_people_purchaser.quelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_SalesPeoplePurchasers",
+			          "ConceptualProperty": "Quelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quelle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_sales_people_purchaser.phone_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_SalesPeoplePurchasers",
+			          "ConceptualProperty": "phoneNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "phone number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "phoneNumber": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "phone no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_sales_people_purchaser.commission_percent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_SalesPeoplePurchasers",
+			          "ConceptualProperty": "commissionPercent"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "commission percent": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "commissionPercent": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "commission percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "commission ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "commission percentile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "commission part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "commission proportion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "commission fraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_datum.flag_YTD": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Datum",
+			          "ConceptualProperty": "Flag YTD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "flag YTD": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "YTD": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "flag year to date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "year to date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.573
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item.na_usage_purpose": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Items",
+			          "ConceptualProperty": "naUsagePurpose"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "na usage purpose": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "naUsagePurpose": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "purpose": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "usage purpose": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "na usage determination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "na usage resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "na usage persistence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "na usage perseverance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "na usage tenacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "na usage commitment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "na usage purposefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "na usage devotion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "na usage dedication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "usage determination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item.key_item_group": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Items",
+			          "ConceptualProperty": "Key Item Group"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "key item group": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "item group": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "key item category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "key item organization": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "item organization": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "key item bracket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "key item class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "key item crew": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "key item team": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "item bracket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "item class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "item crew": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item.ArtikelNr__ArtikelName": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Items",
+			          "ConceptualProperty": "ArtikelNr - ArtikelName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ArtikelNr - ArtikelName": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ArtikelNr ArtikelName": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item.quelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_Items",
+			          "ConceptualProperty": "Quelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quelle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FCT_sales_line_order.salesperson_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FCT_SalesLineOrders",
+			          "ConceptualProperty": "salespersonCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "salesperson code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "salespersonCode": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "salesperson id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "salesperson key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "FCT_sales_line_order.key_customerdate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FCT_SalesLineOrders",
+			          "ConceptualProperty": "Key Customer-Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "key customer-date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "key customer date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "customer date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "key customer-moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "key customer moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "customer moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "key customer-period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "key customer period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "key client -date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key consumer -date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key user -date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key buyer -date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "FCT_sales_line_order.quelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FCT_SalesLineOrders",
+			          "ConceptualProperty": "Quelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quelle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale.key_customerdate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FCT_ValueEntriesSales",
+			          "ConceptualProperty": "Key Customer-Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "key customer-date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "key customer date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "customer date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "key customer-moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "key customer moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "customer moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "key customer-period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "key customer period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "key client -date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key consumer -date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key user -date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key buyer -date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale.source_hier_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FCT_ValueEntriesSales",
+			          "ConceptualProperty": "sourceHierCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "source hier code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sourceHierCode": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "source hier id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "source hier key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale.quelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FCT_ValueEntriesSales",
+			          "ConceptualProperty": "Quelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quelle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "unit_of_measure.quelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "unitsOfMeasure",
+			          "ConceptualProperty": "Quelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "quelle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item_unit_of_measures.quelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_ItemUnitOfMeasures",
+			          "ConceptualProperty": "Quelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quelle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchies.quelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_CustomerHierarchies",
+			          "ConceptualProperty": "Quelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quelle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment.datum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_CustomerHierarchyAssignments",
+			          "ConceptualProperty": "Datum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "DIM_customer_hierarchy_assignment.key_customer__date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_CustomerHierarchyAssignments",
+			          "ConceptualProperty": "Key Customer - Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "key customer - date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "key customer date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "customer date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "key customer - moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "key customer moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "customer moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "key customer - period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "key customer period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "key client - date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key consumer - date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key user - date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "key buyer - date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment.customer_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_CustomerHierarchyAssignments",
+			          "ConceptualProperty": "CustomerName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CustomerName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "customer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "customer nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "customer title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "customer label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "customer tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Kunde": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment.country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_CustomerHierarchyAssignments",
+			          "ConceptualProperty": "country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment.salesperson_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_CustomerHierarchyAssignments",
+			          "ConceptualProperty": "salespersonCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "salesperson code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "salespersonCode": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "salesperson id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "salesperson key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment.CustomerNoCustmomerName": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_CustomerHierarchyAssignments",
+			          "ConceptualProperty": "CustomerNo-CustmomerName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CustomerNo-CustmomerName": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CustomerNo CustmomerName": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value.ebene_1_hauptgruppe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_ItemGroupHierarchyValues",
+			          "ConceptualProperty": "Ebene 1 (Hauptgruppe)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ebene 1 (hauptgruppe)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ebene 1": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value.ebene_2_produktart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_ItemGroupHierarchyValues",
+			          "ConceptualProperty": "Ebene 2 (Produktart)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ebene 2 (produktart)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ebene 2": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value.ebene_3_fettgehalt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_ItemGroupHierarchyValues",
+			          "ConceptualProperty": "Ebene 3 (Fettgehalt)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ebene 3 (fettgehalt)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ebene 3": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value.ebene_4_leer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_ItemGroupHierarchyValues",
+			          "ConceptualProperty": "Ebene 4 (leer)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ebene 4 (leer)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ebene 4": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value.key_item_group": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DIM_ItemGroupHierarchyValues",
+			          "ConceptualProperty": "Key Item Group"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "key item group": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "item group": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "key item category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "key item organization": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "item organization": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "key item bracket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "key item class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "key item crew": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "key item team": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "item bracket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "item class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "item crew": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "DIM_customer_hierarchy_assignment_has_DIM_customer_hierarchies": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        },
+			        "DIM_customer_hierarchies": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchies"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchies"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_DIM_customer_hierarchies"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchies"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchies_have_DIM_customer_hierarchy_assignments"
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale_has_DIM_customer_hierarchy_assignment": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_ValueEntriesSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_value_entries_sale": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale"
+			          }
+			        },
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_value_entries_sale"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_value_entries_sales_have_DIM_customer_hierarchy_assignments"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "FCT_value_entries_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_FCT_value_entries_sales"
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale_has_DIM_datum": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_ValueEntriesSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_value_entries_sale": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale"
+			          }
+			        },
+			        "DIM_datum": {
+			          "Target": {
+			            "Entity": "DIM_datum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_value_entries_sale"
+			            },
+			            "Object": {
+			              "Role": "DIM_datum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_value_entries_sales_have_DIM_data"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_datum"
+			            },
+			            "Object": {
+			              "Role": "FCT_value_entries_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_data_have_FCT_value_entries_sales"
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale_has_DIM_sales_people_purchaser": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_ValueEntriesSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_value_entries_sale": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale"
+			          }
+			        },
+			        "DIM_sales_people_purchaser": {
+			          "Target": {
+			            "Entity": "DIM_sales_people_purchaser"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_value_entries_sale"
+			            },
+			            "Object": {
+			              "Role": "DIM_sales_people_purchaser"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_value_entries_sales_have_DIM_sales_people_purchasers"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_sales_people_purchaser"
+			            },
+			            "Object": {
+			              "Role": "FCT_value_entries_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_sales_people_purchasers_have_FCT_value_entries_sales"
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale_has_DIM_item": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_ValueEntriesSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_value_entries_sale": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale"
+			          }
+			        },
+			        "DIM_item": {
+			          "Target": {
+			            "Entity": "DIM_item"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_value_entries_sale"
+			            },
+			            "Object": {
+			              "Role": "DIM_item"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_value_entries_sales_have_DIM_items"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item"
+			            },
+			            "Object": {
+			              "Role": "FCT_value_entries_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_items_have_FCT_value_entries_sales"
+			        }
+			      ]
+			    },
+			    "FCT_sales_line_order_has_DIM_sales_people_purchaser": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_SalesLineOrders"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_sales_line_order": {
+			          "Target": {
+			            "Entity": "FCT_sales_line_order"
+			          }
+			        },
+			        "DIM_sales_people_purchaser": {
+			          "Target": {
+			            "Entity": "DIM_sales_people_purchaser"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_sales_line_order"
+			            },
+			            "Object": {
+			              "Role": "DIM_sales_people_purchaser"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_sales_line_orders_have_DIM_sales_people_purchasers"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_sales_people_purchaser"
+			            },
+			            "Object": {
+			              "Role": "FCT_sales_line_order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_sales_people_purchasers_have_FCT_sales_line_orders"
+			        }
+			      ]
+			    },
+			    "FCT_sales_line_order_has_DIM_customer_hierarchy_assignment": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_SalesLineOrders"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_sales_line_order": {
+			          "Target": {
+			            "Entity": "FCT_sales_line_order"
+			          }
+			        },
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_sales_line_order"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_sales_line_orders_have_DIM_customer_hierarchy_assignments"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "FCT_sales_line_order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_FCT_sales_line_orders"
+			        }
+			      ]
+			    },
 			    "FCT_sales_line_order_has_DIM_item": {
 			      "Binding": {
 			        "ConceptualEntity": "FCT_SalesLineOrders"
@@ -52534,83 +54159,6 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
-			    "FCT_sales_line_order_has_DIM_customer": {
-			      "Binding": {
-			        "ConceptualEntity": "FCT_SalesLineOrders"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FCT_sales_line_order": {
-			          "Target": {
-			            "Entity": "FCT_sales_line_order"
-			          }
-			        },
-			        "DIM_customer": {
-			          "Target": {
-			            "Entity": "DIM_customer"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FCT_sales_line_order"
-			            },
-			            "Object": {
-			              "Role": "DIM_customer"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FCT_sales_line_orders_have_DIM_customers"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_customer"
-			            },
-			            "Object": {
-			              "Role": "FCT_sales_line_order"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_customers_have_FCT_sales_line_orders"
-			        },
-			        {
-			          "Verb": {
-			            "Subject": {
-			              "Role": "FCT_sales_line_order"
-			            },
-			            "Verbs": [
-			              {
-			                "sell": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "PrepositionalPhrases": [
-			              {
-			                "Prepositions": [
-			                  {
-			                    "to": {
-			                      "State": "Generated"
-			                    }
-			                  }
-			                ],
-			                "Object": {
-			                  "Role": "DIM_customer"
-			                }
-			              }
-			            ]
-			          },
-			          "State": "Generated",
-			          "Weight": 0.95,
-			          "ID": "FCT_sales_line_orders_sell_to_DIM_customers"
-			        }
-			      ]
-			    },
 			    "FCT_sales_line_order_has_DIM_datum": {
 			      "Binding": {
 			        "ConceptualEntity": "FCT_SalesLineOrders"
@@ -52654,6 +54202,52 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_data_have_FCT_sales_line_orders"
+			        }
+			      ]
+			    },
+			    "DIM_item_has_DIM_item_group_hierarchy_value": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item": {
+			          "Target": {
+			            "Entity": "DIM_item"
+			          }
+			        },
+			        "DIM_item_group_hierarchy_value": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item"
+			            },
+			            "Object": {
+			              "Role": "DIM_item_group_hierarchy_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_items_have_DIM_item_group_hierarchy_values"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item_group_hierarchy_value"
+			            },
+			            "Object": {
+			              "Role": "DIM_item"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_item_group_hierarchy_values_have_DIM_items"
 			        }
 			      ]
 			    },
@@ -52717,24 +54311,6 @@ cultureInfo de-DE
 			        "DIM_datum": {
 			          "Target": {
 			            "Entity": "DIM_datum"
-			          }
-			        }
-			      }
-			    },
-			    "sales_order_has_DIM_customer": {
-			      "Binding": {
-			        "ConceptualEntity": "SalesOrders"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sales_order": {
-			          "Target": {
-			            "Entity": "sales_order"
-			          }
-			        },
-			        "DIM_customer": {
-			          "Target": {
-			            "Entity": "DIM_customer"
 			          }
 			        }
 			      }
@@ -52829,24 +54405,6 @@ cultureInfo de-DE
 			        }
 			      }
 			    },
-			    "sales_invoice_has_DIM_customer": {
-			      "Binding": {
-			        "ConceptualEntity": "SalesInvoices"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sales_invoice": {
-			          "Target": {
-			            "Entity": "sales_invoice"
-			          }
-			        },
-			        "DIM_customer": {
-			          "Target": {
-			            "Entity": "DIM_customer"
-			          }
-			        }
-			      }
-			    },
 			    "item_has_item_category": {
 			      "Binding": {
 			        "ConceptualEntity": "Items"
@@ -52864,6 +54422,798 @@ cultureInfo de-DE
 			          }
 			        }
 			      }
+			    },
+			    "DIM_item_group_hierarchy_value_has_key_item_group": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_ItemGroupHierarchyValues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item_group_hierarchy_value": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value"
+			          }
+			        },
+			        "DIM_item_group_hierarchy_value.key_item_group": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value.key_item_group"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item_group_hierarchy_value"
+			            },
+			            "Object": {
+			              "Role": "DIM_item_group_hierarchy_value.key_item_group"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_item_group_hierarchy_values_have_key_item_groups"
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value_has_ebene_4_leer": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_ItemGroupHierarchyValues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item_group_hierarchy_value": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value"
+			          }
+			        },
+			        "DIM_item_group_hierarchy_value.ebene_4_leer": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value.ebene_4_leer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item_group_hierarchy_value"
+			            },
+			            "Object": {
+			              "Role": "DIM_item_group_hierarchy_value.ebene_4_leer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_item_group_hierarchy_values_have_ebene_4_leer"
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value_has_ebene_3_fettgehalt": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_ItemGroupHierarchyValues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item_group_hierarchy_value": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value"
+			          }
+			        },
+			        "DIM_item_group_hierarchy_value.ebene_3_fettgehalt": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value.ebene_3_fettgehalt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item_group_hierarchy_value"
+			            },
+			            "Object": {
+			              "Role": "DIM_item_group_hierarchy_value.ebene_3_fettgehalt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_item_group_hierarchy_values_have_ebene_3_fettgehalt"
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value_has_ebene_2_produktart": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_ItemGroupHierarchyValues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item_group_hierarchy_value": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value"
+			          }
+			        },
+			        "DIM_item_group_hierarchy_value.ebene_2_produktart": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value.ebene_2_produktart"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item_group_hierarchy_value"
+			            },
+			            "Object": {
+			              "Role": "DIM_item_group_hierarchy_value.ebene_2_produktart"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_item_group_hierarchy_values_have_ebene_2_produktart"
+			        }
+			      ]
+			    },
+			    "DIM_item_group_hierarchy_value_has_ebene_1_hauptgruppe": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_ItemGroupHierarchyValues"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item_group_hierarchy_value": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value"
+			          }
+			        },
+			        "DIM_item_group_hierarchy_value.ebene_1_hauptgruppe": {
+			          "Target": {
+			            "Entity": "DIM_item_group_hierarchy_value.ebene_1_hauptgruppe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item_group_hierarchy_value"
+			            },
+			            "Object": {
+			              "Role": "DIM_item_group_hierarchy_value.ebene_1_hauptgruppe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_item_group_hierarchy_values_have_ebene_1_hauptgruppe"
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment_has_CustomerNoCustmomerName": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        },
+			        "DIM_customer_hierarchy_assignment.CustomerNoCustmomerName": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment.CustomerNoCustmomerName"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment.CustomerNoCustmomerName"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_CustomerNoCustmomerNames"
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment_has_salesperson_code": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        },
+			        "DIM_customer_hierarchy_assignment.salesperson_code": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment.salesperson_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment.salesperson_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_salesperson_codes"
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment_has_country": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        },
+			        "DIM_customer_hierarchy_assignment.country": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment.country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_countries"
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment_has_customer_name": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        },
+			        "DIM_customer_hierarchy_assignment.customer_name": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment.customer_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment.customer_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_customer_names"
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment_has_key_customer__date": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        },
+			        "DIM_customer_hierarchy_assignment.key_customer__date": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment.key_customer__date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment.key_customer__date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_key_customer__dates"
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment_has_datum": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
+			        },
+			        "DIM_customer_hierarchy_assignment.datum": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment.datum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchy_assignment"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment.datum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchy_assignments_have_data"
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchies_has_quelle": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchies"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchies": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchies"
+			          }
+			        },
+			        "DIM_customer_hierarchies.quelle": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchies.quelle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_customer_hierarchies"
+			            },
+			            "Object": {
+			              "Role": "DIM_customer_hierarchies.quelle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_customer_hierarchies_have_quelles"
+			        }
+			      ]
+			    },
+			    "DIM_item_unit_of_measures_has_quelle": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_ItemUnitOfMeasures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item_unit_of_measures": {
+			          "Target": {
+			            "Entity": "DIM_item_unit_of_measures"
+			          }
+			        },
+			        "DIM_item_unit_of_measures.quelle": {
+			          "Target": {
+			            "Entity": "DIM_item_unit_of_measures.quelle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item_unit_of_measures"
+			            },
+			            "Object": {
+			              "Role": "DIM_item_unit_of_measures.quelle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_item_unit_of_measures_have_quelles"
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale_has_quelle": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_ValueEntriesSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_value_entries_sale": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale"
+			          }
+			        },
+			        "FCT_value_entries_sale.quelle": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale.quelle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_value_entries_sale"
+			            },
+			            "Object": {
+			              "Role": "FCT_value_entries_sale.quelle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_value_entries_sales_have_quelles"
+			        }
+			      ]
+			    },
+			    "FCT_value_entries_sale_has_source_hier_code": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_ValueEntriesSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_value_entries_sale": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale"
+			          }
+			        },
+			        "FCT_value_entries_sale.source_hier_code": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale.source_hier_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_value_entries_sale"
+			            },
+			            "Object": {
+			              "Role": "FCT_value_entries_sale.source_hier_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_value_entries_sales_have_source_hier_codes"
+			        }
+			      ]
+			    },
+			    "FCT_sales_line_order_has_quelle": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_SalesLineOrders"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_sales_line_order": {
+			          "Target": {
+			            "Entity": "FCT_sales_line_order"
+			          }
+			        },
+			        "FCT_sales_line_order.quelle": {
+			          "Target": {
+			            "Entity": "FCT_sales_line_order.quelle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_sales_line_order"
+			            },
+			            "Object": {
+			              "Role": "FCT_sales_line_order.quelle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_sales_line_orders_have_quelles"
+			        }
+			      ]
+			    },
+			    "DIM_item_has_quelle": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item": {
+			          "Target": {
+			            "Entity": "DIM_item"
+			          }
+			        },
+			        "DIM_item.quelle": {
+			          "Target": {
+			            "Entity": "DIM_item.quelle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item"
+			            },
+			            "Object": {
+			              "Role": "DIM_item.quelle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_items_have_quelles"
+			        }
+			      ]
+			    },
+			    "DIM_item_has_ArtikelNr__ArtikelName": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item": {
+			          "Target": {
+			            "Entity": "DIM_item"
+			          }
+			        },
+			        "DIM_item.ArtikelNr__ArtikelName": {
+			          "Target": {
+			            "Entity": "DIM_item.ArtikelNr__ArtikelName"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item"
+			            },
+			            "Object": {
+			              "Role": "DIM_item.ArtikelNr__ArtikelName"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_items_have_ArtikelNr__ArtikelNames"
+			        }
+			      ]
+			    },
+			    "DIM_item_has_key_item_group": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item": {
+			          "Target": {
+			            "Entity": "DIM_item"
+			          }
+			        },
+			        "DIM_item.key_item_group": {
+			          "Target": {
+			            "Entity": "DIM_item.key_item_group"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item"
+			            },
+			            "Object": {
+			              "Role": "DIM_item.key_item_group"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_items_have_key_item_groups"
+			        }
+			      ]
+			    },
+			    "DIM_item_has_na_usage_purpose": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Items"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_item": {
+			          "Target": {
+			            "Entity": "DIM_item"
+			          }
+			        },
+			        "DIM_item.na_usage_purpose": {
+			          "Target": {
+			            "Entity": "DIM_item.na_usage_purpose"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_item"
+			            },
+			            "Object": {
+			              "Role": "DIM_item.na_usage_purpose"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_items_have_na_usage_purposes"
+			        }
+			      ]
+			    },
+			    "DIM_datum_has_flag_YTD": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_Datum"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_datum": {
+			          "Target": {
+			            "Entity": "DIM_datum"
+			          }
+			        },
+			        "DIM_datum.flag_YTD": {
+			          "Target": {
+			            "Entity": "DIM_datum.flag_YTD"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_datum"
+			            },
+			            "Object": {
+			              "Role": "DIM_datum.flag_YTD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_data_have_flag_YTD"
+			        }
+			      ]
+			    },
+			    "DIM_sales_people_purchaser_has_commission_percent": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_sales_people_purchaser": {
+			          "Target": {
+			            "Entity": "DIM_sales_people_purchaser"
+			          }
+			        },
+			        "DIM_sales_people_purchaser.commission_percent": {
+			          "Target": {
+			            "Entity": "DIM_sales_people_purchaser.commission_percent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_sales_people_purchaser"
+			            },
+			            "Object": {
+			              "Role": "DIM_sales_people_purchaser.commission_percent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_sales_people_purchasers_have_commission_percent"
+			        }
+			      ]
+			    },
+			    "DIM_sales_people_purchaser_has_phone_number": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_sales_people_purchaser": {
+			          "Target": {
+			            "Entity": "DIM_sales_people_purchaser"
+			          }
+			        },
+			        "DIM_sales_people_purchaser.phone_number": {
+			          "Target": {
+			            "Entity": "DIM_sales_people_purchaser.phone_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_sales_people_purchaser"
+			            },
+			            "Object": {
+			              "Role": "DIM_sales_people_purchaser.phone_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_sales_people_purchasers_have_phone_numbers"
+			        }
+			      ]
+			    },
+			    "DIM_sales_people_purchaser_has_quelle": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_sales_people_purchaser": {
+			          "Target": {
+			            "Entity": "DIM_sales_people_purchaser"
+			          }
+			        },
+			        "DIM_sales_people_purchaser.quelle": {
+			          "Target": {
+			            "Entity": "DIM_sales_people_purchaser.quelle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "DIM_sales_people_purchaser"
+			            },
+			            "Object": {
+			              "Role": "DIM_sales_people_purchaser.quelle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DIM_sales_people_purchasers_have_quelles"
+			        }
+			      ]
 			    },
 			    "DIM_item_group_hierarchy_value_has_fettgehalt": {
 			      "Binding": {
@@ -53027,39 +55377,6 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_item_group_hierarchy_values_have_pfads"
-			        }
-			      ]
-			    },
-			    "DIM_item_group_hierarchy_value_has_E_tag": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_ItemGroupHierarchyValues"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item_group_hierarchy_value": {
-			          "Target": {
-			            "Entity": "DIM_item_group_hierarchy_value"
-			          }
-			        },
-			        "DIM_item_group_hierarchy_value.E_tag": {
-			          "Target": {
-			            "Entity": "DIM_item_group_hierarchy_value.E_tag"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item_group_hierarchy_value"
-			            },
-			            "Object": {
-			              "Role": "DIM_item_group_hierarchy_value.E_tag"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_item_group_hierarchy_values_have_E_tags"
 			        }
 			      ]
 			    },
@@ -53327,39 +55644,6 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
-			    "DIM_customer_hierarchy_assignment_has_E_tag": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_customer_hierarchy_assignment": {
-			          "Target": {
-			            "Entity": "DIM_customer_hierarchy_assignment"
-			          }
-			        },
-			        "DIM_customer_hierarchy_assignment.E_tag": {
-			          "Target": {
-			            "Entity": "DIM_customer_hierarchy_assignment.E_tag"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_customer_hierarchy_assignment"
-			            },
-			            "Object": {
-			              "Role": "DIM_customer_hierarchy_assignment.E_tag"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_customer_hierarchy_assignments_have_E_tags"
-			        }
-			      ]
-			    },
 			    "DIM_customer_hierarchy_assignment_has_ending_date": {
 			      "Binding": {
 			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
@@ -53489,39 +55773,6 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_customer_hierarchy_assignments_have_customer_noes"
-			        }
-			      ]
-			    },
-			    "DIM_customer_hierarchies_has_E_tag": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_CustomerHierarchies"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_customer_hierarchies": {
-			          "Target": {
-			            "Entity": "DIM_customer_hierarchies"
-			          }
-			        },
-			        "DIM_customer_hierarchies.E_tag": {
-			          "Target": {
-			            "Entity": "DIM_customer_hierarchies.E_tag"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_customer_hierarchies"
-			            },
-			            "Object": {
-			              "Role": "DIM_customer_hierarchies.E_tag"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_customer_hierarchies_have_E_tags"
 			        }
 			      ]
 			    },
@@ -53852,72 +56103,6 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_item_unit_of_measures_have_a"
-			        }
-			      ]
-			    },
-			    "DIM_item_unit_of_measures_has_std": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_ItemUnitOfMeasures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item_unit_of_measures": {
-			          "Target": {
-			            "Entity": "DIM_item_unit_of_measures"
-			          }
-			        },
-			        "DIM_item_unit_of_measures.std": {
-			          "Target": {
-			            "Entity": "DIM_item_unit_of_measures.std"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item_unit_of_measures"
-			            },
-			            "Object": {
-			              "Role": "DIM_item_unit_of_measures.std"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_item_unit_of_measures_have_stds"
-			        }
-			      ]
-			    },
-			    "DIM_item_unit_of_measures_has_v_": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_ItemUnitOfMeasures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item_unit_of_measures": {
-			          "Target": {
-			            "Entity": "DIM_item_unit_of_measures"
-			          }
-			        },
-			        "DIM_item_unit_of_measures.v_": {
-			          "Target": {
-			            "Entity": "DIM_item_unit_of_measures.v_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item_unit_of_measures"
-			            },
-			            "Object": {
-			              "Role": "DIM_item_unit_of_measures.v_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_item_unit_of_measures_have_"
 			        }
 			      ]
 			    },
@@ -54545,72 +56730,6 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_item_unit_of_measures_have_g"
-			        }
-			      ]
-			    },
-			    "DIM_item_unit_of_measures_has_sack_imcd": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_ItemUnitOfMeasures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item_unit_of_measures": {
-			          "Target": {
-			            "Entity": "DIM_item_unit_of_measures"
-			          }
-			        },
-			        "DIM_item_unit_of_measures.sack_imcd": {
-			          "Target": {
-			            "Entity": "DIM_item_unit_of_measures.sack_imcd"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item_unit_of_measures"
-			            },
-			            "Object": {
-			              "Role": "DIM_item_unit_of_measures.sack_imcd"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_item_unit_of_measures_have_sack_imcds"
-			        }
-			      ]
-			    },
-			    "DIM_item_unit_of_measures_has_sack_bot": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_ItemUnitOfMeasures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item_unit_of_measures": {
-			          "Target": {
-			            "Entity": "DIM_item_unit_of_measures"
-			          }
-			        },
-			        "DIM_item_unit_of_measures.sack_bot": {
-			          "Target": {
-			            "Entity": "DIM_item_unit_of_measures.sack_bot"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item_unit_of_measures"
-			            },
-			            "Object": {
-			              "Role": "DIM_item_unit_of_measures.sack_bot"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_item_unit_of_measures_have_sack_bots"
 			        }
 			      ]
 			    },
@@ -56132,39 +58251,6 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
-			    "DIM_item_has_pfad": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.pfad": {
-			          "Target": {
-			            "Entity": "DIM_item.pfad"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.pfad"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_pfads"
-			        }
-			      ]
-			    },
 			    "FCT_value_entries_sale_has_E_tag": {
 			      "Binding": {
 			        "ConceptualEntity": "FCT_ValueEntriesSales"
@@ -56891,6 +58977,39 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
+			    "FCT_value_entries_sale_has_source_no": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_ValueEntriesSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_value_entries_sale": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale"
+			          }
+			        },
+			        "FCT_value_entries_sale.source_no": {
+			          "Target": {
+			            "Entity": "FCT_value_entries_sale.source_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_value_entries_sale"
+			            },
+			            "Object": {
+			              "Role": "FCT_value_entries_sale.source_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_value_entries_sales_have_source_noes"
+			        }
+			      ]
+			    },
 			    "FCT_value_entries_sale_has_posting_date": {
 			      "Binding": {
 			        "ConceptualEntity": "FCT_ValueEntriesSales"
@@ -56954,389 +59073,6 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "FCT_value_entries_sales_have_entry_noes"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_ebene_3": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.ebene_3": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.ebene_3"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.ebene_3"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_ebene_3"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_ebene_2": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.ebene_2": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.ebene_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.ebene_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_ebene_2"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_ebene_1": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.ebene_1": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.ebene_1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.ebene_1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_ebene_1"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_pfad": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.pfad": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.pfad"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.pfad"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_pfads"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_E_tag": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.E_tag": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.E_tag"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.E_tag"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_E_tags"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_description": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.description": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.description"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.description"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_descriptions"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_value": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.value": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_values"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_from_value": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.from_value": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.from_value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.from_value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_from_value"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Prepositions": [
-			              {
-			                "from": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.from_value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_are_from_from_value"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_subgroup_code": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.subgroup_code": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.subgroup_code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.subgroup_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_subgroup_codes"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_level": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.level": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.level"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.level"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_levels"
-			        }
-			      ]
-			    },
-			    "item_group_hierarchy_values_alt_has_main_group": {
-			      "Binding": {
-			        "ConceptualEntity": "itemGroupHierarchyValues_alt"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "item_group_hierarchy_values_alt": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt"
-			          }
-			        },
-			        "item_group_hierarchy_values_alt.main_group": {
-			          "Target": {
-			            "Entity": "item_group_hierarchy_values_alt.main_group"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "item_group_hierarchy_values_alt"
-			            },
-			            "Object": {
-			              "Role": "item_group_hierarchy_values_alt.main_group"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "item_group_hierarchy_values_alts_have_main_groups"
 			        }
 			      ]
 			    },
@@ -58363,6 +60099,70 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
+			    "FCT_sales_line_order_has_sell_to_customer_no": {
+			      "Binding": {
+			        "ConceptualEntity": "FCT_SalesLineOrders"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "FCT_sales_line_order": {
+			          "Target": {
+			            "Entity": "FCT_sales_line_order"
+			          }
+			        },
+			        "FCT_sales_line_order.sell_to_customer_no": {
+			          "Target": {
+			            "Entity": "FCT_sales_line_order.sell_to_customer_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "FCT_sales_line_order"
+			            },
+			            "Object": {
+			              "Role": "FCT_sales_line_order.sell_to_customer_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "FCT_sales_line_orders_have_sell_to_customer_no"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "FCT_sales_line_order"
+			            },
+			            "Verbs": [
+			              {
+			                "sell": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "to": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "FCT_sales_line_order.sell_to_customer_no"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "FCT_sales_line_orders_sell_to_sell_to_customer_no"
+			        }
+			      ]
+			    },
 			    "FCT_sales_line_order_has_line_no": {
 			      "Binding": {
 			        "ConceptualEntity": "FCT_SalesLineOrders"
@@ -58459,270 +60259,6 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "FCT_sales_line_orders_have_document_types"
-			        }
-			      ]
-			    },
-			    "DIM_item_has_itemGroupHierarchyValue_description": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.itemGroupHierarchyValue_description": {
-			          "Target": {
-			            "Entity": "DIM_item.itemGroupHierarchyValue_description"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.itemGroupHierarchyValue_description"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_itemGroupHierarchyValue_descriptions"
-			        }
-			      ]
-			    },
-			    "DIM_item_has_itemGroupHierarchyValue_value": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.itemGroupHierarchyValue_value": {
-			          "Target": {
-			            "Entity": "DIM_item.itemGroupHierarchyValue_value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.itemGroupHierarchyValue_value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_itemGroupHierarchyValue_values"
-			        }
-			      ]
-			    },
-			    "DIM_item_has_itemGroupHierarchyValue_fromValue": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.itemGroupHierarchyValue_fromValue": {
-			          "Target": {
-			            "Entity": "DIM_item.itemGroupHierarchyValue_fromValue"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.itemGroupHierarchyValue_fromValue"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_itemGroupHierarchyValue_fromValues"
-			        }
-			      ]
-			    },
-			    "DIM_item_has_itemGroupHierarchyValue_subgroupCode": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.itemGroupHierarchyValue_subgroupCode": {
-			          "Target": {
-			            "Entity": "DIM_item.itemGroupHierarchyValue_subgroupCode"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.itemGroupHierarchyValue_subgroupCode"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_itemGroupHierarchyValue_subgroupCodes"
-			        }
-			      ]
-			    },
-			    "DIM_item_has_itemGroupHierarchyValue_level": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.itemGroupHierarchyValue_level": {
-			          "Target": {
-			            "Entity": "DIM_item.itemGroupHierarchyValue_level"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.itemGroupHierarchyValue_level"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_itemGroupHierarchyValue_levels"
-			        }
-			      ]
-			    },
-			    "DIM_item_has_itemGroupHierarchyValue_mainGroup": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.itemGroupHierarchyValue_mainGroup": {
-			          "Target": {
-			            "Entity": "DIM_item.itemGroupHierarchyValue_mainGroup"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.itemGroupHierarchyValue_mainGroup"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_itemGroupHierarchyValue_mainGroups"
-			        }
-			      ]
-			    },
-			    "DIM_item_has_E_tag": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.E_tag": {
-			          "Target": {
-			            "Entity": "DIM_item.E_tag"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.E_tag"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_E_tags"
-			        }
-			      ]
-			    },
-			    "DIM_item_has_na_fat_content": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_Items"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        },
-			        "DIM_item.na_fat_content": {
-			          "Target": {
-			            "Entity": "DIM_item.na_fat_content"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "DIM_item.na_fat_content"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_na_fat_contents"
 			        }
 			      ]
 			    },
@@ -61195,72 +62731,6 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
-			    "DIM_sales_people_purchaser_has_E_tag": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.E_tag": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.E_tag"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser.E_tag"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_sales_people_purchasers_have_E_tags"
-			        }
-			      ]
-			    },
-			    "DIM_sales_people_purchaser_has_last_modified_date_time": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.last_modified_date_time": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.last_modified_date_time"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser.last_modified_date_time"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_sales_people_purchasers_have_last_modified_date_times"
-			        }
-			      ]
-			    },
 			    "DIM_sales_people_purchaser_has_blocked": {
 			      "Binding": {
 			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
@@ -61291,171 +62761,26 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_sales_people_purchasers_have_blocked"
-			        }
-			      ]
-			    },
-			    "DIM_sales_people_purchaser_has_privacy_blocked": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
 			        },
-			        "DIM_sales_people_purchaser.privacy_blocked": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.privacy_blocked"
-			          }
-			        }
-			      },
-			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Adjective": {
 			            "Subject": {
 			              "Role": "DIM_sales_people_purchaser"
 			            },
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser.privacy_blocked"
+			            "Adjectives": [
+			              {
+			                "blocked": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "DIM_sales_people_purchaser.blocked"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "DIM_sales_people_purchasers_have_privacy_blocked"
-			        }
-			      ]
-			    },
-			    "DIM_sales_people_purchaser_has_commision_percent": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.commision_percent": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.commision_percent"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser.commision_percent"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_sales_people_purchasers_have_commision_percent"
-			        }
-			      ]
-			    },
-			    "DIM_sales_people_purchaser_has_job_title": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.job_title": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.job_title"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser.job_title"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_sales_people_purchasers_have_job_titles"
-			        }
-			      ]
-			    },
-			    "DIM_sales_people_purchaser_has_phone_no": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.phone_no": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.phone_no"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser.phone_no"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_sales_people_purchasers_have_phone_noes"
-			        }
-			      ]
-			    },
-			    "DIM_sales_people_purchaser_has_email_2": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.email_2": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.email_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser.email_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_sales_people_purchasers_have_email_2"
+			          "ID": "blocked_indicates_how_blocked_DIM_sales_people_purchasers_are"
 			        }
 			      ]
 			    },
@@ -61588,19 +62913,51 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "DIM_sales_people_purchasers_have_ids"
+			        }
+			      ]
+			    },
+			    "DIM_customer_hierarchy_assignment_in_country": {
+			      "Binding": {
+			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "DIM_customer_hierarchy_assignment": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment"
+			          }
 			        },
+			        "DIM_customer_hierarchy_assignment.country": {
+			          "Target": {
+			            "Entity": "DIM_customer_hierarchy_assignment.country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "DIM_customer_hierarchy_assignment.country"
+			        }
+			      },
+			      "Phrasings": [
 			        {
-			          "Name": {
+			          "Preposition": {
 			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
+			              "Role": "DIM_customer_hierarchy_assignment"
 			            },
-			            "Name": {
-			              "Role": "DIM_sales_people_purchaser.id"
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "DIM_customer_hierarchy_assignment.country"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "ids_are_names_IDs_of_DIM_sales_people_purchasers"
+			          "ID": "DIM_customer_hierarchy_assignments_are_in_countries"
 			        }
 			      ]
 			    },
@@ -61943,153 +63300,6 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
-			    "DIM_sales_people_purchaser_is_modified_on_last_modified_date_time": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.last_modified_date_time": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.last_modified_date_time"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "When": {
-			          "Role": "DIM_sales_people_purchaser.last_modified_date_time"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Verb": {
-			            "Verbs": [
-			              {
-			                "modify": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.9,
-			          "ID": "DIM_sales_people_purchasers_are_modified_on_last_modified_date_times"
-			        }
-			      ]
-			    },
-			    "DIM_sales_people_purchaser_is_blocked": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.blocked": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.blocked"
-			          }
-			        }
-			      },
-			      "Conditions": [
-			        {
-			          "Target": {
-			            "Role": "DIM_sales_people_purchaser.blocked"
-			          },
-			          "Operator": "Equals",
-			          "Value": {
-			            "Boolean": [
-			              true
-			            ]
-			          }
-			        }
-			      ],
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Adjectives": [
-			              {
-			                "blocked": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ]
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "some_DIM_sales_people_purchasers_are_blocked_DIM_sales_people_purchasers"
-			        }
-			      ]
-			    },
-			    "DIM_sales_people_purchaser_is_privacy_blocked": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        },
-			        "DIM_sales_people_purchaser.privacy_blocked": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser.privacy_blocked"
-			          }
-			        }
-			      },
-			      "Conditions": [
-			        {
-			          "Target": {
-			            "Role": "DIM_sales_people_purchaser.privacy_blocked"
-			          },
-			          "Operator": "Equals",
-			          "Value": {
-			            "Boolean": [
-			              true
-			            ]
-			          }
-			        }
-			      ],
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Adjectives": [
-			              {
-			                "privacy blocked": {
-			                  "State": "Generated"
-			                }
-			              },
-			              {
-			                "privacy-blocked": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ]
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "some_DIM_sales_people_purchasers_are_privacy_blocked_DIM_sales_people_purchasers"
-			        }
-			      ]
-			    },
 			    "DIM_sales_people_purchaser_purchase": {
 			      "Binding": {
 			        "ConceptualEntity": "DIM_SalesPeoplePurchasers"
@@ -62119,236 +63329,6 @@ cultureInfo de-DE
 			          "State": "Generated",
 			          "Weight": 0.75,
 			          "ID": "DIM_sales_people_purchasers_purchase"
-			        }
-			      ]
-			    },
-			    "FCT_value_entries_sale_has_DIM_item": {
-			      "Binding": {
-			        "ConceptualEntity": "FCT_ValueEntriesSales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FCT_value_entries_sale": {
-			          "Target": {
-			            "Entity": "FCT_value_entries_sale"
-			          }
-			        },
-			        "DIM_item": {
-			          "Target": {
-			            "Entity": "DIM_item"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FCT_value_entries_sale"
-			            },
-			            "Object": {
-			              "Role": "DIM_item"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FCT_value_entries_sales_have_DIM_items"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_item"
-			            },
-			            "Object": {
-			              "Role": "FCT_value_entries_sale"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_items_have_FCT_value_entries_sales"
-			        }
-			      ]
-			    },
-			    "FCT_value_entries_sale_has_DIM_sales_people_purchaser": {
-			      "Binding": {
-			        "ConceptualEntity": "FCT_ValueEntriesSales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FCT_value_entries_sale": {
-			          "Target": {
-			            "Entity": "FCT_value_entries_sale"
-			          }
-			        },
-			        "DIM_sales_people_purchaser": {
-			          "Target": {
-			            "Entity": "DIM_sales_people_purchaser"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FCT_value_entries_sale"
-			            },
-			            "Object": {
-			              "Role": "DIM_sales_people_purchaser"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FCT_value_entries_sales_have_DIM_sales_people_purchasers"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_sales_people_purchaser"
-			            },
-			            "Object": {
-			              "Role": "FCT_value_entries_sale"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_sales_people_purchasers_have_FCT_value_entries_sales"
-			        }
-			      ]
-			    },
-			    "FCT_value_entries_sale_has_DIM_customer": {
-			      "Binding": {
-			        "ConceptualEntity": "FCT_ValueEntriesSales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FCT_value_entries_sale": {
-			          "Target": {
-			            "Entity": "FCT_value_entries_sale"
-			          }
-			        },
-			        "DIM_customer": {
-			          "Target": {
-			            "Entity": "DIM_customer"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FCT_value_entries_sale"
-			            },
-			            "Object": {
-			              "Role": "DIM_customer"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FCT_value_entries_sales_have_DIM_customers"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_customer"
-			            },
-			            "Object": {
-			              "Role": "FCT_value_entries_sale"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_customers_have_FCT_value_entries_sales"
-			        }
-			      ]
-			    },
-			    "FCT_value_entries_sale_has_DIM_datum": {
-			      "Binding": {
-			        "ConceptualEntity": "FCT_ValueEntriesSales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "FCT_value_entries_sale": {
-			          "Target": {
-			            "Entity": "FCT_value_entries_sale"
-			          }
-			        },
-			        "DIM_datum": {
-			          "Target": {
-			            "Entity": "DIM_datum"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "FCT_value_entries_sale"
-			            },
-			            "Object": {
-			              "Role": "DIM_datum"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "FCT_value_entries_sales_have_DIM_data"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_datum"
-			            },
-			            "Object": {
-			              "Role": "FCT_value_entries_sale"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_data_have_FCT_value_entries_sales"
-			        }
-			      ]
-			    },
-			    "DIM_customer_hierarchy_assignment_has_DIM_customer_hierarchies": {
-			      "Binding": {
-			        "ConceptualEntity": "DIM_CustomerHierarchyAssignments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "DIM_customer_hierarchy_assignment": {
-			          "Target": {
-			            "Entity": "DIM_customer_hierarchy_assignment"
-			          }
-			        },
-			        "DIM_customer_hierarchies": {
-			          "Target": {
-			            "Entity": "DIM_customer_hierarchies"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_customer_hierarchy_assignment"
-			            },
-			            "Object": {
-			              "Role": "DIM_customer_hierarchies"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_customer_hierarchy_assignments_have_DIM_customer_hierarchies"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "DIM_customer_hierarchies"
-			            },
-			            "Object": {
-			              "Role": "DIM_customer_hierarchy_assignment"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DIM_customer_hierarchies_have_DIM_customer_hierarchy_assignments"
 			        }
 			      ]
 			    }

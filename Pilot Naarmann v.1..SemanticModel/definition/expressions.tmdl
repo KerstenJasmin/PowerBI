@@ -369,9 +369,10 @@ expression DIM_ItemGroupHierarchyValues_NAV =
 		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
 		    dbo_itemGroupHierarchyValues = Quelle{[Schema="dbo",Item="itemGroupHierarchyValues"]}[Data],
 		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_itemGroupHierarchyValues, "Quelle", each "NAV"),
-		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}}),
+		    #"Gefilterte Zeilen" = Table.SelectRows(#"Geänderter Typ", each ([mainGroup] = 1))
 		in
-		    #"Geänderter Typ"
+		    #"Gefilterte Zeilen"
 	lineageTag: bb31aa38-fcf0-443e-ba0b-eab69a51ecd8
 	queryGroup: 'NAV Tabellen'
 
@@ -414,9 +415,12 @@ expression FCT_SalesLineOrders_NAV =
 		    Quelle = Sql.Database("NAV-DB-CN1", "Naarmann_Live"),
 		    dbo_salesLineOrders = Quelle{[Schema="dbo",Item="salesLineOrders"]}[Data],
 		    #"Hinzugefügte benutzerdefinierte Spalte" = Table.AddColumn(dbo_salesLineOrders, "Quelle", each "NAV"),
-		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}})
+		    #"Geänderter Typ" = Table.TransformColumnTypes(#"Hinzugefügte benutzerdefinierte Spalte",{{"Quelle", type text}, {"type", type text}}),
+		    #"Ersetzter Wert" = Table.ReplaceValue(#"Geänderter Typ","2","Item",Replacer.ReplaceText,{"type"}),
+		    #"Ersetzter Wert1" = Table.ReplaceValue(#"Ersetzter Wert","5","Zu-/Abschlag",Replacer.ReplaceText,{"type"}),
+		    #"Ersetzter Wert2" = Table.ReplaceValue(#"Ersetzter Wert1","0","",Replacer.ReplaceText,{"type"})
 		in
-		    #"Geänderter Typ"
+		    #"Ersetzter Wert2"
 	lineageTag: d2506073-0bf1-4681-9b30-7765cbdcec42
 	queryGroup: 'NAV Tabellen'
 

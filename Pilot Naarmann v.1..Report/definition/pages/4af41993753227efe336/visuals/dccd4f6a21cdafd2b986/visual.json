@@ -68,11 +68,11 @@
                       "Entity": "DIM_Items"
                     }
                   },
-                  "Property": "description"
+                  "Property": "ArtikelNr - ArtikelName"
                 }
               },
-              "queryRef": "DIM_Items.description",
-              "nativeQueryRef": "description",
+              "queryRef": "DIM_Items.ArtikelNr - ArtikelName",
+              "nativeQueryRef": "ArtikelNr - ArtikelName",
               "active": false
             }
           ]
@@ -192,13 +192,82 @@
           },
           {
             "queryRefs": [
-              "DIM_Items.description"
+              "DIM_Items.ArtikelNr - ArtikelName"
             ],
             "isCollapsed": true,
             "isPinned": true
           }
         ],
-        "root": {}
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'Pudding'"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'Pudding'"
+                      }
+                    }
+                  ],
+                  "isToggled": true,
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'alle'"
+                          }
+                        }
+                      ],
+                      "isToggled": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "null"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "null"
+                      }
+                    }
+                  ],
+                  "isToggled": true,
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "null"
+                          }
+                        }
+                      ],
+                      "isToggled": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "objects": {
@@ -428,5 +497,189 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d844cb4b8ee40243e6ac",
+        "ordinal": 0,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Absatz"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "36406a32ef9239ddc7c7",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_Items"
+              }
+            },
+            "Property": "ArtikelNr - ArtikelName"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a79bf0eb62b79089de4b",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 1 (Hauptgruppe)"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e776b85b9683cd5985b7",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FCT_ValueEntriesSales"
+              }
+            },
+            "Property": "itemNo"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "f",
+              "Entity": "FCT_ValueEntriesSales",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f"
+                              }
+                            },
+                            "Property": "itemNo"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'475609'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "07bf33b9476ab1bcaedd",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 2 (Produktart)"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "94b721d4c96fb9a7d8e0",
+        "ordinal": 5,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_ItemGroupHierarchyValues"
+              }
+            },
+            "Property": "Ebene 3 (Fettgehalt)"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "cff0e62c9dced1243bfa",
+        "ordinal": 6,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Δ Absatz VJ"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "126647dad8ae720615dd",
+        "ordinal": 7,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measure Tabelle"
+              }
+            },
+            "Property": "Δ% Absatz VJ"
+          }
+        },
+        "type": "Advanced"
+      }
+    ],
+    "filterSortOrder": "Custom"
   }
 }

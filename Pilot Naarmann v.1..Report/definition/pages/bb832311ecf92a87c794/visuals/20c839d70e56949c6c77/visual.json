@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "8ff49091beda41a25819",
+  "name": "20c839d70e56949c6c77",
   "position": {
     "x": 19.918099918099919,
     "y": 63.947583947583951,
@@ -20,45 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DIM_ItemGroupHierarchyValues"
+                      "Entity": "DIM_CustomerHierarchyAssignments"
                     }
                   },
-                  "Property": "Ebene 1 (Hauptgruppe)"
+                  "Property": "CustomerName"
                 }
               },
-              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 1 (Hauptgruppe)",
-              "nativeQueryRef": "Ebene 1 (Hauptgruppe)",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "DIM_ItemGroupHierarchyValues"
-                    }
-                  },
-                  "Property": "Ebene 2 (Produktart)"
-                }
-              },
-              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 2 (Untergruppe)",
-              "nativeQueryRef": "Ebene 2 (Produktart)",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "DIM_ItemGroupHierarchyValues"
-                    }
-                  },
-                  "Property": "Ebene 3 (Fettgehalt)"
-                }
-              },
-              "queryRef": "DIM_ItemGroupHierarchyValues.Ebene 3 (Produktart)",
-              "nativeQueryRef": "Ebene 3 (Fettgehalt)",
-              "active": true
+              "queryRef": "DIM_CustomerHierarchyAssignments.CustomerName",
+              "nativeQueryRef": "Kunde",
+              "active": true,
+              "displayName": "Kunde"
             },
             {
               "field": {
@@ -73,7 +44,7 @@
               },
               "queryRef": "FCT_SalesLineOrders.documentNo",
               "nativeQueryRef": "documentNo",
-              "active": true
+              "active": false
             }
           ]
         },
@@ -161,59 +132,9 @@
         "levels": [
           {
             "queryRefs": [
-              "DIM_ItemGroupHierarchyValues.Ebene 1 (Hauptgruppe)"
+              "DIM_CustomerHierarchyAssignments.CustomerName"
             ],
             "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "DIM_ItemGroupHierarchyValues"
-                    }
-                  },
-                  "Property": "Ebene 1 (Hauptgruppe)"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "DIM_ItemGroupHierarchyValues.Ebene 2 (Untergruppe)"
-            ],
-            "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "DIM_ItemGroupHierarchyValues"
-                    }
-                  },
-                  "Property": "Ebene 2 (Produktart)"
-                }
-              }
-            ],
-            "isPinned": true
-          },
-          {
-            "queryRefs": [
-              "DIM_ItemGroupHierarchyValues.Ebene 3 (Produktart)"
-            ],
-            "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "DIM_ItemGroupHierarchyValues"
-                    }
-                  },
-                  "Property": "Ebene 3 (Fettgehalt)"
-                }
-              }
-            ],
             "isPinned": true
           },
           {
@@ -221,59 +142,10 @@
               "FCT_SalesLineOrders.documentNo"
             ],
             "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "FCT_SalesLineOrders"
-                    }
-                  },
-                  "Property": "documentNo"
-                }
-              }
-            ],
             "isPinned": true
           }
         ],
-        "root": {
-          "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'Eismix'"
-                  }
-                }
-              ],
-              "isToggled": true,
-              "children": [
-                {
-                  "identityValues": [
-                    {
-                      "Literal": {
-                        "Value": "'Softeismix'"
-                      }
-                    }
-                  ],
-                  "isToggled": true,
-                  "children": [
-                    {
-                      "identityValues": [
-                        {
-                          "Literal": {
-                            "Value": "'alle'"
-                          }
-                        }
-                      ],
-                      "isToggled": true
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
+        "root": {}
       }
     ],
     "objects": {

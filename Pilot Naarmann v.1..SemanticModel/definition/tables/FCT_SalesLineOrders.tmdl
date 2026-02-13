@@ -468,11 +468,12 @@ table FCT_SalesLineOrders
 				            Name = "salesLineOrders",
 				            Signature = "table"
 				        ]}[Data],
+				    #"Ersetzter Wert" = Table.ReplaceValue(SalesLineOrders,"_x0020_","",Replacer.ReplaceText,{"type"}),
 				
 				    // Temporäre Umwandlung des Buchungsdatums in Text (für Key-Erstellung)
 				    PostingDate_AlsText =
 				        Table.TransformColumnTypes(
-				            SalesLineOrders,
+				            #"Ersetzter Wert",
 				            {{"postingDate", type text}}
 				        ),
 				
@@ -527,9 +528,7 @@ table FCT_SalesLineOrders
 				                {"plannedDeliveryDate", type date}
 				            }
 				        )
-				
 				in
-				    // Rückgabe der finalen Faktentabelle
 				    FinaleTypen
 
 	changedProperty = IsHidden
